@@ -1,0 +1,47 @@
+baseurl = "/"
+enableEmoji = false
+footnotereturnlinkcontents = "↩"
+googleAnalytics = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+languageCode = "en-us"
+theme = "hugo-classic"
+title = "Collin Dewey"
+enableRobotsTXT = true
+disableLiveReload = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "monokai"
+tabWidth = 4
+
+[permalinks]
+articles = "/articles/:slug/"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 2
+[[menu.main]]
+name = "Homelab"
+url = "/homelab/"
+weight = 3
+
+[params]
+description = ""
+footer = "Discord: Legit_Magic#9356 | [GitHub](https://github.com/LegitMagic) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey)"

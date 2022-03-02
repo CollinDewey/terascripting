@@ -3,12 +3,11 @@ title: Home
 description: "I'm Collin Dewey and I like to mess with various computing stuff. Specific interests include Docker, Linux, NixOS, 3DS Homebrew, and Cyber Security. This website is where I keep my technology ramblings, and for keeping up on my projects."
 ---
 <img
-  src="/images/home/Collin.png"
+  src="/images/home/Sunset.svg"
   style="
   min-width: 40px;
   max-width: 256px;
   float: right;
-  padding: 10px;
   display: block;
   ">
 

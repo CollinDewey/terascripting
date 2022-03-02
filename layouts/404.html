@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+<h1><span class="title">{{ .Title | markdownify }}</span></h1>
+</div>
+
+<div class="content-wrapper">
+  <main>
+    {{ .Content }}
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+{{ partial "footer.html" . }}

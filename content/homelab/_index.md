@@ -44,7 +44,7 @@ Intel Celeron 2957U
 
 NixOS 22.05 (Quokka)
 
-[AMD](https://youtu.be/-NYduubaf8Y?t=150) FX-8350
+[AMD](https://youtu.be/zAEXuONMJCQ?t=45) FX-8350
 
 NVIDIA GTX 970
 

@@ -2,7 +2,7 @@
 # To enable this hook, set the executable bit and run
 # git config --local core.hooksPath .githooks/
 
-if git diff HEAD --name-only | grep -q "content/homelab/_index.md"; then
+if git diff --staged --name-only | grep -q "content/homelab/_index.md"; then
 	time=$(date '+%s')
 	sed -i "s,https://img.shields.io/date/[0-9]\+,https://img.shields.io/date/$time,g" content/homelab/_index.md
 fi

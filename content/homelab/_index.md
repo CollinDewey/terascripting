@@ -90,7 +90,7 @@ Raspberry Pi 4 Model B
  - [Firefly III](https://docs.firefly-iii.org/firefly-iii/installation/docker/)
  - [Home Assistant](https://www.home-assistant.io/installation/generic-x86-64#install-home-assistant-container)
  - [Hugo Webserver](https://github.com/klakegg/docker-hugo)
- - [Hugo_NGINX](https://github.com/nginxinc/docker-nginx)
+ - [Hugo NGINX](https://github.com/nginxinc/docker-nginx)
  - [jmusicbot](https://github.com/craumix/jmb-container)
  - [Librespeed](https://github.com/librespeed/speedtest/blob/master/doc_docker.md)
  - Cuberite Minecraft Lobby
@@ -108,4 +108,4 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1646453521?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1646457107?label=Last%20Updated&style=for-the-badge">

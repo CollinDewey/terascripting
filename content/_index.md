@@ -5,10 +5,9 @@ description: "I'm Collin Dewey and I like to mess with various computing stuff. 
 <img
   src="/images/home/Sunset.svg"
   style="
-  min-width: 40px;
+  width: 35%;
   max-width: 256px;
   float: right;
-  display: block;
   ">
 
 ## Collin Dewey - About Me

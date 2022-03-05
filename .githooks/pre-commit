@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-# To enable this hook, rename this file to "pre-commit".
+# To enable this hook, set the executable bit and run
+# git config --local core.hooksPath .githooks/
 
 if git diff HEAD --name-only | grep -q "content/homelab/_index.md"; then
 	time=$(date '+%s')

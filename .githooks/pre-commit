@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+# To enable this hook, rename this file to "pre-commit".
+
+if git diff HEAD --name-only | grep -q "content/homelab/_index.md"; then
+	time=$(date '+%s')
+	sed -i "s,https://img.shields.io/date/[0-9]\+,https://img.shields.io/date/$time,g" content/homelab/_index.md
+fi
+git add content/homelab/_index.md

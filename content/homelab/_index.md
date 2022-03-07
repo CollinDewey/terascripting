@@ -95,6 +95,7 @@ Raspberry Pi 4 Model B
  - [Librespeed](https://github.com/librespeed/speedtest/blob/master/doc_docker.md)
  - Cuberite Minecraft Lobby
  - [Minecraft Velocity Proxy](https://github.com/itzg/docker-bungeecord)
+ - [Navidrome](https://www.navidrome.org/docs/installation/docker/)
  - [OvenMediaEngine](https://airensoft.gitbook.io/ovenmediaengine/getting-started#running-with-docker)
  - [OvenMediaEngine NGINX](https://github.com/nginxinc/docker-nginx)
  - [Paperless-ng](https://paperless-ng.readthedocs.io/en/latest/setup.html#setup-docker-hub)
@@ -108,4 +109,4 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1646457107?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1646664316?label=Last%20Updated&style=for-the-badge">

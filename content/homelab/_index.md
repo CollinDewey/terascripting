@@ -103,10 +103,29 @@ Raspberry Pi 4 Model B
  - [Pi-hole](https://github.com/pi-hole/docker-pi-hole)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Unifi-Controller](https://hub.docker.com/r/linuxserver/unifi-controller)
- - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
  - [Watchtower](https://github.com/containrrr/watchtower)
  - [WebDav Server](https://rclone.org/install/#install-with-docker)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1646664316?label=Last%20Updated&style=for-the-badge">
+## OracleVPS - Oracle Cloud [(Always Free)](https://www.oracle.com/cloud/free/) VPS
+
+NixOS 21.11 (Porcupine)
+
+VM.Standard.A1.Flex
+
+24GB RAM
+
+#### Storage
+ - 50GB SSD
+
+#### Usage
+ - Track Server Uptime
+
+#### Continaers
+ - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
+ - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
+ - [Watchtower](https://github.com/containrrr/watchtower)
+
+---
+<img src="https://img.shields.io/date/1648041671?label=Last%20Updated&style=for-the-badge">

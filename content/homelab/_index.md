@@ -53,6 +53,7 @@ NVIDIA GTX 970
 #### Storage
  - 1TB HDD
  - 2TB HDD
+ - 8TB HDD
  - 1TB SSD
 
 #### Usage
@@ -128,4 +129,4 @@ Oracle Cloud [(Always Free)](https://www.oracle.com/cloud/free/) VM.Standard.A1.
  - [Watchtower](https://github.com/containrrr/watchtower)
 
 ---
-<img src="https://img.shields.io/date/1648041873?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648084161?label=Last%20Updated&style=for-the-badge">

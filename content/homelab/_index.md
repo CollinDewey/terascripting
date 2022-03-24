@@ -109,11 +109,13 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-## OracleVPS - Virtual Private Server
+## Brown - Virtual Private Server
 
 NixOS 21.11 (Porcupine)
 
-Oracle Cloud [(Always Free)](https://www.oracle.com/cloud/free/) VM.Standard.A1.Flex
+[Oracle Cloud VM.Standard.A1.Flex](https://www.oracle.com/cloud/free/)
+
+4 OCPUs
 
 24GB RAM
 
@@ -129,4 +131,4 @@ Oracle Cloud [(Always Free)](https://www.oracle.com/cloud/free/) VM.Standard.A1.
  - [Watchtower](https://github.com/containrrr/watchtower)
 
 ---
-<img src="https://img.shields.io/date/1648084161?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648089479?label=Last%20Updated&style=for-the-badge">

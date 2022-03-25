@@ -129,6 +129,7 @@ NixOS 21.11 (Porcupine)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
  - [Watchtower](https://github.com/containrrr/watchtower)
+ - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648089479?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648214067?label=Last%20Updated&style=for-the-badge">

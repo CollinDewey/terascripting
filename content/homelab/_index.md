@@ -109,7 +109,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-## Brown - Virtual Private Server
+## BROWN - Virtual Private Server
 
 NixOS 21.11 (Porcupine)
 
@@ -132,4 +132,4 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648214067?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648341549?label=Last%20Updated&style=for-the-badge">

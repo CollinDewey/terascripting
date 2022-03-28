@@ -59,11 +59,9 @@ NVIDIA GTX 970
 #### Usage
  - SSHFS Storage Server
  - Duplicati Backup
- - Docker Containers
 
 #### Containers
  - [Plex](https://github.com/linuxserver/docker-plex)
- - Multiple [Minecraft Servers](https://github.com/itzg/docker-minecraft-server)
 
 ---
 ## PI - Server
@@ -94,8 +92,6 @@ Raspberry Pi 4 Model B
  - [Hugo NGINX](https://github.com/nginxinc/docker-nginx)
  - [jmusicbot](https://github.com/craumix/jmb-container)
  - [Librespeed](https://github.com/librespeed/speedtest/blob/master/doc_docker.md)
- - Cuberite Minecraft Lobby
- - [Minecraft Velocity Proxy](https://github.com/itzg/docker-bungeecord)
  - [Navidrome](https://www.navidrome.org/docs/installation/docker/)
  - [OvenMediaEngine](https://airensoft.gitbook.io/ovenmediaengine/getting-started#running-with-docker)
  - [OvenMediaEngine NGINX](https://github.com/nginxinc/docker-nginx)
@@ -120,16 +116,20 @@ NixOS 21.11 (Porcupine)
 24GB RAM
 
 #### Storage
- - 50GB SSD
+ - 50GB Boot Storage
+ - 100GB Block Storage
 
 #### Usage
  - Track Server Uptime
 
 #### Continaers
+ - Cuberite Server
+ - [Minecraft Servers](https://github.com/itzg/docker-minecraft-server)
+ - [Minecraft Velocity Proxy](https://github.com/itzg/docker-bungeecord)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
  - [Watchtower](https://github.com/containrrr/watchtower)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648341549?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648473811?label=Last%20Updated&style=for-the-badge">

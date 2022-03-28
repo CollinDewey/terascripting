@@ -116,8 +116,8 @@ NixOS 21.11 (Porcupine)
 24GB RAM
 
 #### Storage
- - 50GB Boot Storage
  - 100GB Block Storage
+ - 50GB Boot Storage
 
 #### Usage
  - Track Server Uptime
@@ -132,4 +132,4 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648473811?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648473906?label=Last%20Updated&style=for-the-badge">

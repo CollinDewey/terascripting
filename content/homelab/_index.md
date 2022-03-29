@@ -86,6 +86,7 @@ Raspberry Pi 4 Model B
  - [ddclient](https://github.com/linuxserver/docker-ddclient)
  - [diun](https://crazymax.dev/diun/install/docker/)
  - [dnsmasq](https://github.com/LegitMagic/misc/tree/master/dnsmasq_docker)
+ - [FileRun](https://docs.filerun.com/docker)
  - [Firefly III](https://docs.firefly-iii.org/firefly-iii/installation/docker/)
  - [Home Assistant](https://www.home-assistant.io/installation/generic-x86-64#install-home-assistant-container)
  - [Hugo Webserver](https://github.com/klakegg/docker-hugo)
@@ -132,4 +133,4 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648473906?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648555658?label=Last%20Updated&style=for-the-badge">

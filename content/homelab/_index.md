@@ -57,7 +57,7 @@ NVIDIA GTX 970
  - 1TB SSD
 
 #### Usage
- - SSHFS Storage Server
+ - SSHFS Storage
  - Duplicati Backup
 
 #### Containers
@@ -78,8 +78,6 @@ Raspberry Pi 4 Model B
 
 #### Usage
  - SSHFS Storage
- - Many Docker Containers
- - Netdata
 
 #### Containers
  - [CUPS Print Server](https://github.com/chuckcharlie/cups-avahi-airprint)
@@ -121,6 +119,7 @@ NixOS 21.11 (Porcupine)
  - 50GB Boot Storage
 
 #### Usage
+ - Minecraft Server Host
  - Track Server Uptime
 
 #### Continaers
@@ -133,4 +132,4 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648555658?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648556482?label=Last%20Updated&style=for-the-badge">

@@ -132,4 +132,14 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648556482?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1648687527?label=Last%20Updated&style=for-the-badge">
+
+---
+
+<script src="https://utteranc.es/client.js"
+  repo="LegitMagic/terascripting"
+  issue-term="og:title"
+  theme="icy-dark"
+  crossorigin="anonymous"
+  async>
+</script>

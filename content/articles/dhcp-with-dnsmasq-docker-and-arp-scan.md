@@ -51,8 +51,8 @@ dhcp-host=8C:EB:32:DF:2D:C0,UniFi-AP,172.16.0.2,12h
 dhcp-host=65:E3:62:1B:38:CF,PI,172.16.0.3,12h
 dhcp-host=A9:F2:07:3A:13:9F,Network-Switch-1,172.16.0.4,12h
 dhcp-host=85:B2:D3:5B:A6:34,Personal-Cloud,172.16.0.5,12h
-dhcp-host=B2:B4:36:E1:43:4E,ObiHai,172.16.0.8,12h
-dhcp-host=17:59:A0:DE:2A:73,BLUE,172.16.0.20,12h
+dhcp-host=B2:B4:36:E1:43:4E,ObiHai,172.16.0.26,12h
+dhcp-host=17:59:A0:DE:2A:73,GREEN,172.16.0.28,12h
 ```
 
 ---
@@ -87,7 +87,7 @@ arp-scan allows you to specify a file that relates the MAC addresses to names wi
 A9F2073A139F    Network-Switch-1
 85B2D35BA634    Personal-Cloud
 B2B436E1434E    ObiHai
-1759A0DE2A73    BLUE
+1759A0DE2A73    GREEN
 ```
 
 Now when I specify the macfile, I can see a much nicer output.
@@ -100,10 +100,10 @@ Starting arp-scan 1.9.7 with 256 hosts (https://github.com/royhills/arp-scan)
 172.16.0.2      8c:eb:32:df:2d:c0       UniFi-AP
 172.16.0.5      85:b2:d3:5b:a6:34       Personal-Cloud
 172.16.0.3      65:e3:62:1b:38:cf       PI
-172.16.0.20     17:59:a0:de:2a:73       BLUE
+172.16.0.28     17:59:a0:de:2a:73       GREEN
 172.16.0.4      a9:f2:07:3a:13:9f       Network-Switch-1
-172.16.0.20     17:59:a0:de:2a:73       BLUE (DUP: 2)
-172.16.0.8      b2:b4:36:e1:43:4e       ObiHai
+172.16.0.28     17:59:a0:de:2a:73       GREEN (DUP: 2)
+172.16.0.26     b2:b4:36:e1:43:4e       ObiHai
 9 packets received by filter, 0 packets dropped by kernel
 Ending arp-scan 1.9.7: 256 hosts scanned in 2.157 seconds (118.68 hosts/sec). 8 responded
 ```
@@ -117,8 +117,8 @@ $ sudo arp-scan --macfile arp-scan.txt --localnet --interface eth0 --ignoredups 
 172.16.0.3      65:e3:62:1b:38:cf       PI
 172.16.0.4      a9:f2:07:3a:13:9f       Network-Switch-1
 172.16.0.5      85:b2:d3:5b:a6:34       Personal-Cloud
-172.16.0.8      b2:b4:36:e1:43:4e       ObiHai
-172.16.0.20     17:59:a0:de:2a:73       BLUE
+172.16.0.26     b2:b4:36:e1:43:4e       ObiHai
+172.16.0.28     17:59:a0:de:2a:73       GREEN
 ```
 
 ---
@@ -135,10 +135,10 @@ Sure I could maintain a separate list to keep between arp-scan and dnsmasq, but 
 65E3621B38CF    PI      172.16.0.3      12h
 A9F2073A139F    Network-Switch-1        172.16.0.4      12h
 85B2D35BA634    Personal-Cloud  172.16.0.5      12h
-B2B436E1434E    ObiHai  172.16.0.8      12h
+B2B436E1434E    ObiHai  172.16.0.26      12h
 
 #Misc           eth0 (20-39)
-1759A0DE2A73    BLUE    172.16.0.20     12h
+1759A0DE2A73    GREEN    172.16.0.28     12h
 ```
 
 **`generate.sh`**
@@ -208,4 +208,6 @@ After running `docker-compose up -d`, I was left with functional dnsmasq in a do
 
 ### Edit History:
 
-10/3/21 - Initial Release
+10/03/21 - Initial Release
+
+04/11/22 - Minor Example Revision

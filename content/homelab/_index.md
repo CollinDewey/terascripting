@@ -25,21 +25,6 @@ VoIP House Phone service through Google Voice for [free](https://www.youtube.com
 Connected to [Amazon Echos](https://www.youtube.com/watch?v=IRmGZSdH2qY) through an [Echo Connect](https://www.amazon.com/dp/B076ZRFP6Y)
 
 ---
-## BLUE - Workstation
-
-[Windows](https://youtu.be/Zu0l-Ac7fTU) 10 Professional
-
-HP Stream 200-010
-
-Intel Celeron 2957U
-
-6GB RAM
-
-#### Usage
- - Banking software
- - RDP Server
-
----
 ## TEAL - Workstation/Server
 
 NixOS 22.05 (Quokka)
@@ -132,7 +117,7 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1648687527?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1649714516?label=Last%20Updated&style=for-the-badge">
 
 ---
 

@@ -25,6 +25,21 @@ VoIP House Phone service through Google Voice for [free](https://www.youtube.com
 Connected to [Amazon Echos](https://www.youtube.com/watch?v=IRmGZSdH2qY) through an [Echo Connect](https://www.amazon.com/dp/B076ZRFP6Y)
 
 ---
+## klipper - 3D Printer Controller
+
+[MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os)
+
+Raspberry Pi 3 Model B
+
+1GB RAM
+
+#### Storage
+ - 16GB Flash
+
+#### Usage
+ - Controlling my Ender 3 Pro 3D printer
+
+---
 ## TEAL - Workstation/Server
 
 [NixOS 22.05 (Quokka)](https://nixos.org/)
@@ -117,7 +132,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1650497434?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1650497615?label=Last%20Updated&style=for-the-badge">
 
 ---
 

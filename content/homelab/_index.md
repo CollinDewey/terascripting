@@ -27,7 +27,7 @@ Connected to [Amazon Echos](https://www.youtube.com/watch?v=IRmGZSdH2qY) through
 ---
 ## TEAL - Workstation/Server
 
-NixOS 22.05 (Quokka)
+[NixOS 22.05 (Quokka)](https://nixos.org/)
 
 [AMD](https://youtu.be/zAEXuONMJCQ?t=45) FX-8350
 
@@ -51,7 +51,7 @@ NVIDIA GTX 970
 ---
 ## PI - Server
 
-NixOS 21.11 (Porcupine)
+[NixOS 21.11 (Porcupine)](https://nixos.org/)
 
 Raspberry Pi 4 Model B
 
@@ -91,7 +91,7 @@ Raspberry Pi 4 Model B
 ---
 ## BROWN - Virtual Private Server
 
-NixOS 21.11 (Porcupine)
+[NixOS 21.11 (Porcupine)](https://nixos.org/)
 
 [Oracle Cloud VM.Standard.A1.Flex](https://www.oracle.com/cloud/free/)
 
@@ -117,7 +117,7 @@ NixOS 21.11 (Porcupine)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1649714516?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1650497434?label=Last%20Updated&style=for-the-badge">
 
 ---
 

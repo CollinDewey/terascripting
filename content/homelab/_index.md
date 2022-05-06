@@ -61,6 +61,8 @@ NVIDIA GTX 970
  - Duplicati Backup
 
 #### Containers
+ - [Nextcloud](https://github.com/nextcloud/docker)
+ - [PhotoPrism](https://docs.photoprism.app/getting-started/)
  - [Plex](https://github.com/linuxserver/docker-plex)
 
 ---

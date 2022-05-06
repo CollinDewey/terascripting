@@ -134,7 +134,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1650497615?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1651876191?label=Last%20Updated&style=for-the-badge">
 
 ---
 

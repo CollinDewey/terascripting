@@ -20,7 +20,7 @@ Makes AT&T happy with the use of [eap_proxy](https://github.com/jaysoffian/eap_p
 
 [OBi202](https://www.obitalk.com/info/products/obi202)
 
-VoIP House Phone service through Google Voice for [free](https://www.youtube.com/watch?v=DRmv6vmFHjo)
+VoIP House Phone service through Google Voice for free
 
 Connected to [Amazon Echos](https://www.youtube.com/watch?v=IRmGZSdH2qY) through an [Echo Connect](https://www.amazon.com/dp/B076ZRFP6Y)
 
@@ -134,7 +134,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1651876191?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1655394346?label=Last%20Updated&style=for-the-badge">
 
 ---
 

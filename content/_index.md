@@ -18,7 +18,7 @@ I am going for my Bachelors of Science degree in Computer Science and Engineerin
 Lab Manager and Leader of the Linux Special Interest Group at UofL's ACM chapter.
 
 
-Check out my projects and homelab setup at the top of the page, and my tech ramblings in the articles section below.
+Check out my homelab setup at the top of the page, and my tech ramblings in the articles section below.
 
 ---
 

@@ -33,14 +33,15 @@ articles = "/articles/:slug/"
 name = "Home"
 url = "/"
 weight = 1
-[[menu.main]]
-name = "Projects"
-url = "/projects/"
-weight = 2
+#[[menu.main]]
+#name = "Projects"
+#url = "/projects/"
+#weight = 2
 [[menu.main]]
 name = "Homelab"
 url = "/homelab/"
-weight = 3
+#weight = 3
+weight = 2
 
 [params]
 description = ""

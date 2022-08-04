@@ -14,7 +14,7 @@ description: "I'm Collin Dewey and I like to mess with various computing stuff. 
 
 I'm Collin Dewey and I like to mess with various computing stuff.
 Specific interests include Docker, Linux, NixOS, 3DS Homebrew, and Cyber Security.
-I am going for my Bachelors of Science degree in Computer Science and Engineering at the University of Louisville.
+I am going for my Bachelors degree in Computer Science at the University of Louisville.
 Lab Manager and Leader of the Linux Special Interest Group at UofL's ACM chapter.
 
 

@@ -45,7 +45,7 @@ I looked around online and eventually found a (now deleted) 3D model on thingive
 	</tr>
 </table>
 
-Now you can see from the last picture, that I ended up having trouble getting the 3D printed arm to fit. This was due to my MakerBot Replicator Mini not being able to correctly *Replicate* the dimensions of the 3D model. I attempted to super glue the arm, but it would just fall off when attempting to actually flip the switch. Another problem I had with this model is that you had to completely unscrew and re-screw the switch to take on/off the print. This basically meant that if Housing came by, they'd most likely be upset if they saw the "thermostat".
+As you can see from the last picture above, I ended up having trouble getting the 3D printed arm to fit the servo arm. This was due to my MakerBot Replicator Mini not being able to correctly Replicate the dimensions of the 3D model. I attempted to super glue the arm, but it would just fall off when attempting to actually flip the switch. Another problem I had with this model is that you had to completely unscrew and re-screw the switch to take on/off the print. This basically meant that if Housing came by, they'd most likely be upset if they saw the thermostat.
 
 ---
 # Second attempt

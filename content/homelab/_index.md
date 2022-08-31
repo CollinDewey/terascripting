@@ -68,7 +68,7 @@ NVIDIA GTX 970
 ---
 ## PI - Server
 
-[NixOS 21.11 (Porcupine)](https://nixos.org/)
+[NixOS 22.05 (Quokka)](https://nixos.org/)
 
 Raspberry Pi 4 Model B
 
@@ -108,7 +108,7 @@ Raspberry Pi 4 Model B
 ---
 ## BROWN - Virtual Private Server
 
-[NixOS 21.11 (Porcupine)](https://nixos.org/)
+[NixOS 22.11 (Raccoon)](https://nixos.org/)
 
 [Oracle Cloud VM.Standard.A1.Flex](https://www.oracle.com/cloud/free/)
 
@@ -134,7 +134,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1655394346?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1661910028?label=Last%20Updated&style=for-the-badge">
 
 ---
 

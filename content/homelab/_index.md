@@ -64,6 +64,7 @@ NVIDIA GTX 970
  - [Nextcloud](https://github.com/nextcloud/docker)
  - [PhotoPrism](https://docs.photoprism.app/getting-started/)
  - [Plex](https://github.com/linuxserver/docker-plex)
+ - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
 ## PI - Server
@@ -104,7 +105,6 @@ Raspberry Pi 4 Model B
  - [Unifi-Controller](https://hub.docker.com/r/linuxserver/unifi-controller)
  - [Watchtower](https://github.com/containrrr/watchtower)
  - [WebDav Server](https://rclone.org/install/#install-with-docker)
- - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
 ## BROWN - Virtual Private Server
@@ -135,7 +135,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1662863428?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1664665330?label=Last%20Updated&style=for-the-badge">
 
 ---
 

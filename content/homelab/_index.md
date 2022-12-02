@@ -42,7 +42,7 @@ Raspberry Pi 3 Model B
 ---
 ## TEAL - Workstation/Server
 
-[NixOS 22.05 (Quokka)](https://nixos.org/)
+[NixOS 22.11 (Raccoon)](https://nixos.org/)
 
 [AMD](https://youtu.be/zAEXuONMJCQ?t=45) FX-8350
 
@@ -69,7 +69,7 @@ NVIDIA GTX 970
 ---
 ## PI - Server
 
-[NixOS 22.05 (Quokka)](https://nixos.org/)
+[NixOS 22.11 (Raccoon)](https://nixos.org/)
 
 Raspberry Pi 4 Model B
 
@@ -135,7 +135,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1664665330?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1669941447?label=Last%20Updated&style=for-the-badge">
 
 ---
 

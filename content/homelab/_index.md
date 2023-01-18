@@ -44,6 +44,8 @@ Raspberry Pi 3 Model B
 
 [NixOS 22.11 (Raccoon)](https://nixos.org/)
 
+[Nix Configuration](https://github.com/LegitMagic/nix-config)
+
 [AMD](https://youtu.be/zAEXuONMJCQ?t=45) FX-8350
 
 NVIDIA GTX 970
@@ -67,9 +69,11 @@ NVIDIA GTX 970
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-## PI - Server
+## VIRIDIAN - Server
 
 [NixOS 22.11 (Raccoon)](https://nixos.org/)
+
+[Nix Configuration](https://github.com/LegitMagic/nix-config)
 
 Raspberry Pi 4 Model B
 
@@ -111,6 +115,8 @@ Raspberry Pi 4 Model B
 
 [NixOS 22.11 (Raccoon)](https://nixos.org/)
 
+[Nix Configuration](https://github.com/LegitMagic/nix-config)
+
 [Oracle Cloud VM.Standard.A1.Flex](https://www.oracle.com/cloud/free/)
 
 4 OCPUs
@@ -135,7 +141,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1669941447?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1674053137?label=Last%20Updated&style=for-the-badge">
 
 ---
 

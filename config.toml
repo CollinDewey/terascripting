@@ -33,16 +33,18 @@ articles = "/articles/:slug/"
 name = "Home"
 url = "/"
 weight = 1
-#[[menu.main]]
-#name = "Projects"
-#url = "/projects/"
-#weight = 2
+
+[[menu.main]]
+name = "Articles"
+url = "/articles/"
+weight = 2
+
 [[menu.main]]
 name = "Homelab"
 url = "/homelab/"
 #weight = 3
-weight = 2
+weight = 3
 
 [params]
 description = ""
-footer = "Discord: Legit_Magic#9356 | [GitHub](https://github.com/LegitMagic) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey) | [Server Status](https://kuma.terascripting.com/)"
+footer = "Discord: Legit_Magic#9356 | [GitHub](https://github.com/LegitMagic) | [Twitter](https://twitter.com/CollinDew) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey) | [Server Status](https://kuma.terascripting.com/)"

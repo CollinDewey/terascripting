@@ -1,6 +1,5 @@
 ---
 title: Home
-description: "I'm Collin Dewey and I like to mess with various computing stuff. Specific interests include Docker, Linux, NixOS, 3DS Homebrew, and Cyber Security. This website is where I keep my technology ramblings, and for keeping up on my projects."
 ---
 <img
   src="/images/home/Sunset.svg"
@@ -12,13 +11,31 @@ description: "I'm Collin Dewey and I like to mess with various computing stuff. 
 
 ## Collin Dewey - About Me
 
-I'm Collin Dewey and I like to mess with various computing stuff.
-Specific interests include Docker, Linux, NixOS, 3DS Homebrew, and Cyber Security.
-I am going for my Bachelors degree in Computer Science at the University of Louisville.
-Lab Manager and Leader of the Linux Special Interest Group at UofL's ACM chapter.
+I'm a Computer Science student at the University of Louisville's Speed School of Engineering with a passion for Cyber Security.
+I'm actively involved in my school's Cyber Security club and lead the school's Student Linux User Group.
+I enjoy participating in CTF-style challenges as well as Red Team/Blue Team competitions.
 
+*I'm currently seeking an internship in Cyber Security and would love to connect with others who share my interests.*
 
-Check out my homelab setup at the top of the page, and my tech ramblings in the articles section below.
+### Experience
+- ❄️ My Linux NixOS configuration can be found in my [nix-config repo](https://github.com/LegitMagic/nix-config)
+- 📦 Experienced with Git, Docker, and Nix
+- </> Have used a variety of programming languages, such as C/C++/C#/Java/Swift/Python 3/HTML/CSS/JS
+- 📖 Check out my blog at [terascripting.com](https://terascripting.com/)
+
+### Accomplishments
+- 🏅 Placed 24/6679 in the NCL Fall 2022 Individual Game
+- 🏅 Placed 91/6480 in the NCL Fall 2021 Individual Game
+- 👨‍💻 With a team, made it to the NCCDC Regional Competition twice
+- 🦅 Achieved the rank of Eagle Scout
+
+### Contact me
+- Email: collin (at) terascripting.com
+- Discord: Legit_Magic#9356
+- Twitter: [@CollinDew](https://twitter.com/CollinDew)
+- LinkedIn: [in/collinmdewey](https://www.linkedin.com/in/collinmdewey/)
+
+### Check out my homelab setup at the top of the page, and my tech ramblings in the articles section below.
 
 ---
 

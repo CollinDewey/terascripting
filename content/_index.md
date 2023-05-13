@@ -32,7 +32,6 @@ I enjoy participating in CTF-style challenges as well as Red Team/Blue Team comp
 ### Contact me
 - Email: collin (at) terascripting.com
 - Discord: Legit_Magic#9356
-- Twitter: [@CollinDew](https://twitter.com/CollinDew)
 - LinkedIn: [in/collinmdewey](https://www.linkedin.com/in/collinmdewey/)
 
 ### Check out my homelab setup at the top of the page, and my tech ramblings in the articles section below.

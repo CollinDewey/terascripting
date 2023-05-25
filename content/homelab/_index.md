@@ -42,7 +42,7 @@ Raspberry Pi 3 Model B
 ---
 ## TEAL - Workstation/Server
 
-[NixOS 22.11 (Raccoon)](https://nixos.org/)
+[NixOS 23.05 (Stoat)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
@@ -71,7 +71,7 @@ NVIDIA GTX 970
 ---
 ## VIRIDIAN - Server
 
-[NixOS 22.11 (Raccoon)](https://nixos.org/)
+[NixOS 23.05 (Stoat)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
@@ -113,7 +113,7 @@ Raspberry Pi 4 Model B
 ---
 ## BROWN - Virtual Private Server
 
-[NixOS 22.11 (Raccoon)](https://nixos.org/)
+[NixOS 23.05 (Stoat)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
@@ -141,7 +141,7 @@ Raspberry Pi 4 Model B
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
 
 ---
-<img src="https://img.shields.io/date/1674053137?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1685000669?label=Last%20Updated&style=for-the-badge">
 
 ---
 

@@ -37,7 +37,7 @@ AMD FX-8350
 
 AMD ATI Xpert 128
 
-16GB RAM DDR4
+16GB RAM DDR3
 
 #### Storage
  - 14TB HDD (RAID1)
@@ -102,19 +102,17 @@ Raspberry Pi 4 Model B
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
-[Oracle Cloud VM.Standard.A1.Flex](https://www.oracle.com/cloud/free/)
-
 4 CPUs
 
 24GB RAM
 
 #### Storage
- - 100GB Block Storage
- - 50GB Boot Storage
+ - 200GB Storage
 
 #### Usage
- - Minecraft Server Host
+ - Minecraft Server Hosts
  - Track Server Uptime
+ - File Server
 
 #### Continaers
  - [Minecraft Servers](https://github.com/itzg/docker-minecraft-server)
@@ -122,6 +120,7 @@ Raspberry Pi 4 Model B
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
+ - [NGINX](https://github.com/nginxinc/docker-nginx)
 
 ---
 ## KLIPPER - 3D Printer Controller
@@ -136,6 +135,7 @@ Raspberry Pi 3 Model B
  - 16GB Flash
 
 #### Usage
+ - Runs the Mainsail 3D printing interface using the Klipper 3D printing firmware
  - Hosts a [camera livestream of the printing process](https://printer.terascripting.com/)
  - Connected to an ADXL345 Accelerometer through GPIO for vibration tuning
 
@@ -156,7 +156,7 @@ Bypasses AT&T Fiber Residental Router Lock using [eap_proxy](https://github.com/
 VoIP House Phone service through Google Voice for free
 
 ---
-<img src="https://img.shields.io/date/1694136254?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1694138478?label=Last%20Updated&style=for-the-badge">
 
 ---
 

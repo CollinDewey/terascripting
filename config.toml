@@ -8,7 +8,7 @@ theme = "hugo-classic"
 title = "Collin Dewey"
 enableRobotsTXT = true
 disableLiveReload = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -42,7 +42,6 @@ weight = 2
 [[menu.main]]
 name = "Homelab"
 url = "/homelab/"
-#weight = 3
 weight = 3
 
 [params]

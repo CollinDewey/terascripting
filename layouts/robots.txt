@@ -1,16 +1,7 @@
 # robots.txt
+
 User-agent: *
-Disallow: /
-User-agent: Googlebot
-Disallow: 
-Disallow: /public/
-Disallow: /UofL/
-User-agent: googlebot-mobile
-Disallow: 
-Disallow: /public/
-Disallow: /UofL/
-User-agent: ia_archiver
-Disallow: 
-Disallow: /public/
-Disallow: /UofL/
-Sitemap: https://terascripting.com/sitemap.xml
+Disallow: /images
+Disallow: /css
+
+Sitemap: https://collindewey.net/sitemap.xml

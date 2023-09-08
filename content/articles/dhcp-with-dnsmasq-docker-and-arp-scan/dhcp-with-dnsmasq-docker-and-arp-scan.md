@@ -143,7 +143,7 @@ B2B436E1434E    ObiHai  172.16.0.26      12h
 
 **`generate.sh`**
 ```
-#!/bin/bash
+#!/usr/bin/env bash
 
 cat dhcp.tsv | while IFS="	" read -r col1 col2 col3 col4
 do
@@ -211,3 +211,5 @@ After running `docker-compose up -d`, I was left with functional dnsmasq in a do
 10/03/21 - Initial Release
 
 04/11/22 - Minor Example Revision
+
+09/07/23 - Replace `/bin/bash` with `/usr/bin/env`

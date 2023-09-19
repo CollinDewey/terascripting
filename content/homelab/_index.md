@@ -33,11 +33,11 @@ Radeon RX 6800-XT / GeForce RTX 2080
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
-AMD FX-8350
+Intel Xeon E5-2696 v3
 
-AMD ATI Xpert 128
+GeForce GTX 970
 
-16GB RAM DDR3
+128GB RAM DDR4
 
 #### Storage
  - 14TB HDD (RAID1)
@@ -156,7 +156,7 @@ Bypasses AT&T Fiber Residental Router Lock using [eap_proxy](https://github.com/
 VoIP House Phone service through Google Voice for free
 
 ---
-<img src="https://img.shields.io/date/1694138478?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1695153583?label=Last%20Updated&style=for-the-badge">
 
 ---
 

@@ -6,7 +6,7 @@ description: "My Homelab Setup"
 ---
 ## CYAN - Workstation
 
-[NixOS 23.05 (Tapir)](https://nixos.org/)
+[NixOS 23.11 (Tapir)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
@@ -21,15 +21,16 @@ Radeon RX 6800-XT / GeForce RTX 2080
  - Connection to TEAL over NFS via 10GbE
 
 #### Usage
- - Compiling Linux Software
- - Brute Forcing Passwords
- - Using AI (Stable Diffusion / RVC / Llama 2)
+ - Primary Computer
+ - Temporary Cyber Security Virtual Machines
+ - GPU Compute (Hashcat)
+ - AI (Stable Diffusion / RVC / Text-Generation)
  - Two Gamers - One Computer (VFIO GPU Passthrough)
 
 ---
 ## TEAL - Server
 
-[NixOS 23.05 (Stoat)](https://nixos.org/)
+[NixOS 23.11 (Tapir)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
@@ -37,86 +38,97 @@ Intel Xeon E5-2696 v3
 
 GeForce GTX 970
 
-128GB RAM DDR4
+128GB RAM DDR4 ECC
 
 #### Storage
  - 14TB HDD (RAID1)
  - 14TB HDD (RAID1)
  - 8TB HDD
- - 1TB SSD
+ - 2x256GB SSD (Cache Drives)
+ - 1TB SSD (Boot)
 
 #### Usage
  - Stores Family Photos, Computer Backups, Phone Backups
+ - BTFS Snapshots
  - Hosts Virtual Machines
- - Cache Server using [LanCache](https://lancache.net/)
- - Jellyfin Media Server
+ - Web Server, Media Server
 
 #### Containers
- - [LanCache](https://lancache.net/)
- - [PhotoPrism](https://docs.photoprism.app/getting-started/)
- - [Plex](https://github.com/linuxserver/docker-plex)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
- - [OvenMediaEngine](https://airensoft.gitbook.io/ovenmediaengine/getting-started#running-with-docker)
-
-
----
-## VIRIDIAN - Server
-
-[NixOS 23.05 (Stoat)](https://nixos.org/)
-
-[Nix Configuration](https://github.com/LegitMagic/nix-config)
-
-Raspberry Pi 4 Model B
-
-8GB RAM
-
-#### Storage
- - 120GB SSD
-
-#### Usage
- - Hosts DHCP/DNS
- - Hosts websites
-
-
-### Services
- - [Navidrome](https://www.navidrome.org/docs/overview/)
  - [jmusicbot Discord Bot](https://jmusicbot.com/)
  - [CUPS Print Server](https://openprinting.github.io/cups/)
  - [netdata](https://www.netdata.cloud/)
-
-#### Containers
- - [dnsmasq](https://github.com/LegitMagic/misc/tree/master/dnsmasq_docker)
+ - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
+ - [WebDav Server](https://rclone.org/install/#install-with-docker)
  - [Hugo Webserver](https://github.com/klakegg/docker-hugo)
  - [Hugo NGINX](https://github.com/nginxinc/docker-nginx)
- - [Navidrome](https://www.navidrome.org/docs/installation/docker/)
- - [OvenMediaEngine NGINX](https://github.com/nginxinc/docker-nginx)
- - [Pi-hole](https://github.com/pi-hole/docker-pi-hole)
- - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Unifi-Controller](https://hub.docker.com/r/linuxserver/unifi-controller)
- - [WebDav Server](https://rclone.org/install/#install-with-docker)
+ - [ProjectSend](https://github.com/projectsend/projectsend)
+
+---
+## OPNSense - Virtual Machine - TEAL
+
+[OPNSense](https://opnsense.org/)
+
+4x1GbE NIC via VFIO PCIe Passthrough
+
+#### Usage
+ - Home Router
+ - Data Traffic Analysis
+ - DHCP Server
+ - Static ARP Routes
+
+---
+## CyberVM - Virtual Machine - TEAL
+
+[Arch Linux](https://archlinux.org/)
+
+#### Usage
+ - Cyber Security related tooling with the ([Blackarch](https://blackarch.org/)) package repositories
+ - Use applications that require a "normal" Linux distribution
+
+---
+## CyberWIN - Virtual Machine - TEAL
+
+Windows 10
+
+#### Usage
+ - Cyber Security tooling specific to Windows
+ - Experimenting with Windows, Batch, or Powershell
+
+---
+## DC - Virtual Machine - TEAL
+
+Windows Server vNext Datacenter
+
+#### Usage
+ - Learn more about Active Directory
+ - Domain Controller for Windows computers
+ - RDP Remote App
 
 ---
 ## BROWN/RUBY/SCARLET - Virtual Private Server
 
-[NixOS 23.05 (Stoat)](https://nixos.org/)
+[NixOS 23.11 (Tapir)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
-4 CPUs
+4 CPUs - Each
 
-24GB RAM
+24GB RAM - Each
 
 #### Storage
- - 200GB Storage
+ - 200GB Storage - Each
 
 #### Usage
  - Minecraft Server Hosts
- - Track Server Uptime
+ - Track Server Uptime with Uptime-Kuma
+ - VPN
  - File Server
 
 #### Continaers
  - [Minecraft Servers](https://github.com/itzg/docker-minecraft-server)
- - [Minecraft Velocity Proxy](https://github.com/itzg/docker-bungeecord)
+ - [Minecraft Router](https://github.com/itzg/mc-router)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
@@ -137,26 +149,10 @@ Raspberry Pi 3 Model B
 #### Usage
  - Runs the Mainsail 3D printing interface using the Klipper 3D printing firmware
  - Hosts a [camera livestream of the printing process](https://printer.terascripting.com/)
- - Connected to an ADXL345 Accelerometer through GPIO for vibration tuning
+ - Connected to an ADXL345 Accelerometer through GPIO for input shaping
 
 ---
-## ERLite-3 - Router
-
-EdgeOS v2
-
-EdgeRouter Lite
-
-Bypasses AT&T Fiber Residental Router Lock using [eap_proxy](https://github.com/jaysoffian/eap_proxy)
-
----
-## OBi202 - VoIP House Phone
-
-[OBi202](https://www.obitalk.com/info/products/obi202)
-
-VoIP House Phone service through Google Voice for free
-
----
-<img src="https://img.shields.io/date/1695153583?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1699900591?label=Last%20Updated&style=for-the-badge">
 
 ---
 

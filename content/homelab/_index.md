@@ -126,7 +126,7 @@ Windows Server vNext Datacenter
  - VPN
  - File Server
 
-#### Continaers
+#### Containers
  - [Minecraft Servers](https://github.com/itzg/docker-minecraft-server)
  - [Minecraft Router](https://github.com/itzg/mc-router)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
@@ -152,7 +152,7 @@ Raspberry Pi 3 Model B
  - Connected to an ADXL345 Accelerometer through GPIO for input shaping
 
 ---
-<img src="https://img.shields.io/date/1699900591?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1699900742?label=Last%20Updated&style=for-the-badge">
 
 ---
 

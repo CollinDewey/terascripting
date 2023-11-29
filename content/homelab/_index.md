@@ -49,7 +49,7 @@ GeForce GTX 970
 
 #### Usage
  - Stores Family Photos, Computer Backups, Phone Backups
- - BTFS Snapshots
+ - BTRFS Snapshots
  - Hosts Virtual Machines
  - Web Server, Media Server
 
@@ -152,7 +152,7 @@ Raspberry Pi 3 Model B
  - Connected to an ADXL345 Accelerometer through GPIO for input shaping
 
 ---
-<img src="https://img.shields.io/date/1701295949?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1701297919?label=Last%20Updated&style=for-the-badge">
 
 ---
 

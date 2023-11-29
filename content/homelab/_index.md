@@ -6,7 +6,7 @@ description: "My Homelab Setup"
 ---
 ## CYAN - Workstation
 
-[NixOS 23.11 (Tapir)](https://nixos.org/)
+[NixOS 24.05 (Uakari)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/LegitMagic/nix-config)
 
@@ -152,7 +152,7 @@ Raspberry Pi 3 Model B
  - Connected to an ADXL345 Accelerometer through GPIO for input shaping
 
 ---
-<img src="https://img.shields.io/date/1699900742?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1701295949?label=Last%20Updated&style=for-the-badge">
 
 ---
 

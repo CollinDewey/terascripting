@@ -8,7 +8,7 @@ description: "My Homelab Setup"
 
 [NixOS 24.05 (Uakari)](https://nixos.org/)
 
-[Nix Configuration](https://github.com/LegitMagic/nix-config)
+[Nix Configuration](https://github.com/CollinDewey/nix-config)
 
 AMD Ryzen 9 7950X
 
@@ -32,7 +32,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
 
 [NixOS 23.11 (Tapir)](https://nixos.org/)
 
-[Nix Configuration](https://github.com/LegitMagic/nix-config)
+[Nix Configuration](https://github.com/CollinDewey/nix-config)
 
 Intel Xeon E5-2696 v3
 
@@ -111,7 +111,7 @@ Windows Server vNext Datacenter
 
 [NixOS 23.11 (Tapir)](https://nixos.org/)
 
-[Nix Configuration](https://github.com/LegitMagic/nix-config)
+[Nix Configuration](https://github.com/CollinDewey/nix-config)
 
 4 CPUs - Each
 
@@ -157,7 +157,7 @@ Raspberry Pi 3 Model B
 ---
 
 <script src="https://utteranc.es/client.js"
-  repo="LegitMagic/terascripting"
+  repo="CollinDewey/terascripting"
   issue-term="og:title"
   theme="icy-dark"
   crossorigin="anonymous"

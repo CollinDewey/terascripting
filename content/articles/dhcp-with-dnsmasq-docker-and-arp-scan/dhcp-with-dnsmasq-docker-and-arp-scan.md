@@ -202,7 +202,7 @@ After running `docker-compose up -d`, I was left with functional dnsmasq in a do
 
 ---
 
-## You can see the files mentioned in the article on my [GitHub](https://github.com/LegitMagic/misc/tree/master/dnsmasq_docker)
+## You can see the files mentioned in the article on my [GitHub](https://github.com/CollinDewey/misc/tree/master/dnsmasq_docker)
 
 ---
 

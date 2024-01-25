@@ -16,7 +16,7 @@ I have actively engaged in UofL's ACM student chapter, where I lead the Student 
 My peers and I have consistently excelled in capture the flag style challenges and Red Team/Blue Team competitions, putting our knowledge into action.
 
 ### Experience
-- ❄️ Linux configuration located in a [nix-config repo](https://github.com/LegitMagic/nix-config)
+- ❄️ Linux configuration located in a [nix-config repo](https://github.com/CollinDewey/nix-config)
 - 📦 Experienced with Git, Docker, and Nix
 - 🐧 Familiar with different Operating Systems at a deep level
 - 📖 Personal blog at [collindewey.net](https://collindewey.net/)

@@ -109,7 +109,7 @@ This gave me a pretty promising result for the time. Unfortunately there were a 
 
 ---
 
-## You can see the files mentioned in the article on my [GitHub](https://github.com/LegitMagic/misc/tree/master/light_switch_thermostat)
+## You can see the files mentioned in the article on my [GitHub](https://github.com/CollinDewey/misc/tree/master/light_switch_thermostat)
 
 ---
 

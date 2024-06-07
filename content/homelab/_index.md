@@ -6,7 +6,7 @@ description: "My Homelab Setup"
 ---
 ## CYAN - Workstation
 
-[NixOS 24.05 (Uakari)](https://nixos.org/)
+[NixOS 24.11 (Vicuña)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -30,7 +30,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
 ---
 ## TEAL - Server
 
-[NixOS 23.11 (Tapir)](https://nixos.org/)
+[NixOS 24.05 (Uakari)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -56,14 +56,9 @@ GeForce GTX 970
 #### Containers
  - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
  - [jmusicbot Discord Bot](https://jmusicbot.com/)
- - [CUPS Print Server](https://openprinting.github.io/cups/)
- - [netdata](https://www.netdata.cloud/)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
- - [WebDav Server](https://rclone.org/install/#install-with-docker)
- - [Hugo Webserver](https://github.com/klakegg/docker-hugo)
- - [Hugo NGINX](https://github.com/nginxinc/docker-nginx)
- - [Unifi-Controller](https://hub.docker.com/r/linuxserver/unifi-controller)
- - [ProjectSend](https://github.com/projectsend/projectsend)
+ - [jmusicbot Discord Bot](https://jmusicbot.com/)
+ - [Hugo ](https://github.com/klakegg/docker-hugo)
 
 ---
 ## OPNSense - Virtual Machine - TEAL
@@ -109,7 +104,7 @@ Windows Server vNext Datacenter
 ---
 ## BROWN/RUBY/SCARLET - Virtual Private Server
 
-[NixOS 23.11 (Tapir)](https://nixos.org/)
+[NixOS 24.05 (Uakari)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -135,13 +130,15 @@ Windows Server vNext Datacenter
  - [NGINX](https://github.com/nginxinc/docker-nginx)
 
 ---
-## KLIPPER - 3D Printer Controller
+## AZUL - 3D Printer Controller
 
-[MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os)
+[NixOS 24.11 (Vicuña)](https://nixos.org/)
 
-Raspberry Pi 3 Model B
+[Nix Configuration](https://github.com/CollinDewey/nix-config)
 
-1GB RAM
+Intel Celeron 2957U
+
+6GB RAM
 
 #### Storage
  - 16GB Flash
@@ -149,7 +146,7 @@ Raspberry Pi 3 Model B
 #### Usage
  - Runs the Mainsail 3D printing interface using the Klipper 3D printing firmware
  - Hosts a [camera livestream of the printing process](https://printer.terascripting.com/)
- - Connected to an ADXL345 Accelerometer through GPIO for input shaping
+ - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
 <img src="https://img.shields.io/date/1701297919?label=Last%20Updated&style=for-the-badge">

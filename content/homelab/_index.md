@@ -53,12 +53,16 @@ GeForce GTX 970
  - Hosts Virtual Machines
  - Web Server, Media Server
 
-#### Containers
- - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
- - [jmusicbot Discord Bot](https://jmusicbot.com/)
+#### Hosted Software
+ - [Wireguard](https://github.com/linuxserver/docker-wireguard)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [jmusicbot Discord Bot](https://jmusicbot.com/)
- - [Hugo ](https://github.com/klakegg/docker-hugo)
+ - [Hugo](https://github.com/klakegg/docker-hugo)
+ - Error Pages
+ - Lancache
+ - Jellyfin
+ - Vaultwarden
+ - Adguardhome
 
 ---
 ## OPNSense - Virtual Machine - TEAL
@@ -126,8 +130,6 @@ Windows Server vNext Datacenter
  - [Minecraft Router](https://github.com/itzg/mc-router)
  - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
  - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
- - [Wireguard Server](https://github.com/linuxserver/docker-wireguard)
- - [NGINX](https://github.com/nginxinc/docker-nginx)
 
 ---
 ## AZUL - 3D Printer Controller
@@ -149,7 +151,7 @@ Intel Celeron 2957U
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1701297919?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1718866229?label=Last%20Updated&style=for-the-badge">
 
 ---
 

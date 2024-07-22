@@ -138,12 +138,12 @@ Windows Server vNext Datacenter
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
-Intel Celeron 2957U
+Intel N97
 
-6GB RAM
+16GB RAM
 
 #### Storage
- - 16GB Flash
+ - 512GB SSD
 
 #### Usage
  - Runs the Mainsail 3D printing interface using the Klipper 3D printing firmware
@@ -151,7 +151,7 @@ Intel Celeron 2957U
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1718866229?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1721647747?label=Last%20Updated&style=for-the-badge">
 
 ---
 

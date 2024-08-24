@@ -7,10 +7,15 @@ languageCode = "en-us"
 theme = "hugo-classic"
 title = "Collin Dewey"
 enableRobotsTXT = true
-disableLiveReload = true
+disableLiveReload = false
+disableKinds = ["taxonomy"]
+minify = true
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.goldmark.parser.attribute]
+block = true
 
 [markup.highlight]
 anchorLineNos = false
@@ -27,6 +32,7 @@ tabWidth = 4
 
 [permalinks]
 articles = "/articles/:slug/"
+presentations = "/presentations/:slug/"
 
 [[menu.main]]
 name = "Home"
@@ -39,10 +45,15 @@ url = "/articles/"
 weight = 2
 
 [[menu.main]]
+name = "Presentations"
+url = "/presentations/"
+weight = 3
+
+[[menu.main]]
 name = "Homelab"
 url = "/homelab/"
-weight = 3
+weight = 4
 
 [params]
 description = ""
-footer = "[GitHub](https://github.com/CollinDewey) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey) | [Server Status](https://kuma.terascripting.com/)"
+footer = "[GitHub](https://github.com/CollinDewey) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey) | [Server Status](https://kuma.terascripting.com/) | [GPG Public Key](https://github.com/CollinDewey.gpg)"

@@ -13,6 +13,7 @@
      {{ range (where $pages "Section" "!=" "") }}
      <li>
        <span class="date">{{ .Date.Format "01/02/2006" }}</span>
+       <span class="type">- [{{ .Type | markdownify }}] - </span>
        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
      </li>
      {{ end }}

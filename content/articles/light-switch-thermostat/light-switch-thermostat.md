@@ -2,6 +2,7 @@
 title: Making a Light Switch Thermostat
 author: Collin Dewey
 date: '2022-08-09'
+type: Article
 slug: light-switch-thermostat
 description: "Light Switch Thermostat using Servos and an ESP-8266"
 ---

@@ -1,0 +1,8 @@
+img { /* "Fix" for giant background slide */
+    max-width: 20%;
+}
+
+iframe { /* Wild style hacks */
+    height: 45em;
+    width: 100%;
+}

@@ -49,4 +49,4 @@ My peers and I have consistently excelled in capture the flag style challenges a
 
 ---
 
-## Articles
+## Content

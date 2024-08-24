@@ -25,7 +25,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
  - Temporary Cyber Security Virtual Machines
  - GPU Compute (Hashcat)
  - AI (Stable Diffusion / RVC / Text-Generation)
- - Two Gamers - One Computer (VFIO GPU Passthrough)
+ - VFIO GPU Passthrough for one VM
 
 ---
 ## TEAL - Server
@@ -36,7 +36,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
 
 Intel Xeon E5-2696 v3
 
-GeForce GTX 970
+GeForce RTX 2070 Super
 
 128GB RAM DDR4 ECC
 
@@ -50,12 +50,12 @@ GeForce GTX 970
 #### Usage
  - Stores Family Photos, Computer Backups, Phone Backups
  - BTRFS Snapshots
- - Hosts Virtual Machines
+ - Hosts Virtual Machines (Many with NVIDIA vGPUs)
  - Web Server, Media Server
 
 #### Hosted Software
  - [Wireguard](https://github.com/linuxserver/docker-wireguard)
- - [Traefik Reverse Proxy](https://github.com/traefik/traefik-library-image)
+ - Traefik Reverse Proxy
  - [jmusicbot Discord Bot](https://jmusicbot.com/)
  - [Hugo](https://github.com/klakegg/docker-hugo)
  - Error Pages
@@ -78,7 +78,7 @@ GeForce GTX 970
  - Static ARP Routes
 
 ---
-## CyberVM - Virtual Machine - TEAL
+## CyberL - Virtual Machine - TEAL
 
 [Arch Linux](https://archlinux.org/)
 
@@ -87,7 +87,7 @@ GeForce GTX 970
  - Use applications that require a "normal" Linux distribution
 
 ---
-## CyberWIN - Virtual Machine - TEAL
+## CyberW - Virtual Machine - TEAL
 
 Windows 10
 
@@ -98,12 +98,11 @@ Windows 10
 ---
 ## DC - Virtual Machine - TEAL
 
-Windows Server vNext Datacenter
+Windows Server 2025 Standard
 
 #### Usage
  - Learn more about Active Directory
  - Domain Controller for Windows computers
- - RDP Remote App
 
 ---
 ## BROWN/RUBY/SCARLET - Virtual Private Server
@@ -151,7 +150,7 @@ Intel N97
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1721647747?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1724528292?label=Last%20Updated&style=for-the-badge">
 
 ---
 

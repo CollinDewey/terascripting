@@ -11,6 +11,9 @@ theme: default
 size: 16:9
 ---
 
+# [Presentation Slides](/slides/osint-ctf-basics.html)
+
+
 # OSINT Basics
 <!-- _footer: By Collin Dewey-->
 
@@ -65,5 +68,6 @@ clip.apples.leap
 
 # More Resources
 
-https://osintframework.com/
-https://github.com/jivoi/awesome-osint
+[OSINTframework](https://osintframework.com/)
+
+[Awesome-OSINT](https://github.com/jivoi/awesome-osint)

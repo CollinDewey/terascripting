@@ -12,13 +12,19 @@ size: 16:9
 ---
 <link rel="stylesheet" href="style.css"> <!-- Extra CSS for the presentation -->
 
+# [Presentation Slides](/slides/cryptography-ctf-basics.html)
+
 # Cryptography Basics
 <!-- _footer: By Collin Dewey-->
+For CTF Competitions
+<div class="invert-svg">
+
 ![bg invert right:55%](https://upload.wikimedia.org/wikipedia/commons/3/36/Pigpen_cipher_key.svg)
+
+</div>
 
 <!-- Logo on the right is for the Pigpen Cipher -->
 
-For CTF Competitions
 
 ---
 
@@ -28,7 +34,6 @@ For CTF Competitions
 
 Secure Communication
 
-<br>
 <br>
 <br>
 
@@ -41,7 +46,12 @@ How we get there
 
 ---
 <!-- _class: -->
+
+<div class="white-background-svg">
+
 ![bg contain](https://upload.wikimedia.org/wikipedia/commons/1/1b/ASCII-Table-wide.svg)
+
+</div>
 
 <!-- There are multiple ways to represent text. -->
 <!-- One of the most common ways for English is with the ASCII encoding, which all of the bellow examples are in. -->
@@ -64,7 +74,7 @@ How we get there
 |16|Hex|Elements|45 6C 65 6D 65 6E 74 73|Digits 0-9 and A-F|
 |64|Base64|Celestial!|Q2VsZXN0aWFsIQ==|a-z, A-Z, 0-9. `=` or `==` as padding|
 
-Other representations such as Morse Code and Braille
+There exist other representations such as Morse Code and Braille
 
 ---
 <!-- _footer: https://gchq.github.io/CyberChef/-->
@@ -119,7 +129,12 @@ XOR-->
 <!-- _class: -->
 # Other Symbols
 - Reverse Image Search
+
+<div class="white-background-svg">
+
 ![](https://upload.wikimedia.org/wikipedia/commons/6/69/Qapla%27.svg)
+
+</div>
 
 <!--
 ---

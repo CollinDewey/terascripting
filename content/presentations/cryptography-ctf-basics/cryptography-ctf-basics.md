@@ -10,14 +10,12 @@ class: invert
 theme: default
 size: 16:9
 ---
-<link rel="stylesheet" href="style.css"> <!-- Extra CSS for the presentation -->
-
 # [Presentation Slides](/slides/cryptography-ctf-basics.html)
 
 # Cryptography Basics
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
-<div class="invert-svg">
+<div style="filter: invert(1);">
 
 ![bg invert right:55%](https://upload.wikimedia.org/wikipedia/commons/3/36/Pigpen_cipher_key.svg)
 
@@ -47,7 +45,7 @@ How we get there
 ---
 <!-- _class: -->
 
-<div class="white-background-svg">
+<div style="background-color: #ffffff;">
 
 ![bg contain](https://upload.wikimedia.org/wikipedia/commons/1/1b/ASCII-Table-wide.svg)
 
@@ -79,7 +77,7 @@ There exist other representations such as Morse Code and Braille
 ---
 <!-- _footer: https://gchq.github.io/CyberChef/-->
 
-<iframe src="https://gchq.github.io/CyberChef/"></iframe>
+<iframe style="height: 45em; width: 100%;" src="https://gchq.github.io/CyberChef/"></iframe>
 
 ---
 # Common Ciphers
@@ -130,7 +128,7 @@ XOR-->
 # Other Symbols
 - Reverse Image Search
 
-<div class="white-background-svg">
+<div style="background-color: #ffffff;">
 
 ![](https://upload.wikimedia.org/wikipedia/commons/6/69/Qapla%27.svg)
 

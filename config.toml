@@ -8,7 +8,6 @@ theme = "hugo-classic"
 title = "Collin Dewey"
 enableRobotsTXT = true
 disableLiveReload = false
-disableKinds = ["taxonomy"]
 minify = true
 
 [markup.goldmark.renderer]

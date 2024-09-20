@@ -12,6 +12,9 @@ size: 16:9
 ---
 <link rel="stylesheet" href="style.css"> <!-- Extra CSS for the presentation -->
 
+# [Presentation Slides](/slides/password-cracking-basics.html)
+
+
 # Password Cracking Basics
 <!-- _footer: By Collin Dewey-->
 ![bg right:42%](https://www.kali.org/tools/hashcat/images/hashcat-logo.svg)

@@ -7,6 +7,8 @@ slug: dhcp-with-dnsmasq-docker-and-arp-scan
 description: "dnsmasq in a docker image to easily provide static IPs using DHCP."
 ---
 
+> I personally would no longer suggest using this method. While I still like setting static IPs, it's much easier managing it through a web GUI router software such as OPNsense or pfSense. I do unfortunately lose out on easily using arp-scan, which is unfortunate. If you're hosting your own DHCP server because you're forced to use some other router, this still absolutely works. I created a config conversion script, located [on my GitHub](https://github.com/CollinDewey/misc/blob/master/dnsmasq_docker/convertToOPNsense.sh). Adjust values as needed for your configuration.
+
 ---
 # Why static IP addresses?
 ---
@@ -214,3 +216,5 @@ After running `docker-compose up -d`, I was left with functional dnsmasq in a do
 04/11/22 - Minor Example Revision
 
 09/07/23 - Replace `/bin/bash` with `/usr/bin/env`
+
+09/20/24 - Add notice

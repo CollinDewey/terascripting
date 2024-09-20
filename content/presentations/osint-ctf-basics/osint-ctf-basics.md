@@ -35,7 +35,7 @@ OSINT is using freely available websites on the internet to find information.
 Image Metadata
 - Additional Data
 - Can contain Location/Time/Device Information
-- Oftem Wiped
+- Often Wiped
 - Stored in an EXIF section
 - View extended data with `exiftool`
 - [Pic2Map](https://www.pic2map.com/) for GPS locations

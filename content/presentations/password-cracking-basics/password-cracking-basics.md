@@ -14,7 +14,6 @@ size: 16:9
 
 # [Presentation Slides](/slides/password-cracking-basics.html)
 
-
 # Password Cracking Basics
 <!-- _footer: By Collin Dewey-->
 ![bg right:42%](https://www.kali.org/tools/hashcat/images/hashcat-logo.svg)
@@ -312,12 +311,16 @@ Convert wireless captures to JtR/Hashcat
 
 [John The Ripper Tools Online](https://hashes.com/en/johntheripper)
 
+---
+
 # Wordlist Sites
 [Weakpass](https://weakpass.com/)
 
 [SecLists](https://github.com/danielmiessler/SecLists)
 
 [`wordlistctl` CLI tool](https://github.com/BlackArch/wordlistctl)
+
+---
 
 # Hashcat Rules
 [One Rule To Rule Them All](https://github.com/NotSoSecure/password_cracking_rules)

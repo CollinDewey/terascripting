@@ -22,7 +22,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
 
 #### Usage
  - Primary Computer
- - Temporary Cyber Security Virtual Machines
+ - Temporary Cyber Security Virtual Machines for Training
  - GPU Compute (Hashcat)
  - AI (Stable Diffusion / RVC / Text-Generation)
  - VFIO GPU Passthrough for one VM
@@ -54,7 +54,6 @@ GeForce RTX 2070 Super
  - Web Server, Media Server
 
 #### Hosted Software
- - [Wireguard](https://github.com/linuxserver/docker-wireguard)
  - Traefik Reverse Proxy
  - [jmusicbot Discord Bot](https://jmusicbot.com/)
  - [Hugo](https://github.com/klakegg/docker-hugo)
@@ -62,7 +61,6 @@ GeForce RTX 2070 Super
  - Lancache
  - Jellyfin
  - Vaultwarden
- - Adguardhome
 
 ---
 ## OPNSense - Virtual Machine - TEAL
@@ -73,6 +71,7 @@ GeForce RTX 2070 Super
 
 #### Usage
  - Home Router
+ - Wireguard (Road Warrior)
  - Data Traffic Analysis
  - DHCP Server
  - Static ARP Routes
@@ -85,15 +84,17 @@ GeForce RTX 2070 Super
 #### Usage
  - Cyber Security related tooling with the ([Blackarch](https://blackarch.org/)) package repositories
  - Use applications that require a "normal" Linux distribution
+ - GPU Accelerated
 
 ---
 ## CyberW - Virtual Machine - TEAL
 
-Windows 10
+Windows 10 IoT Enterprise LTSC
 
 #### Usage
  - Cyber Security tooling specific to Windows
  - Experimenting with Windows, Batch, or Powershell
+ - GPU Accelerated
 
 ---
 ## DC - Virtual Machine - TEAL
@@ -102,7 +103,7 @@ Windows Server 2025 Standard
 
 #### Usage
  - Learn more about Active Directory
- - Domain Controller for Windows computers
+ - Domain Controller for Windows Computers
 
 ---
 ## BROWN/RUBY/SCARLET - Virtual Private Server
@@ -111,12 +112,12 @@ Windows Server 2025 Standard
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
-4 CPUs - Each
+4 vCPUs
 
-24GB RAM - Each
+24GB RAM
 
 #### Storage
- - 200GB Storage - Each
+ - 200GB Storage
 
 #### Usage
  - Minecraft Server Hosts
@@ -150,7 +151,7 @@ Intel N97
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1724528292?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1726812347?label=Last%20Updated&style=for-the-badge">
 
 ---
 

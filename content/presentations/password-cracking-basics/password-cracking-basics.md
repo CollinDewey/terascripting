@@ -16,11 +16,10 @@ size: 16:9
 
 # Password Cracking Basics
 <!-- _footer: By Collin Dewey-->
+For CTF Competitions
 ![bg right:42%](https://www.kali.org/tools/hashcat/images/hashcat-logo.svg)
 
 <!-- Logo on the right is for the Password Cracking utility Hashcat -->
-
-For CTF Competitions
 
 ---
 
@@ -220,8 +219,11 @@ GPU Accelerated Password Cracker
 # Hashcat Arguments
 
 Specify [hash type](https://hashcat.net/wiki/doku.php?id=example_hashes) with `-m #`
+
 Specify attack mode with `-a #`
+
 Speedup Arguments
+
 - `-O` uses "optimized kernels". Limits max length.
 - `-w #` sets the workload profile
     - 1 is Low

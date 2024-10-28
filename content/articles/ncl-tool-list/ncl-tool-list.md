@@ -64,13 +64,13 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 
 [pdf2john Online](https://hashes.com/en/johntheripper/pdf2john) - Online tool to extract the password hash from a PDF
 
-[rar2john Online](https://hashes.com/en/johntheripper/pdf2john) - Online tool to extract the password hash from a RAR file
+[rar2john Online](https://hashes.com/en/johntheripper/rar2john) - Online tool to extract the password hash from a RAR file
 
-[zip2john Online](https://hashes.com/en/johntheripper/pdf2john) - Online tool to extract the password hash from a ZIP file
+[zip2john Online](https://hashes.com/en/johntheripper/zip2john) - Online tool to extract the password hash from a ZIP file
 
-[7z2john Online](https://hashes.com/en/johntheripper/pdf2john) - Online tool to extract the password hash from a 7z file
+[7z2john Online](https://hashes.com/en/johntheripper/7z2john) - Online tool to extract the password hash from a 7z file
 
-[office2john Online](https://hashes.com/en/johntheripper/pdf2john) - Online tool to extract the password hash from a Microsoft Office document
+[office2john Online](https://hashes.com/en/johntheripper/office2john) - Online tool to extract the password hash from a Microsoft Office document
 
 
 ---
@@ -111,9 +111,15 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 
 `sort` - Sorts lines
 
+`awk` - Scripting language
+
 [gron](https://github.com/tomnomnom/gron) - Make JSON greppable
 
+[jq](https://github.com/jqlang/jq) - CLI JSON processor
+
 [Python](https://www.python.org/) - Python, good for parsing JSON and custom binary data
+
+LLMs - Good for writing Python scripts
 
 
 ---
@@ -130,6 +136,8 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 ---
 # Scanning and Reconnaissance
 ---
+
+[nmap](https://nmap.org/) - TCP/UDP Scanning utility
 
 [dirbuster](https://sourceforge.net/projects/dirbuster/) - Java-based website subfolder enumeration
 

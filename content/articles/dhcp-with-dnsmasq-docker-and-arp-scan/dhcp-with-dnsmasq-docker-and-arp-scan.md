@@ -2,6 +2,7 @@
 title: DHCP with dnsmasq, Docker, and arp-scan
 author: Collin Dewey
 date: '2021-10-03'
+lastmod: '2024-09-20'
 type: Article
 slug: dhcp-with-dnsmasq-docker-and-arp-scan
 description: "dnsmasq in a docker image to easily provide static IPs using DHCP."

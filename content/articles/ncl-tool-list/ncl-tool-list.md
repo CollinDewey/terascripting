@@ -2,6 +2,7 @@
 title: National Cyber League Tool List
 author: Collin Dewey
 date: '2024-10-25'
+lastmod: '2024-10-28'
 type: Article
 slug: ncl-tool-list
 description: "A list of tools I tend to use for the National Cyber League (NCL) Capture The Flag (CTF)"

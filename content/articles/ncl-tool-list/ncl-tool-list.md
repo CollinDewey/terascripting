@@ -2,7 +2,7 @@
 title: National Cyber League Tool List
 author: Collin Dewey
 date: '2024-10-25'
-lastmod: '2024-11-01'
+lastmod: '2024-11-07'
 type: Article
 slug: ncl-tool-list
 description: "A list of tools I tend to use for the National Cyber League (NCL) Capture The Flag (CTF)"
@@ -74,6 +74,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 
 [office2john Online](https://hashes.com/en/johntheripper/office2john) - Online tool to extract the password hash from a Microsoft Office document
 
+[Wikidata Query Service](https://query.wikidata.org/) - Tool to query data from Wikipedia for Wordlists
 
 ---
 # Forensics

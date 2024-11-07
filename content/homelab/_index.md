@@ -48,10 +48,11 @@ GeForce RTX 2070 Super
  - 1TB SSD (Boot)
 
 #### Usage
- - Stores Family Photos, Computer Backups, Phone Backups
+ - Stores Family Photos, Backups
  - BTRFS Snapshots
  - Hosts Virtual Machines (Many with NVIDIA vGPUs)
- - Web Server, Media Server
+ - Web Server, Media Server, Game Server
+ - Container Host
 
 #### Hosted Software
  - Traefik Reverse Proxy
@@ -94,6 +95,16 @@ Windows 10 IoT Enterprise LTSC
 #### Usage
  - Cyber Security tooling specific to Windows
  - Experimenting with Windows, Batch, or Powershell
+ - GPU Accelerated
+
+---
+## CERISE - Virtual Machine - TEAL
+
+Windows 10 IoT Enterprise LTSC
+
+#### Usage
+ - Windows Software Development
+ - Run Windows Applications
  - GPU Accelerated
 
 ---
@@ -151,7 +162,7 @@ Intel N97
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1726812347?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1731008131?label=Last%20Updated&style=for-the-badge">
 
 ---
 

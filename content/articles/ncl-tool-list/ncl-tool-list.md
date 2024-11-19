@@ -2,7 +2,7 @@
 title: National Cyber League Tool List
 author: Collin Dewey
 date: '2024-10-25'
-lastmod: '2024-11-07'
+lastmod: '2024-11-19'
 type: Article
 slug: ncl-tool-list
 description: "A list of tools I tend to use for the National Cyber League (NCL) Capture The Flag (CTF)"
@@ -119,6 +119,8 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 [gron](https://github.com/tomnomnom/gron) - Make JSON greppable
 
 [jq](https://github.com/jqlang/jq) - CLI JSON processor
+
+[LNAV](https://github.com/tstack/lnav) - Log File Navigator
 
 [Python](https://www.python.org/) - Python, good for parsing JSON and custom binary data
 

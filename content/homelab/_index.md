@@ -6,7 +6,7 @@ description: "My Homelab Setup"
 ---
 ## CYAN - Workstation
 
-[NixOS 24.11 (Vicuña)](https://nixos.org/)
+[NixOS 25.05 (Warbler)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -30,7 +30,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
 ---
 ## TEAL - Server
 
-[NixOS 24.05 (Uakari)](https://nixos.org/)
+[NixOS 24.11 (Vicuña)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -119,7 +119,7 @@ Windows Server 2025 Standard
 ---
 ## BROWN/RUBY/SCARLET - Virtual Private Server
 
-[NixOS 24.05 (Uakari)](https://nixos.org/)
+[NixOS 24.11 (Vicuña)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -145,7 +145,7 @@ Windows Server 2025 Standard
 ---
 ## AZUL - 3D Printer Controller
 
-[NixOS 24.11 (Vicuña)](https://nixos.org/)
+[NixOS 25.05 (Warbler)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -162,7 +162,7 @@ Intel N97
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1731008131?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1732033275?label=Last%20Updated&style=for-the-badge">
 
 ---
 

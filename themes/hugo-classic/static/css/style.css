@@ -29,7 +29,8 @@
     }
     table thead th { border-bottom: 1px solid #666; }
     th, td { padding: 5px; }
-    tr:nth-child(even) { background: #666 }
+    tr:nth-child(odd) { background: #13161C; }
+    tr:nth-child(even) { background: #1F262F; }
 /*
 }
 
@@ -159,12 +160,22 @@ header .current a {
 pre {
   border-width: 1px;
   border-style: solid;
-  border-color: #30363D;
+  border-color: #1F262F;
   border-radius: 6px;
   padding: 1em;
   overflow-x: auto;
 }
-pre code { background: none; }
+
+pre code { 
+  background: none;
+  padding: 0;
+}
+
+code {
+  background: #1F262F;
+  padding: 0 0.4em;
+  border-radius: 0.4em;
+}
 
 /* Images, tables, misc. */
 img, iframe, video {
@@ -189,7 +200,7 @@ main a {
 
 blockquote {
 
-  border-left: 5px solid #ccc;
+  border-left: 5px solid #1F262F;
   padding: 3px 1em 3px;
 }
 

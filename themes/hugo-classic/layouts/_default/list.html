@@ -5,6 +5,10 @@
   <h1>{{ .Title | markdownify }}</h1>
   {{ end }}
 
+  {{ if .Params.toc }}
+    {{ .TableOfContents }}
+  {{ end }}
+
   {{ .Content }}
 
   <ul>

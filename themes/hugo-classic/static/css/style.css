@@ -90,9 +90,38 @@ output:
 
     */
 
-#TableOfContents, #TOC {
-  border: 1px solid #eee;
+#TableOfContents {
+  position: fixed;
+  right: 1.25em;
+  top: 100px;
+  overflow-y: auto;
+  background: #1F262F;
+  border: 1px solid #EEE;
   border-radius: 5px;
+  padding: 0.5em;
+}
+
+#TableOfContents ul {
+  margin: 0;
+  padding-left: 0.5em;
+  list-style-type: none;
+}
+
+#TableOfContents a {
+  color: #C9CACC;
+  font-size: 0.9em;
+}
+
+#TableOfContents a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  #TableOfContents {
+    position: static;
+    width: auto;
+  }
 }
 
 /* Header and Footer */
@@ -147,13 +176,13 @@ header nav {
 }
 
 header a {
-    color: #fff;
+    color: #FFF;
     line-height: 1.75rem;
     padding: 0 0.5rem
 }
 header a:hover,
 header .current a {
-    color: #fff
+    color: #FFF
 }
 
 /* Code Boxes */

@@ -1,6 +1,7 @@
 ---
 title: "Homelab"
 description: "My Homelab Setup"
+toc: true
 ---
 
 ---
@@ -162,7 +163,7 @@ Intel N97
  - Connected to an LIS2DW Accelerometer for input shaping
 
 ---
-<img src="https://img.shields.io/date/1732033275?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1736533826?label=Last%20Updated&style=for-the-badge">
 
 ---
 

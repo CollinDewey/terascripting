@@ -11,7 +11,7 @@ title: Home
 
 ## Collin Dewey - About Me
 
-I am working on my Masters of Science in Computer Science as well as a Cybersecurity Certificate from the University of Louisville. During my time at college I have actively engaged in the university's ACM student chapter, leading the Student Linux User Group for three years, and the Cyber Defense group for one. In Cyber Defense, my peers and I have excelled in Capture the Flag style exercises, as well as Red Team/Blue Team competitions.
+I am working on my Masters of Science in Computer Science as well as a Cybersecurity Certificate from the University of Louisville. During my time at college I have actively engaged in the university's ACM student chapter, leading the Student Linux User Group for three years, and leading the [Cyber Defense Team](https://engineering.louisville.edu/cybercenter/homepage/student-activities/) since 2023. In Cyber Defense, my peers and I have excelled in Capture the Flag style exercises, as well as Red Team/Blue Team competitions.
 <!--I have actively engaged in UofL's ACM student chapter, where I lead the Student Linux User Group and spearhead the Cyber Defense Team.
 My peers and I have consistently excelled in capture the flag style challenges and Red Team/Blue Team competitions, putting our knowledge into action.-->
 
@@ -44,6 +44,7 @@ My peers and I have consistently excelled in capture the flag style challenges a
 - 👨‍💻 With a team, made it to the [National Collegiate Cyber Defense Competition](https://www.nationalccdc.org/) Regional Competition in 2022 and 2023
 - 🏆 University of Louisville [Raymond I. Fields Award](https://web.archive.org/web/20230522163630/https://engineering.louisville.edu/about/ourstudents/honorsawards/) recipient
 - 🦅 Achieved the rank of Eagle Scout
+- 🔒 CompTIA Security+ Certification
 
 ### Contact me
 - Email: collin@dewey.net

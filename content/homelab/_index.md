@@ -158,7 +158,7 @@ Windows Server 2025 Standard Insider
 Going into a job where I worked on Windows computers, I wanted to supplement my knowledge of Windows, Windows Server, and Active Directory. I created an AD domain and setup Group Policies for my other Windows VMs to use.
 
 ---
-## BROWN/RUBY/SCARLET - VPS
+## BROWN/RUBY/SCARLET - VPS {id="VPS"}
 
 [NixOS 24.11 (Vicuña)](https://nixos.org/)
 
@@ -211,7 +211,7 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-<img src="https://img.shields.io/date/1736571639?label=Last%20Updated&style=for-the-badge">
+<img src="https://img.shields.io/date/1736573399?label=Last%20Updated&style=for-the-badge">
 
 ---
 

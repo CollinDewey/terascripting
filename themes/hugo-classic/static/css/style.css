@@ -117,7 +117,7 @@ output:
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1650px) {
   #TableOfContents {
     position: static;
     width: auto;

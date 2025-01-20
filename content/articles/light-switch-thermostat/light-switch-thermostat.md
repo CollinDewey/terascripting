@@ -40,9 +40,9 @@ I looked around online and eventually found a (now deleted) 3D model on thingive
 
 <table>
 	<tr>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch1.jpg"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch2.jpg"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch3.jpg"></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch1.jpg" alt="3D printed servo mount sitting on a 3D printer build-plate"></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch2.jpg" alt="Servo connected to 3D printed light switch mount"></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch3.jpg" alt="Servo arm connected to 3D Printed handle"></th>
 	</tr>
 </table>
 
@@ -56,9 +56,9 @@ I figured that if my 3D printer couldn't print the little arm correctly, I'd jus
 
 <table>
 	<tr>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch4.jpg"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch5.jpg"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch6.jpg"></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch4.jpg" alt="3D printer printing"></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch5.jpg" alt="3D printed light switch mount in two pieces"></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch6.jpg" alt="3D printer printing completed mount" ></th>
 	</tr>
 </table>
 
@@ -68,11 +68,11 @@ I figured that if my 3D printer couldn't print the little arm correctly, I'd jus
 
 After printing and verifying that the servos attached correctly, I had to start working on the hardware sides of things. I ended up using a [TMP102](https://www.sparkfun.com/products/13314) temperature sensor. I had a small breadboard laying around with some adhesive on the back, so I figured I'd use that and stick it to the wall.
 
-<img style="max-height:40vh" loading="lazy" src="LightSwitch7.jpg">
+<img style="max-height:40vh" loading="lazy" src="LightSwitch7.jpg" alt="Wires connected to a breadboard, connected to a temperature sensor">
 
 I did my testing on an Arduino UNO, but after thinking about it a little more, I decided against using an UNO due to the size of the board. I ended up using a Wemos D1 Mini, which is a ESP8266 board that I ripped from a previous project of mine. Another thing I realized is that I wanted to be able to control the temperature the thermostat was set at, without having to reflash the ESP8266. So I added a potentiometer which would allow me to switch between a range of a few degrees. Thankfully I was able to fit this all on the breadboard I had.
 
-<img style="max-height:40vh" loading="lazy" src="LightSwitch8.jpg">
+<img style="max-height:40vh" loading="lazy" src="LightSwitch8.jpg" alt="Temperature sensor, potentiometer, servo, and ESP8266 microcontroller connected together using a breadboard">
 
 ---
 # Software
@@ -81,7 +81,7 @@ Using the Arduino IDE, I installed the neccisary libraries for flashing my ESP82
 
 This gave me a pretty promising result for the time. Unfortunately there were a few issues with the project.
 
-<video style="max-height:40vh" controls preload="none" poster="LightSwitch9.jpg"><source src="LightSwitch9.webm"></video>
+<video style="max-height:40vh" controls preload="none" poster="LightSwitch9.jpg" alt="Video of 3D printed mount and two servos flicking a light switch on and off"><source src="LightSwitch9.webm"></video>
 
 ---
 # Problems
@@ -95,8 +95,8 @@ This gave me a pretty promising result for the time. Unfortunately there were a 
 
 <table>
 	<tr>
-		<th><video style="max-height:40vh" controls preload="none" poster="LightSwitch10.jpg"><source src="LightSwitch10.webm"></video></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch11.jpg"></th>
+		<th><video style="max-height:40vh" controls preload="none" poster="LightSwitch10.jpg" alt="The automatic switcher, connected to a real light switch"><source src="LightSwitch10.webm"></video></th>
+		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch11.jpg" alt="A newer version of the mount which attaches the breadboard directly to the mount"></th>
 	</tr>
 </table>
 

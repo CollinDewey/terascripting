@@ -3,6 +3,7 @@ title: Home
 ---
 <img
   src="/images/home/Sunset.svg"
+  alt=""
   style="
   width: 35%;
   max-width: 256px;

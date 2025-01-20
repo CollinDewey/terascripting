@@ -15,7 +15,7 @@
     {{ if .Params.canonicalUrl }}
     <link rel="canonical" href="{{ .Params.canonicalUrl }}">
     {{ else }}
-    <link rel="canonical" href="{{ .RelPermalink }}">
+    <link rel="canonical" href="https://collindewey.net{{ .RelPermalink }}">
     {{ end }}
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />

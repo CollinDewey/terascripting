@@ -9,6 +9,10 @@ title = "Collin Dewey"
 enableRobotsTXT = true
 disableLiveReload = false
 minify = true
+cleanDestinationDir = true
+timeZone = "US/Eastern"
+
+[Taxonomies]
 
 [markup.goldmark.renderer]
 unsafe = true

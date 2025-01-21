@@ -1,5 +1,6 @@
 ---
 title: Home
+description: "I'm Collin Dewey, a Masters of Science student, and this is my technology blog, where I cover topics about Computers, Cybersecurity, Linux, Windows, and more."
 ---
 <img
   src="/images/home/Sunset.svg"
@@ -7,6 +8,7 @@ title: Home
   style="
   width: 35%;
   max-width: 256px;
+  aspect-ratio: 256 / 303;
   float: right;
   ">
 

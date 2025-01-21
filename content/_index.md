@@ -1,6 +1,6 @@
 ---
 title: Home
-description: "I'm Collin Dewey, a Masters of Computer Science student, and this is my technology blog, where I cover topics about Computers, Cybersecurity, Linux, Windows, and more."
+description: "I'm Collin Dewey, a Masters of Computer Science student, and this is my blog, where I cover topics about Computers and Cybersecurity"
 ---
 <script type="application/ld+json" nonce="7AnF83KoB">
 {

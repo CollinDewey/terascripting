@@ -4,7 +4,7 @@ author: Collin Dewey
 date: '2024-09-19'
 type: Presentation
 slug: password-cracking-basics
-description: "Password Cracking Basics - For CTF Competitions"
+description: "Presentation slides for password cracking basics for beginner level Capture The Flag style cybersecurity challenges. Using tools such as hashcat and john."
 marp: true
 theme: default
 class: invert

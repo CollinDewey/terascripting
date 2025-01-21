@@ -4,7 +4,7 @@ author: Collin Dewey
 date: '2022-08-09'
 type: Article
 slug: light-switch-thermostat
-description: "Light Switch Thermostat using Servos and an ESP-8266"
+description: "Using a ESP8266 microcontroller and servos to turn on and off a physical light switch based on the ambient temperature"
 ---
 
 ---

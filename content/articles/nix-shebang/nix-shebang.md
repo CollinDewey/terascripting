@@ -5,7 +5,7 @@ date: '2024-12-31'
 lastmod: '2024-12-31'
 type: Article
 slug: nix-shebang
-description: "Using Nix Shebang"
+description: "Nix as a BINFMT_SCRIPT shebang interpreter to run scripts with dependency applications reliably available at specific versions"
 ---
 
 # Executing Files

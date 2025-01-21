@@ -4,7 +4,7 @@ author: Collin Dewey
 date: '2024-10-24'
 type: Article
 slug: how-i-create-my-presentations
-description: "Creating presentations using the Marp Presentation Ecosystem"
+description: "Creating presentations using the Marp Presentation Ecosystem to produce presentations faster and in a more dynamic manner"
 ---
 
 ---

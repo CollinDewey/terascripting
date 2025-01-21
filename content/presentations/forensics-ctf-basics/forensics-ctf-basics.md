@@ -4,7 +4,7 @@ author: Collin Dewey
 date: '2024-10-03'
 type: Presentation
 slug: forensics-ctf-basics
-description: "Forensics Basics - For CTF Competitions"
+description: "Presentation slides for forensics basics for beginner level Capture The Flag style cybersecurity challenges."
 marp: true
 class: invert
 theme: default

@@ -5,7 +5,7 @@ date: '2024-10-25'
 lastmod: '2024-11-19'
 type: Article
 slug: ncl-tool-list
-description: "A list of tools I tend to use for the National Cyber League (NCL) Capture The Flag (CTF)"
+description: "A list of many tools used for solving challenges within the National Cyber League Capture The Flag competition"
 ---
 
 # Tool List

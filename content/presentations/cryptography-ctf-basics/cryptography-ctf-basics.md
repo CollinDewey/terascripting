@@ -4,7 +4,7 @@ author: Collin Dewey
 date: '2024-09-12'
 type: Presentation
 slug: cryptography-ctf-basics
-description: "Cryptography Basics - For CTF Competitions"
+description: "Presentation slides for cryptography basics for beginner level Capture The Flag style cybersecurity challenges."
 marp: true
 class: invert
 theme: default

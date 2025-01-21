@@ -4,7 +4,7 @@ author: Collin Dewey
 date: '2024-10-03'
 type: Presentation
 slug: scanning-reconnaissance-ctf-basics
-description: "Scanning & Reconnaissance Basics - For CTF Competitions"
+description: "Presentation slides for scanning and reconnaissance basics for beginner level Capture The Flag style cybersecurity challenges"
 marp: true
 class: invert
 theme: default

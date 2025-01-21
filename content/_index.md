@@ -2,6 +2,37 @@
 title: Home
 description: "I'm Collin Dewey, a Masters of Computer Science student, and this is my technology blog, where I cover topics about Computers, Cybersecurity, Linux, Windows, and more."
 ---
+<script type="application/ld+json" nonce="7AnF83KoB">
+{
+  "@context": "https://schema.org/",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Collin Dewey",
+    "description": "Masters of Science in Computer Science student",
+    "url": "https://collindewey.net",
+    "award": [
+      "Top 0.1% National Cyber League Spring 2024",
+      "Raymond I. Fields Award",
+      "Outstanding Achievement and Leadership Award"
+    ],
+    "hasCertification": {
+      "@type": "Certification",
+      "name": "CompTIA Security+",
+      "validFrom": "2025-01-05",
+      "issuedBy": {
+        "@type": "Organization",
+        "name": "CompTIA",
+        "url": "https://www.comptia.org"
+      }
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/CollinMDewey",
+      "https://github.com/CollinDewey"
+    ]
+  }
+}
+</script>
 <img
   src="/images/home/Sunset.svg"
   alt=""

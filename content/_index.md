@@ -1,6 +1,6 @@
 ---
 title: Home
-description: "I'm Collin Dewey, a Masters of Science student, and this is my technology blog, where I cover topics about Computers, Cybersecurity, Linux, Windows, and more."
+description: "I'm Collin Dewey, a Masters of Computer Science student, and this is my technology blog, where I cover topics about Computers, Cybersecurity, Linux, Windows, and more."
 ---
 <img
   src="/images/home/Sunset.svg"

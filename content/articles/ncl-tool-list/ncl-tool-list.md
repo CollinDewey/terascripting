@@ -2,7 +2,7 @@
 title: National Cyber League Tool List
 author: Collin Dewey
 date: '2024-10-25'
-lastmod: '2024-11-19'
+lastmod: '2026-01-27'
 type: Article
 slug: ncl-tool-list
 description: "A list of many tools used for solving challenges within the National Cyber League Capture The Flag competition"
@@ -47,6 +47,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 
 [Ciphey](https://github.com/Ciphey/Ciphey) - Cipher solver tool
 
+[QuipQuip](https://quipqiup.com/) - Cipher solver tool
 
 ---
 # Password Cracking

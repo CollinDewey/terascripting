@@ -2,7 +2,7 @@
 title: National Cyber League Tool List
 author: Collin Dewey
 date: '2024-10-25'
-lastmod: '2026-01-27'
+lastmod: '2025-01-27'
 type: Article
 slug: ncl-tool-list
 description: "A list of many tools used for solving challenges within the National Cyber League Capture The Flag competition"

@@ -59,4 +59,4 @@ weight = 4
 
 [params]
 description = ""
-footer = "[GitHub](https://github.com/CollinDewey) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey) | [Server Status](https://kuma.terascripting.com/) | [GPG Public Key](https://github.com/CollinDewey.gpg)"
+footer = "[GitHub](https://github.com/CollinDewey) | [LinkedIn](https://www.linkedin.com/in/CollinMDewey) | [Server Status](https://kuma.terascripting.com/) | [Onion](http://collindewtqc4o7ol7w2v3wfrqaxd7jy4f3ikp2stnjau3iwbkq3ohid.onion/) | [GPG Public Key](https://github.com/CollinDewey.gpg)"

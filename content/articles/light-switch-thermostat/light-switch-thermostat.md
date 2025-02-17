@@ -40,9 +40,24 @@ I looked around online and eventually found a (now deleted) 3D model on thingive
 
 <table>
 	<tr>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch1.jpg" alt="3D printed servo mount sitting on a 3D printer build-plate"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch2.jpg" alt="Servo connected to 3D printed light switch mount"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch3.jpg" alt="Servo arm connected to 3D Printed handle"></th>
+		<th>
+		  <picture>
+		  	<source srcset="LightSwitch1.avif" type="image/avif">
+			<img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch1.jpg" alt="3D printed servo mount sitting on a 3D printer build-plate">
+		  </picture>
+		</th>
+		<th>
+		  <picture>
+		  	<source srcset="LightSwitch2.avif" type="image/avif">
+		    <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch2.jpg" alt="Servo connected to 3D printed light switch mount">
+		 </picture>
+		</th>
+		<th>
+		  <picture>
+		  	<source srcset="LightSwitch3.avif" type="image/avif">
+			<img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch3.jpg" alt="Servo arm connected to 3D Printed handle">
+		  </picture>
+		</th>
 	</tr>
 </table>
 
@@ -55,11 +70,26 @@ As you can see from the last picture above, I ended up having trouble getting th
 I figured that if my 3D printer couldn't print the little arm correctly, I'd just use the servo arm that came with the servo, and just use two servos. From my engineering classes at school I was familiar with SOLIDWORKS, so I went online, found a diagram for the dimensions of a light switch, and recreated them in SOLIDWORKS, along with cutouts so the cover could be slid on with only the screws of the light switch loosened. I then created little stands to hold up the servo with a screw hole for them, and physically figured out where I should attach the switch.
 
 <table>
-	<tr>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch4.jpg" alt="3D printer printing"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch5.jpg" alt="3D printed light switch mount in two pieces"></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch6.jpg" alt="3D printer printing completed mount" ></th>
-	</tr>
+    <tr>
+        <th>
+            <picture>
+                <source srcset="LightSwitch4.avif" type="image/avif">
+                <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch4.jpg" alt="3D printer printing">
+            </picture>
+        </th>
+        <th>
+            <picture>
+                <source srcset="LightSwitch5.avif" type="image/avif">
+                <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch5.jpg" alt="3D printed light switch mount in two pieces">
+            </picture>
+        </th>
+        <th>
+            <picture>
+                <source srcset="LightSwitch6.avif" type="image/avif">
+                <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch6.jpg" alt="3D printer printing completed mount">
+            </picture>
+        </th>
+    </tr>
 </table>
 
 ---
@@ -68,11 +98,17 @@ I figured that if my 3D printer couldn't print the little arm correctly, I'd jus
 
 After printing and verifying that the servos attached correctly, I had to start working on the hardware sides of things. I ended up using a [TMP102](https://www.sparkfun.com/products/13314) temperature sensor. I had a small breadboard laying around with some adhesive on the back, so I figured I'd use that and stick it to the wall.
 
-<img style="max-height:40vh" loading="lazy" src="LightSwitch7.jpg" alt="Wires connected to a breadboard, connected to a temperature sensor">
+<picture>
+    <source srcset="LightSwitch7.avif" type="image/avif">
+    <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch7.jpg" alt="Wires connected to a breadboard, connected to a temperature sensor">
+</picture>
 
 I did my testing on an Arduino UNO, but after thinking about it a little more, I decided against using an UNO due to the size of the board. I ended up using a Wemos D1 Mini, which is a ESP8266 board that I ripped from a previous project of mine. Another thing I realized is that I wanted to be able to control the temperature the thermostat was set at, without having to reflash the ESP8266. So I added a potentiometer which would allow me to switch between a range of a few degrees. Thankfully I was able to fit this all on the breadboard I had.
 
-<img style="max-height:40vh" loading="lazy" src="LightSwitch8.jpg" alt="Temperature sensor, potentiometer, servo, and ESP8266 microcontroller connected together using a breadboard">
+<picture>
+    <source srcset="LightSwitch8.avif" type="image/avif">
+    <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch8.jpg" alt="Temperature sensor, potentiometer, servo, and ESP8266 microcontroller connected together using a breadboard">
+</picture>
 
 ---
 # Software
@@ -81,7 +117,7 @@ Using the Arduino IDE, I installed the neccisary libraries for flashing my ESP82
 
 This gave me a pretty promising result for the time. Unfortunately there were a few issues with the project.
 
-<video style="max-height:40vh" controls preload="none" poster="LightSwitch9.jpg" alt="Video of 3D printed mount and two servos flicking a light switch on and off"><source src="LightSwitch9.webm"></video>
+<video style="max-height:40vh; aspect-ratio: 1280 / 750;" controls preload="none" poster="LightSwitch9.jpg" alt="Video of 3D printed mount and two servos flicking a light switch on and off"><source src="LightSwitch9.webm"></video>
 
 ---
 # Problems
@@ -94,10 +130,17 @@ This gave me a pretty promising result for the time. Unfortunately there were a 
 6) The adhesive on the breadboard didn't last very long. I tried sticking it up with tape but that too fell. Thankfully the breadboard has two little screw holes in it. After rubbing off the adhesive and extending the mount to have little arms that align to the breadboard holes, I was able to affix the breadboard to the mount.
 
 <table>
-	<tr>
-		<th><video style="max-height:40vh" controls preload="none" poster="LightSwitch10.jpg" alt="The automatic switcher, connected to a real light switch"><source src="LightSwitch10.webm"></video></th>
-		<th><img style="max-height:40vh" loading="lazy" src="LightSwitch11.jpg" alt="A newer version of the mount which attaches the breadboard directly to the mount"></th>
-	</tr>
+    <tr>
+        <th>
+        	<video style="max-height:40vh; aspect-ratio: 406 / 721;" controls preload="none" poster="LightSwitch10.jpg" alt="The automatic switcher, connected to a real light switch"><source src="LightSwitch10.webm"></video>
+        </th>
+        <th>
+            <picture>
+                <source srcset="LightSwitch11.avif" type="image/avif">
+                <img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch11.jpg" alt="A newer version of the mount which attaches the breadboard directly to the mount">
+            </picture>
+        </th>
+    </tr>
 </table>
 
 ---

@@ -187,4 +187,4 @@ Kubernetes, Docker Swarm, Rancher, Portainer, Nomad, etc...
 
 # Compose
 
-See [Compose Presentation](https://collindewey.net/articles/intro-to-compose/)
+See [Compose Presentation](https://collindewey.net/presentations/intro-to-compose/)

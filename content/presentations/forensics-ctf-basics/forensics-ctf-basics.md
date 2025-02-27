@@ -10,7 +10,7 @@ class: invert
 theme: default
 size: 16:9
 ---
-# [Presentation Slides](/slides/forensics-ctf-basics.html)
+# [Presentation Slides](slides.html)
 
 
 # Forensics Basics

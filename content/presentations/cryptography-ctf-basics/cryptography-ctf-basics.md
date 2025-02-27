@@ -10,7 +10,7 @@ class: invert
 theme: default
 size: 16:9
 ---
-# [Presentation Slides](/slides/cryptography-ctf-basics.html)
+# [Presentation Slides](slides.html)
 
 # Cryptography Basics
 <!-- _footer: By Collin Dewey-->

@@ -11,7 +11,7 @@ theme: default
 size: 16:9
 ---
 
-# [Presentation Slides](/slides/scanning-reconnaissance-ctf-basics.html)
+# [Presentation Slides](slides.html)
 
 # Scanning & Reconnaissance Basics
 
@@ -59,8 +59,8 @@ Reconnaissance
 
 [nmap](https://nmap.org/)
 - Scans for open ports
-- `nmap -p- <target>` To Scan TCP
-- `nmap -sU <target>` To Scan UDP
+- `nmap -p- [target]` To Scan TCP
+- `nmap -sU [target]` To Scan UDP
     - UDP scans are often unreliable
 
 
@@ -73,7 +73,7 @@ Reconnaissance
 - [HTTP-Brute](https://nmap.org/nsedoc/scripts/http-brute.html)
 - [IMAP-Brute](https://nmap.org/nsedoc/scripts/imap-brute.html)
 - [SMTP-Enum-Users](https://nmap.org/nsedoc/scripts/smtp-enum-users.html)
-- `nmap --script <script> -p <port> <target>`
+- `nmap --script [script] -p [port] [target]`
 
 ---
 

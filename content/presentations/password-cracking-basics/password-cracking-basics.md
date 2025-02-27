@@ -12,7 +12,7 @@ size: 16:9
 ---
 <link rel="stylesheet" href="style.css"> <!-- Extra CSS for the presentation -->
 
-# [Presentation Slides](/slides/password-cracking-basics.html)
+# [Presentation Slides](slides.html)
 
 # Password Cracking Basics
 <!-- _footer: By Collin Dewey-->

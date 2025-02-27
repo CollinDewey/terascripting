@@ -11,7 +11,7 @@ theme: default
 size: 16:9
 ---
 
-# [Presentation Slides](/slides/osint-ctf-basics.html)
+# [Presentation Slides](slides.html)
 
 
 # OSINT Basics

@@ -20,7 +20,7 @@ Docker/Podman Compose
 
 <div class="is-hugo">
 
-[Presentation Slides](/slides/intro-to-compose.html)
+[Presentation Slides](slides.html)
 
 </div>
 

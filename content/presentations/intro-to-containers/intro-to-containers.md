@@ -22,7 +22,7 @@ size: 16:9
 
 </div><div class="is-hugo">
 
-[Presentation Slides](/slides/intro-to-containers.html)
+[Presentation Slides](slides.html)
 
 <img style="min-width: 40vw; max-height:40vh; aspect-ratio: 756.26 / 596.9;" loading="lazy" src="docker.svg" alt="Docker Engine Logo">
 

@@ -1,14 +1,17 @@
 /* If in a hugo content-wrapper, don't display it*/
 div.content-wrapper main div.is-marp {
     display: none;
-  }
+    content-visibility: hidden;
+}
   
 /* Don't display hugo class */
 div.is-hugo {
   display: none;
+  content-visibility: hidden;
 }
 
 /* But actually display it if it's in a content class */
 div.content-wrapper main div.is-hugo {
   display: block;
+  content-visibility: visible;
 }

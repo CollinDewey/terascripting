@@ -1,0 +1,46 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $manualAspect := .Get "aspect" -}}
+{{- $minWidth := .Get "min-width" -}}
+{{- $maxHeight := default "40vh" (.Get "max-height") -}}
+{{- $aspect := $manualAspect -}}
+
+{{- if not $aspect -}}
+  {{- with $.Page.Resources.GetMatch $src -}}
+    {{/* If SVG, extract aspect-ratio */}}
+    {{- if eq .MediaType.SubType "svg" -}}
+      {{- $svgContent := .Content -}}
+      {{- $viewBoxMatch := findRE `(?i)viewBox\s*=\s*["']([^"']*)["']` $svgContent 1 -}}
+      
+      {{- if $viewBoxMatch -}}
+        {{- $viewBox := replaceRE `(?i)viewBox\s*=\s*["']([^"']*)["']` "$1" (index $viewBoxMatch 0) -}}
+        {{- $dimensions := split (replaceRE `\s+` " " $viewBox) " " -}}
+        
+        {{- if ge (len $dimensions) 4 -}}
+          {{- $width := index $dimensions 2 -}}
+          {{- $height := index $dimensions 3 -}}
+          {{- $aspect = printf "%s/%s" $width $height -}}
+        {{- end -}}
+      {{- end -}}
+    {{/* else, use built-in hugo processing */}}
+    {{- else -}}
+      {{- $aspect = printf "%d/%d" .Width .Height -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $style := "" -}}
+{{- if $minWidth -}}
+  {{- $style = printf "min-width: %s; " $minWidth -}}
+{{- end -}}
+{{- $style = printf "%smax-height: %s;" $style $maxHeight -}}
+{{- if $aspect -}}
+  {{- $style = printf "%s aspect-ratio: %s;" $style $aspect -}}
+{{- end -}}
+
+<img 
+  style="{{ $style | safeCSS }}" 
+  loading="lazy" 
+  src="{{ $src }}" 
+  alt="{{ $alt }}"
+/>

@@ -10,14 +10,19 @@ theme: default
 class: invert
 size: 16:9
 ---
-<link rel="stylesheet" href="style.css"> <!-- Extra CSS for the presentation -->
 
-# [Presentation Slides](slides.html)
+<link rel="stylesheet" href="../presentations.css">
+{{< slides >}}
 
 # Password Cracking Basics
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
-![bg right:42%](https://www.kali.org/tools/hashcat/images/hashcat-logo.svg)
+
+{{< marp >}}
+![bg right:42%](hashcat-logo.svg)
+{{< /marp >}}{{< hugo >}}
+{{< img src="hashcat-logo.svg" alt="Hashcat Logo" min-width="40vw" max-height="30vh">}}
+{{< /hugo >}}
 
 <!-- Logo on the right is for the Password Cracking utility Hashcat -->
 
@@ -172,7 +177,12 @@ ophcrack is a free Windows (LM/NTLM) password cracker using Rainbow Tables
 
 # John The Ripper
 <!-- _footer: https://hashes.com/en/johntheripper -->
-![bg right:59%](https://www.kali.org/tools/john/images/john-logo.svg)
+
+{{< marp >}}
+![bg right:59%](john-logo.svg)
+{{< /marp >}}{{< hugo >}}
+{{< img src="john-logo.svg" alt="Hashcat Logo" min-width="40vw" max-height="30vh">}}
+{{< /hugo >}}
 
 CPU Password Cracker
 
@@ -184,7 +194,12 @@ CPU Password Cracker
 ---
 
 # Hashcat
-![bg right:42%](https://www.kali.org/tools/hashcat/images/hashcat-logo.svg)
+
+{{< marp >}}
+![bg right:42%](hashcat-logo.svg)
+{{< /marp >}}{{< hugo >}}
+{{< img src="hashcat-logo.svg" alt="Hashcat Logo" min-width="40vw" max-height="30vh">}}
+{{< /hugo >}}
 
 GPU Accelerated Password Cracker
 
@@ -332,5 +347,3 @@ Convert wireless captures to JtR/Hashcat
 [Kaonashi](https://github.com/kaonashi-passwords/Kaonashi)
 
 [Hashcat Rules](https://github.com/hashcat/hashcat/tree/master/rules)
-
----

@@ -43,7 +43,7 @@ I looked around online and eventually found a (now deleted) 3D model on thingive
 		<th>
 		  <picture>
 		  	<source srcset="LightSwitch1.avif" type="image/avif">
-			<img style="max-height:40vh; aspect-ratio: 750 / 750;" loading="lazy" src="LightSwitch1.jpg" alt="3D printed servo mount sitting on a 3D printer build-plate">
+            {{< img src="LightSwitch1.jpg" alt="3D printed servo mount sitting on a 3D printer build-plate" >}}
 		  </picture>
 		</th>
 		<th>

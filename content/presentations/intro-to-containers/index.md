@@ -12,21 +12,16 @@ size: 16:9
 ---
 
 <link rel="stylesheet" href="../presentations.css">
+{{< slides >}}
 
 # Introduction to Containers
 <!-- _footer: By Collin Dewey-->
 
-<div class="is-marp">
-
+{{< marp >}}
 ![bg right:40% 90%](docker.svg)
-
-</div><div class="is-hugo">
-
-[Presentation Slides](slides.html)
-
-<img style="min-width: 40vw; max-height:40vh; aspect-ratio: 756.26 / 596.9;" loading="lazy" src="docker.svg" alt="Docker Engine Logo">
-
-</div>
+{{< /marp >}}{{< hugo >}}
+{{< img src="docker.svg" alt="Docker Engine Logo" min-width="40vw" max-height="30vh">}}
+{{< /hugo >}}
 
 ---
 
@@ -77,15 +72,11 @@ This means you will lose the raw performance advantages of containers.
 
 # Open Container Initiative (OCI)
 
-<div class="is-marp">
-
+{{< marp >}}
 ![bg fit right:33% 80%](OCI.svg)
-
-</div><div class="is-hugo">
-
-<img style="min-width: 30vw; max-height:30vh; aspect-ratio: 465 / 470;" loading="lazy" src="OCI.svg" alt="Open Container Initiative Logo">
-
-</div>
+{{< /marp >}}{{< hugo >}}
+{{< img src="OCI.svg" alt="Open Container Initiative Logo" min-width="30vw" max-height="30vh">}}
+{{< /hugo >}}
 
 Specification for how containers images are formatted and run.
 Used by...
@@ -100,15 +91,12 @@ Used by...
 # Linux Containers (LXC)
 <!--_footer: systemd-nspawn is also usable for this purpose-->
 
-<div class="is-marp">
-
+{{< marp >}}
+![bg fit right:33% 80%](OCI.svg)
 ![bg fit right:40% 70%](LXC.svg)
-
-</div><div class="is-hugo">
-
-<img style="min-width: 30vw; max-height:30vh; aspect-ratio: 165.754 / 152.992;" loading="lazy" src="LXC.svg" alt="Linux Containers LXC Logo">
-
-</div>
+{{< /marp >}}{{< hugo >}}
+{{< img src="LXC.svg" alt="Linux Containers LXC Logo" min-width="30vw" max-height="30vh">}}
+{{< /hugo >}}
 
 What if you want the permanence of a Virtual Machine but the performance of a Container?
 - Not OCI compatible

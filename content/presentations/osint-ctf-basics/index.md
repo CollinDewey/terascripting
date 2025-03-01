@@ -11,8 +11,8 @@ theme: default
 size: 16:9
 ---
 
-# [Presentation Slides](slides.html)
-
+<link rel="stylesheet" href="../presentations.css">
+{{< slides >}}
 
 # OSINT Basics
 <!-- _footer: By Collin Dewey-->

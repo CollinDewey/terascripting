@@ -10,16 +10,21 @@ class: invert
 theme: default
 size: 16:9
 ---
-# [Presentation Slides](slides.html)
+<link rel="stylesheet" href="../presentations.css">
+{{< slides >}}
 
 # Cryptography Basics
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
+
+{{< marp >}}
+![bg invert right:55%](Pigpen_cipher_key.svg)
+{{< /marp >}}{{< hugo >}}
 <div style="filter: invert(1);">
-
-![bg invert right:55%](https://upload.wikimedia.org/wikipedia/commons/3/36/Pigpen_cipher_key.svg)
-
+{{< img src="Pigpen_cipher_key.svg" alt="Pigpen Cipher" min-width="30vw">}}
 </div>
+{{< /hugo >}}
+
 
 <!-- Logo on the right is for the Pigpen Cipher -->
 
@@ -45,11 +50,15 @@ How we get there
 ---
 <!-- _class: -->
 
+
+{{< marp >}}
+![bg contain](ASCII-Table-wide.svg)
+{{< /marp >}}{{< hugo >}}
 <div style="background-color: #ffffff;">
-
-![bg contain](https://upload.wikimedia.org/wikipedia/commons/1/1b/ASCII-Table-wide.svg)
-
+{{< img src="ASCII-Table-wide.svg" alt="ASCII Table" max-height="auto">}}
 </div>
+{{< /hugo >}}
+
 
 <!-- There are multiple ways to represent text. -->
 <!-- One of the most common ways for English is with the ASCII encoding, which all of the bellow examples are in. -->
@@ -77,9 +86,13 @@ There exist other representations such as Morse Code and Braille
 ---
 <!-- _footer: https://gchq.github.io/CyberChef/-->
 
-<iframe style="height: 45em; width: 100%;" src="https://gchq.github.io/CyberChef/"></iframe>
+{{< marp >}}
+<iframe style="aspect-ratio: 16/9; height:100%;" src="https://gchq.github.io/CyberChef/" loading="lazy"></iframe>
 
 ---
+
+{{< /marp >}}
+
 # Common Ciphers
 
 Rail Fence Cipher
@@ -119,20 +132,27 @@ Bit Shifting/Rotation
 XOR-->
 
 ---
-# Other
-# Symbols
-![bg fit](https://upload.wikimedia.org/wikipedia/commons/f/fa/ICS-flags.png)
+# Other Symbols
+
+{{< marp >}}
+![bg fit](ICS-flags.png)
+{{< /marp >}}{{< hugo >}}
+{{< img src="ICS-flags.png" alt="International Code of Signals Flags" max-height="60vh">}}
+{{< /hugo >}}
+
 
 ---
 <!-- _class: -->
 # Other Symbols
 - Reverse Image Search
 
+{{< marp >}}
+![](Qapla.svg)
+{{< /marp >}}{{< hugo >}}
 <div style="background-color: #ffffff;">
-
-![](https://upload.wikimedia.org/wikipedia/commons/6/69/Qapla%27.svg)
-
+{{< img src="Qapla.svg" alt="Qapla written in pIqaD script" min-width="40vw" max-height="30vh">}}
 </div>
+{{< /hugo >}}
 
 <!--
 ---

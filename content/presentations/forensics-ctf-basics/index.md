@@ -10,10 +10,12 @@ class: invert
 theme: default
 size: 16:9
 ---
-# [Presentation Slides](slides.html)
 
+<link rel="stylesheet" href="../presentations.css">
+{{< slides >}}
 
 # Forensics Basics
+<!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 
@@ -122,4 +124,11 @@ De-pixelate Text
 - Specific blur block size
 - Specific pixelation filter
 
-![bg right contain](https://github.com/BishopFox/unredacter/blob/main/img/wow_such_secrets.gif?raw=true)
+{{< marp >}}
+![bg right contain](Unredacter.gif)
+{{< /marp >}}{{< hugo >}}
+{{< img src="Unredacter.gif" alt="Animation showing a program brute force de-obfuscating text" min-width="40vw" max-height="30vh">}}
+<p style="text-align: center">
+Image License: <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html">GPL v3</a>
+</p>
+{{< /hugo >}}

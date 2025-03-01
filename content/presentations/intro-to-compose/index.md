@@ -12,17 +12,12 @@ size: 16:9
 ---
 
 <link rel="stylesheet" href="../presentations.css">
+{{< slides >}}
 
 # Compose
 <!-- _footer: By Collin Dewey-->
 
 Docker/Podman Compose
-
-<div class="is-hugo">
-
-[Presentation Slides](slides.html)
-
-</div>
 
 ---
 

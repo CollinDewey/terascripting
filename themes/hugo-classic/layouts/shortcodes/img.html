@@ -23,7 +23,7 @@
         {{- end -}}
       {{- end -}}
     {{/* else, use built-in hugo processing */}}
-    {{- else -}}
+    {{- else if ne .MediaType.SubType "avif" -}}
       {{- $aspect = printf "%d/%d" .Width .Height -}}
     {{- end -}}
   {{- end -}}
@@ -38,9 +38,19 @@
   {{- $style = printf "%s aspect-ratio: %s;" $style $aspect -}}
 {{- end -}}
 
-<img 
-  style="{{ $style | safeCSS }}" 
-  loading="lazy" 
-  src="{{ $src }}" 
-  alt="{{ $alt }}"
-/>
+<picture>
+  {{ with $.Page.Resources.GetMatch (printf "%s.avif" (path.BaseName $src)) }}
+  <source srcset="{{ .RelPermalink }}" type="image/avif" >
+  {{ end }}
+  {{ with $.Page.Resources.GetMatch (printf "%s.webp" (path.BaseName $src)) }}
+  <source srcset="{{ .RelPermalink }}" type="image/webp" >
+  {{ end }}
+
+  <img 
+    style="{{ $style | safeCSS }}"
+    loading="lazy"
+    decoding="async"
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+  />
+</picture>

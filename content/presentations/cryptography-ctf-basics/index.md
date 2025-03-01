@@ -135,9 +135,9 @@ XOR-->
 ## Other Symbols
 
 {{< marp >}}
-![bg fit](ICS-flags.png)
+![bg fit](ICS-flags.jpg)
 {{< /marp >}}{{< hugo >}}
-{{< img src="ICS-flags.png" alt="International Code of Signals Flags" max-height="60vh">}}
+{{< img src="ICS-flags.jpg" alt="International Code of Signals Flags" max-height="60vh">}}
 {{< /hugo >}}
 
 

@@ -18,11 +18,16 @@ hugo build $HUGO_ARGS
 for dir in content/presentations/*/; do
     if [ -d "$dir" ]; then
         for file in "$dir"*.md; do
-            name="$TMPDIR/presentations/$(basename "$file" .md)/slides.html"
+            tmpfile=$(mktemp)
+            name="$TMPDIR/presentations/$(basename $dir)/slides.html"
+
+            cp $file $tmpfile
+            sed -i 's/{{<[^>]*>}}//g' "$tmpfile"
+            marp "$tmpfile" $MARP_ARGS --output $name
+            rm "$tmpfile"
             
-            marp "$file" $MARP_ARGS --output $name
-            sed -i 's/<script>/<script nonce="7AnF83KoB">/g' $file # Set nonce
-            sed -i 's/<head>/<head><meta name="robots" content="noindex">/g' $file # Add noindex meta tag
+            sed -i 's/<script>/<script nonce="7AnF83KoB">/g' $name # Set nonce
+            sed -i 's/<head>/<head><meta name="robots" content="noindex">/g' $name # Add noindex meta tag
         done
     fi
 done

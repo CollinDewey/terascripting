@@ -2,6 +2,7 @@
 title: How I create my presentations
 author: Collin Dewey
 date: '2024-10-24'
+lastmod: '2025-03-01'
 type: Article
 slug: how-i-create-my-presentations
 description: "Creating presentations using the Marp Presentation Ecosystem to produce presentations faster and in a more dynamic manner"
@@ -107,4 +108,22 @@ Because Marp allows exporting to HTML, and Markdown allows the inclusion of any 
 
 You can focus a lot more on the writing itself instead of formatting. It makes moving text between slides easy. It makes including codeblocks easy since there's first-class support for that. I then like to use [asciinema](https://asciinema.org/) to show programs running.
 
-But a lot features normally easy in Powerpoint are somewhat complicated to implement. For example, it's not easy to draw over a slide. 
+But a lot features normally easy in Powerpoint are somewhat complicated to implement. For example, it's not easy to draw over a slide.
+
+---
+
+# Integrating with Hugo
+
+Hugo - the static site generator I use - supports reusable snippits of HTML called [shortcodes](https://gohugo.io/content-management/shortcodes/).
+
+This means I can create a shortcode named slides in `layouts/shortcodes/slides.html`
+```html
+<iframe 
+  src="./slides.html" 
+  class="presentation-slides"
+  allow="fullscreen"
+  loading="lazy"
+></iframe>
+```
+
+And on each of my presentations, just include a `{{</* slides */>}}` at the start of the document, which embeds the preview I have.

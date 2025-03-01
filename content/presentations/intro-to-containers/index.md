@@ -92,7 +92,6 @@ Used by...
 <!--_footer: systemd-nspawn is also usable for this purpose-->
 
 {{< marp >}}
-![bg fit right:33% 80%](OCI.svg)
 ![bg fit right:40% 70%](LXC.svg)
 {{< /marp >}}{{< hugo >}}
 {{< img src="LXC.svg" alt="Linux Containers LXC Logo" min-width="30vw" max-height="30vh">}}

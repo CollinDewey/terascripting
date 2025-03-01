@@ -127,7 +127,7 @@ De-pixelate Text
 {{< marp >}}
 ![bg right contain](Unredacter.gif)
 {{< /marp >}}{{< hugo >}}
-{{< img src="Unredacter.gif" alt="Animation showing a program brute force de-obfuscating text" min-width="40vw" max-height="30vh">}}
+{{< img src="Unredacter.gif" alt="Animation showing a program brute force de-obfuscating text">}}
 <p style="text-align: center">
 Image License: <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html">GPL v3</a>
 </p>

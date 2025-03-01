@@ -8,7 +8,7 @@ description: "Using a ESP8266 microcontroller and servos to turn on and off a ph
 ---
 
 ---
-# Introduction
+## Introduction
 ---
 At some dorms at my University, not every dorm gets its own real thermostat. While some have digital ones, others analog. Some have a light switch that toggles on and off the air conditioning, or the heat. The control between AC and Heat unfortunately is building wide, so this situation leaves you with a few problems.
 
@@ -28,7 +28,7 @@ However, this leaves a few problems to be had
 Not being able to control the temperature is the huge problem while you're asleep, as it leaves you waking up in a sweat, or shivering. Unfortunately I don't own the building, thus feel uncomfortable actually wiring a real thermostat in. But what if I just made something that would flip the light switch mechanically?
 
 ---
-# First attempt
+## First attempt
 ---
 I knew I would need a few things.
 - A thermometer
@@ -55,7 +55,7 @@ I looked around online and eventually found a (now deleted) 3D model on thingive
 As you can see from the last picture above, I ended up having trouble getting the 3D printed arm to fit the servo arm. This was due to my MakerBot Replicator Mini not being able to correctly Replicate the dimensions of the 3D model. I attempted to super glue the arm, but it would just fall off when attempting to actually flip the switch. Another problem I had with this model is that you had to completely unscrew and re-screw the switch to take on/off the print. This basically meant that if Housing came by, they'd most likely be upset if they saw the thermostat.
 
 ---
-# Second attempt
+## Second attempt
 ---
 
 I figured that if my 3D printer couldn't print the little arm correctly, I'd just use the servo arm that came with the servo, and just use two servos. From my engineering classes at school I was familiar with SOLIDWORKS, so I went online, found a diagram for the dimensions of a light switch, and recreated them in SOLIDWORKS, along with cutouts so the cover could be slid on with only the screws of the light switch loosened. I then created little stands to hold up the servo with a screw hole for them, and physically figured out where I should attach the switch.
@@ -75,7 +75,7 @@ I figured that if my 3D printer couldn't print the little arm correctly, I'd jus
 </table>
 
 ---
-# Hardware
+## Hardware
 ---
 
 After printing and verifying that the servos attached correctly, I had to start working on the hardware sides of things. I ended up using a [TMP102](https://www.sparkfun.com/products/13314) temperature sensor. I had a small breadboard laying around with some adhesive on the back, so I figured I'd use that and stick it to the wall.
@@ -87,7 +87,7 @@ I did my testing on an Arduino UNO, but after thinking about it a little more, I
 {{< img src="LightSwitch8.jpg" alt="Temperature sensor, potentiometer, servo, and ESP8266 microcontroller connected together using a breadboard" >}}
 
 ---
-# Software
+## Software
 ---
 Using the Arduino IDE, I installed the neccisary libraries for flashing my ESP8266, and the library that SparkFun provides for the TMP102. In standard Arduino fashion, there's a run-once section, and a loop section. In the run-once section, which runs when the Arduino starts, I initialize the temperature sensor, initialize the servos, and set the servo positions to the lowered position, out of the way of the switch. Then in the loop section, I read the potentiometer and the thermostat. Then I multiply the % that the potentiometer is at with a specified range of temperatures, and then add that to a base temperature. In my case, I set the base temperature to 66°F, with a temperature range of 8°F. This means that it can be set between 66°F and 74°F, the middle being 70°F. Of course since it's a potentiometer, the number won't be exactly any integer, but that's fine since half a degree off won't change how the room feels much. After getting the desired temperature and the room temperature, I compare them to each other with a temperature tolerance. The tolerance is so the switch isn't being constantly flicked on and off in minor fluctuations of temperature. I personally settled on a tolerance of 1°F. If the thermostat is set to 70°, it'll trigger at 69°. If it is determined that the room is too cold, the servo will turn on the switch, thus the heat will be turned on. Opposite for too warm. I had a deadline so I didn't go further at the time, only heating.
 
@@ -96,7 +96,7 @@ This gave me a pretty promising result for the time. Unfortunately there were a 
 <video style="max-height:40vh; aspect-ratio: 1280 / 750;" controls preload="none" poster="LightSwitch9.jpg" alt="Video of 3D printed mount and two servos flicking a light switch on and off"><source src="LightSwitch9.webm"></video>
 
 ---
-# Problems
+## Problems
 ---
 1) First problem I ran into was getting the switch mounted on the actual dorm light switch. The toggle on the switch was too thick for my 3D printed model. Thankfully that's not that big of a deal, just made the hole in the middle of the model a bit bigger, and now it fits.
 2) The way I had initially made the program meant that the thermostat would always be in a mode for heat, so once the dormitory switched to AC, the thermostat would try to make the room a giant Ice Box. Equipped with a little more time, I modified the code to have both a heating and cooling mode.
@@ -117,7 +117,7 @@ This gave me a pretty promising result for the time. Unfortunately there were a 
 </table>
 
 ---
-# Possible Improvements
+## Possible Improvements
 ---
 
 1) Currently, I had to switch between the heating/cooling modes by either serial sending a command, or by changing it in the code and reflashing the device. This is generally because I didn't have enough space on the breadboard to have a button or preferably switch to be able to select the mode.
@@ -126,7 +126,7 @@ This gave me a pretty promising result for the time. Unfortunately there were a 
 
 ---
 
-## You can see the files mentioned in the article on my [GitHub](https://github.com/CollinDewey/misc/tree/master/light_switch_thermostat)
+### You can see the files mentioned in the article on my [GitHub](https://github.com/CollinDewey/misc/tree/master/light_switch_thermostat)
 
 ---
 

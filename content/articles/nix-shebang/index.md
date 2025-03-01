@@ -8,7 +8,7 @@ slug: nix-shebang
 description: "Nix as a BINFMT_SCRIPT shebang interpreter to run scripts with dependency applications reliably available at specific versions"
 ---
 
-# Executing Files
+## Executing Files
 ---
 
 On Linux and some other UNIX-like OSes, files are marked as "executable" by a mode flag on the file, referred to as the execute bit. This execute bit can be set with the change mode utility `chmod`, along with the modes for if the user/group/everyone can read and write the file. When you try to run the file you've marked as executable, Linux needs to figure out how to handle that file.
@@ -33,7 +33,7 @@ Looking in the Linux kernel source, at [fs/Kconfig.binfmt](https://elixir.bootli
 
 
 ---
-# Shebang
+## Shebang
 ---
 
 The SCRIPT format can be pretty useful, because it lets us define our own interpreter at the individual file level, as long as we start the file with a shebang sequence - `#!` - and then the path as to what to run the rest of the file with. Such as...
@@ -53,7 +53,7 @@ The SCRIPT format can be pretty useful, because it lets us define our own interp
 This path is usually an absolute path, but relative paths do work as well. Due to different distributions having programs installed in different locations - such as the three bash locations above - it is often encouraged to use `#!/usr/bin/env <program>` as to get the application from the user's `$PATH` variable. This means that as long as that program is available in the path, the script will run. For example, `#!/usr/bin/env bash` will run bash even if bash isn't located in a common path like `/bin/bash`. This is especially useful with Python scripts within virtual environments, where the Python you want to use may not be the same as the globally installed version. This is generally considered more portable across systems, however neither `/bin/sh` or `/usr/bin/env` are required to be in those location, but they are there for the vast majority of systems.
 
 ---
-# Nix Shell
+## Nix Shell
 ---
 
 One of the greatest features of Nix is nix-shell. Given a set of package names defined in the Nix package repository [nixpkgs](https://github.com/NixOS/nixpkgs). See available packages [here](https://search.nixos.org/packages). Nix-shell will start a new shell with those packages available.
@@ -109,7 +109,7 @@ $ nix run github:MrGlockenspiel/activate-linux
 ```
 
 ---
-# Nix Shell Shebang
+## Nix Shell Shebang
 ---
 
 While the above is useful for temporarly running an application or environment, Nix has the ability to be run as a shebang interpreter.
@@ -136,7 +136,7 @@ print(sys.version) # Prints "3.6.14 (default, Jun 28 2021, 17:59:20)"
 ```
 
 ---
-# What This Means
+## What This Means
 ---
 
 This means that as long as Nix is installed on a system, scripts can be created that know exactly how the applications used are going to act. When making bash scripts to run across many different Linux distributions, I may end up needing to include multiple approaches to the same command. Such as downloading a file, where some distributions may come with only curl, and other only wget.

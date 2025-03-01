@@ -11,7 +11,7 @@ description: "Using dnsmasq's DHCP server in a docker container to provide a net
 > I personally would no longer suggest using this method. While I still like setting static IPs, it's much easier managing it through a web GUI router software such as OPNsense or pfSense. I do unfortunately lose out on easily using arp-scan, which is unfortunate. If you're hosting your own DHCP server because you're forced to use some other router, this still absolutely works. I created a config conversion script, located [on my GitHub](https://github.com/CollinDewey/misc/blob/master/dnsmasq_docker/convertToOPNsense.sh). Adjust values as needed for your configuration.
 
 ---
-# Why static IP addresses?
+## Why static IP addresses?
 ---
 I'm an avid user of everything technology, but also not an avid fan of walking between two computers in my house when I'm trying to do something between them. Or even just switching my keyboard, mouse and monitor cables between two computers. Copying files through a flash drive is slow, it would be much easier to just do it through the network. Methods of remotely controlling a computer makes EVERYTHING much more convenient. There is a problem with this however. Software like [TeamViewer](https://www.teamviewer.com/en/) isn't the best when you have a LAN connection with the computer you want to control. TeamViewer also doesn't allow you to run on computers that lack a GUI, although they do have a [Raspberry Pi version](https://www.teamviewer.com/en/solutions/remote-desktop/raspberry-pi/) interestingly enough.
 
@@ -24,7 +24,7 @@ How do I go about setting a static IP address? Setting a static IP address is a 
 The better way to do this is through the power of [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Your home router probably already has a DHCP server, which assigns IPs to devices on your network. But in my case, I will be giving it out through a program called dnsmasq on a Raspberry Pi. Yes I know the name primarily has "DNS" in it, but dnsmasq supports more than just DNS, including being a DHCP server.
 
 ---
-# dnsmasq
+## dnsmasq
 ---
 
 At my house, I have dozens of devices to keep track of. I won't bore you with a base dnsmasq configuration setup, but I will list my DHCP part for reference. You will need to go to your router and change the DHCP server to be the IP of the device running dnsmasq, in addition to setting a static IP on just that device.
@@ -60,7 +60,7 @@ dhcp-host=17:59:A0:DE:2A:73,GREEN,172.16.0.28,12h
 ```
 
 ---
-# arp-scan
+## arp-scan
 ---
 
 However there's another application I want to use that also needs IPs and names, that application being [arp-scan](https://github.com/royhills/arp-scan). arp-scan sends ARP packets to all possible IPs within your specified range, and reports the responses. This unfortunately isn't the most helpful when you don't easily know which device is what.
@@ -126,7 +126,7 @@ $ sudo arp-scan --macfile arp-scan.txt --localnet --interface eth0 --ignoredups 
 ```
 
 ---
-# Automation
+## Automation
 ---
 
 Sure I could maintain a separate list to keep between arp-scan and dnsmasq, but that's no fun. Instead I could do some simple bash scripting to generate multiple list formats from a format of my own. There's four things I need to know. Requested IP, MAC address, name, and DHCP lease time. I decided on a simple tsv format with tab delimiting the sections, in addition to making comments start with # and ignoring empty lines.
@@ -167,7 +167,7 @@ systemctl restart dnsmasq.service
 ```
 
 ---
-# Docker
+## Docker
 ---
 
 [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is containerization software, meaning each container has access to its own files, but still uses the host system's kernel. I'd recommend reading more about Docker if you don't know anything about it. They have a nice overview on docker and how it works over on the [Docker Docs Website](https://docs.docker.com/get-started/overview/).
@@ -206,7 +206,7 @@ After running `docker-compose up -d`, I was left with functional dnsmasq in a do
 
 ---
 
-## You can see the files mentioned in the article on my [GitHub](https://github.com/CollinDewey/misc/tree/master/dnsmasq_docker)
+### You can see the files mentioned in the article on my [GitHub](https://github.com/CollinDewey/misc/tree/master/dnsmasq_docker)
 
 ---
 

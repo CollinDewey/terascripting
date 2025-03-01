@@ -13,7 +13,7 @@ size: 16:9
 <link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
-# Cryptography Basics
+## Cryptography Basics
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
 
@@ -31,7 +31,7 @@ For CTF Competitions
 
 ---
 
-# What is Cryptograhpy?
+## What is Cryptograhpy?
 
 <!-- Cryptography is an overarching field over trying to have secure and private communications, even in the presence of prying eyes. -->
 
@@ -93,7 +93,7 @@ There exist other representations such as Morse Code and Braille
 
 {{< /marp >}}
 
-# Common Ciphers
+## Common Ciphers
 
 Rail Fence Cipher
 - Requires number of "rails", with an optional offset
@@ -132,7 +132,7 @@ Bit Shifting/Rotation
 XOR-->
 
 ---
-# Other Symbols
+## Other Symbols
 
 {{< marp >}}
 ![bg fit](ICS-flags.png)
@@ -143,7 +143,7 @@ XOR-->
 
 ---
 <!-- _class: -->
-# Other Symbols
+## Other Symbols
 - Reverse Image Search
 
 {{< marp >}}

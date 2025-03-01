@@ -14,20 +14,20 @@ size: 16:9
 <link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
-# Forensics Basics
+## Forensics Basics
 <!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 
 ---
 
-# What is forensics?
+## What is forensics?
 
 Identify/Obtain Evidence
 
 ---
 
-# Carving
+## Carving
 
 binwalk
 
@@ -45,7 +45,7 @@ photorec
 
 ---
 
-# Filesystem Forensics
+## Filesystem Forensics
 
 RAW Image - A copy of the raw bytes that are stored on a hard drive.
 
@@ -58,7 +58,7 @@ RAW Image - A copy of the raw bytes that are stored on a hard drive.
 
 ---
 
-# Windows Registry
+## Windows Registry
 
 Where Windows stores a lot of configuration
 
@@ -67,7 +67,7 @@ Where Windows stores a lot of configuration
 
 ---
 
-# RAM Forensics
+## RAM Forensics
 
 Volatility
 
@@ -81,7 +81,7 @@ Volatility
 
 ---
 
-# Steganography
+## Steganography
 
 - Hide special data within seemingly innocent data (Not metadata)
 - Usually images or audio
@@ -89,7 +89,7 @@ Volatility
 
 ---
 
-# Steganography Methods
+## Steganography Methods
 - BlindHide
     - Changes the Least Significant Bit of Colors, and uses them for data
     - Starts at top left, works its way right, then down
@@ -103,7 +103,7 @@ Volatility
 
 ---
 
-# Steganography Tools
+## Steganography Tools
 
 Any advanced photo editor (Paint.NET, Krita, GIMP, Photoshop, Photopea)
 
@@ -117,7 +117,7 @@ Any advanced photo editor (Paint.NET, Krita, GIMP, Photoshop, Photopea)
 
 ---
 
-# Unredacter
+## Unredacter
 
 De-pixelate Text
 - Specific font

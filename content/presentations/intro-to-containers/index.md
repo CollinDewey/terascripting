@@ -14,7 +14,7 @@ size: 16:9
 <link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
-# Introduction to Containers
+## Introduction to Containers
 <!-- _footer: By Collin Dewey-->
 
 {{< marp >}}
@@ -25,7 +25,7 @@ size: 16:9
 
 ---
 
-# Containers versus Virtual Machines
+## Containers versus Virtual Machines
 
 ||Containers|Virtual Machines|
 |---|---|---|
@@ -43,7 +43,7 @@ Virtual Machines handle many applications or services.
 ---
 <!-- _footer: securitylabs.datadoghq.com/articles/container-security-fundamentals-part-2-->
 
-# How are containers setup on Linux?
+## How are containers setup on Linux?
 
 Linux features for resource restrictions and isolations [^1]
 
@@ -55,7 +55,7 @@ Linux features for resource restrictions and isolations [^1]
 [^1]: https://securitylabs.datadoghq.com/articles/container-security-fundamentals-part-2/
 
 ---
-# How are containers setup on Windows?
+## How are containers setup on Windows?
 <!-- _footer: msdn.microsoft.com/en-us/magazine/mt797649-->
 
 Windows features for resource restrictions and isolations [^2]
@@ -70,7 +70,7 @@ This means you will lose the raw performance advantages of containers.
 
 ---
 
-# Open Container Initiative (OCI)
+## Open Container Initiative (OCI)
 
 {{< marp >}}
 ![bg fit right:33% 80%](OCI.svg)
@@ -88,7 +88,7 @@ Used by...
 
 ---
 
-# Linux Containers (LXC)
+## Linux Containers (LXC)
 <!--_footer: systemd-nspawn is also usable for this purpose-->
 
 {{< marp >}}
@@ -103,7 +103,7 @@ What if you want the permanence of a Virtual Machine but the performance of a Co
 
 ---
 
-# Creating an OCI Container Image
+## Creating an OCI Container Image
 
 ### What makes a container
 Containers need to contain all Linux system files wanted by the software being used within the containers, such as libraries and dependencies.
@@ -124,7 +124,7 @@ Containers can be stored locally, or uploaded to the internet for other people t
 
 ---
 
-# Container Security
+## Container Security
 
 ### System Calls
 Containers share the same kernel as the host, therefore syscalls are restricted through namespaces and seccomp. 
@@ -159,7 +159,7 @@ Blindly updating images can be a problem if the container registry uploader's ac
 
 ---
 
-# Container Orchestration Software
+## Container Orchestration Software
 
 Handles
 - Multiple Machines
@@ -172,6 +172,6 @@ Kubernetes, Docker Swarm, Rancher, Portainer, Nomad, etc...
 
 ---
 
-# Compose
+## Compose
 
 See [Compose Presentation](https://collindewey.net/presentations/intro-to-compose/)

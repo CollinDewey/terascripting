@@ -43,7 +43,7 @@ description: "I'm Collin Dewey, a Masters of Computer Science student, and this 
   float: right;
   ">
 
-## Collin Dewey - About Me
+# Collin Dewey - About Me
 
 I am working on my Masters of Science in Computer Science as well as a Cybersecurity Certificate from the University of Louisville. During my time at college I have actively engaged in the university's ACM student chapter, leading the Student Linux User Group for three years, and leading the [Cyber Defense Team](https://engineering.louisville.edu/cybercenter/homepage/student-activities/) since 2023. In Cyber Defense, my peers and I have excelled in Capture the Flag style exercises, as well as Red Team/Blue Team competitions.
 <!--I have actively engaged in UofL's ACM student chapter, where I lead the Student Linux User Group and spearhead the Cyber Defense Team.

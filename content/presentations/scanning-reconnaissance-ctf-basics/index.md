@@ -14,13 +14,13 @@ size: 16:9
 <link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
-# Scanning & Reconnaissance Basics
+## Scanning & Reconnaissance Basics
 
 For CTF Competitions
 
 ---
 
-# What is Scanning & Reconnaissance?
+## What is Scanning & Reconnaissance?
 
 Scanning
 - Probing systems to identity what data they are sending out
@@ -29,7 +29,7 @@ Reconnaissance
 
 ---
 
-# What is a port?
+## What is a port?
 
 - 65536 ports
 - Data Transport
@@ -38,7 +38,7 @@ Reconnaissance
 
 ---
 
-# Common Services/Ports
+## Common Services/Ports
 
 |Port|Service|Acronym|
 |---|---|---|
@@ -56,7 +56,7 @@ Reconnaissance
 
 ---
 
-# Scanning Computers
+## Scanning Computers
 
 [nmap](https://nmap.org/)
 - Scans for open ports
@@ -68,7 +68,7 @@ Reconnaissance
 
 ---
 
-# nmap Script Engine
+## nmap Script Engine
 
 - [FTP-Brute](https://nmap.org/nsedoc/scripts/ftp-brute.html)
 - [HTTP-Brute](https://nmap.org/nsedoc/scripts/http-brute.html)
@@ -78,7 +78,7 @@ Reconnaissance
 
 ---
 
-# netcat/nc/ncat
+## netcat/nc/ncat
 
 - Network 
 - TCP/UDP
@@ -92,7 +92,7 @@ echo "GET /" | nc google.com 80
 
 ---
 
-# Scanning Websites
+## Scanning Websites
 
 - [dirbuster](https://sourceforge.net/projects/dirbuster/)/[feroxbuster](https://github.com/epi052/feroxbuster)
     - Uses a wordlist to enumerate existing folders
@@ -106,13 +106,13 @@ echo "GET /" | nc google.com 80
 
 ---
 
-# [Shodan](https://www.shodan.io/)
+## [Shodan](https://www.shodan.io/)
 
 - Search engine for IPs
 
 ---
 
-# Wordlists for Scanning
+## Wordlists for Scanning
 
 [Common Names](https://download.weakpass.com/wordlists/1452/common-names.txt.gz )
 

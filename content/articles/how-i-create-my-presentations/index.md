@@ -9,13 +9,13 @@ description: "Creating presentations using the Marp Presentation Ecosystem to pr
 ---
 
 ---
-# Presentation Creation
+## Presentation Creation
 
 Occasionally I get asked how I create my presentations that I present to my University's Cyber Defense club. I only get asked this because it's clear I'm not using Powerpoint.
 
 ---
 
-# "Normal" Approach
+## "Normal" Approach
 
 - Microsoft Powerpoint
 - Google Sheets
@@ -24,7 +24,7 @@ If you're a regular person, you'll most likely create presentations in Microsoft
 
 ---
 
-# Cool Approach
+## Cool Approach
 
 I use Markdown everywhere, I use Markdown in my notes through Obsidian, I use Markdown to create my blog posts using Hugo. Why not use Markdown for my presentations as well?
 
@@ -36,7 +36,7 @@ When you look at my presentations on my website, I link to the slides, as well a
 
 ---
 
-# Exporting
+## Exporting
 
 Marp is split into a few different utilities.
 
@@ -51,7 +51,7 @@ I personally use Marp's [VS:Code extension](https://marketplace.visualstudio.com
 
 ---
 
-# Directives
+## Directives
 
 Since presentations are quite a different format, Marp provides "directives" to change many parts about the document. A subset is listed below,
 
@@ -72,7 +72,7 @@ These directives are the many ways you have available to style the presentation.
 
 ---
 
-# Images
+## Images
 
 Marp takes the Markdown image syntax and expands it to allow for easy customization within the slideshow.
 ```
@@ -98,13 +98,13 @@ Multiple backgrounds can be used, which will be auto arranged, although one can 
 
 ---
 
-# HTML
+## HTML
 
 Because Marp allows exporting to HTML, and Markdown allows the inclusion of any HTML elements, I can import custom HTML. I like to integrate websites into my presentations, which is something that you can do within Powerpoint, and here it would just be an iframe. Since I have HTML at my disposal, I can do anything I could do on a website in the slide. Javascript included. This gives me a large amount of flexibility.
 
 ---
 
-# Advantages/Disadvantages
+## Advantages/Disadvantages
 
 You can focus a lot more on the writing itself instead of formatting. It makes moving text between slides easy. It makes including codeblocks easy since there's first-class support for that. I then like to use [asciinema](https://asciinema.org/) to show programs running.
 
@@ -112,7 +112,7 @@ But a lot features normally easy in Powerpoint are somewhat complicated to imple
 
 ---
 
-# Integrating with Hugo
+## Integrating with Hugo
 
 Hugo - the static site generator I use - supports reusable snippits of HTML called [shortcodes](https://gohugo.io/content-management/shortcodes/).
 
@@ -127,3 +127,9 @@ This means I can create a shortcode named slides in `layouts/shortcodes/slides.h
 ```
 
 And on each of my presentations, just include a `{{</* slides */>}}` at the start of the document, which embeds the preview I have.
+
+---
+
+### Edit History:
+
+03/01/25 - Add Hugo shortcode section

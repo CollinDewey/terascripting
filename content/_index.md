@@ -49,7 +49,7 @@ I am working on my Masters of Science in Computer Science as well as a Cybersecu
 <!--I have actively engaged in UofL's ACM student chapter, where I lead the Student Linux User Group and spearhead the Cyber Defense Team.
 My peers and I have consistently excelled in capture the flag style challenges and Red Team/Blue Team competitions, putting our knowledge into action.-->
 
-### Experience
+## Experience
 - ❄️ Linux configuration located in a [nix-config repo](https://github.com/CollinDewey/nix-config)
 - 📦 Experienced with Git, Docker, and Nix
 - 🐧 Familiar with different Operating Systems
@@ -67,7 +67,7 @@ My peers and I have consistently excelled in capture the flag style challenges a
 </details>
 
 
-### Accomplishments
+## Accomplishments
 - 🏅 Placed 15 / 688 in the National Cyber League Fall 2024 Individual Game Experienced Students Bracket ([View Report](https://cyberskyline.com/report/FKN90NBBE9V7))
 - 🏅 Placed 7 / 7406 in the National Cyber League Spring 2024 Individual Game ([View Report](https://cyberskyline.com/report/A3P98W8NBN5G))
 - 🏅 Placed 17 / 7879 in the National Cyber League Fall 2023 Individual Game ([View Report](https://cyberskyline.com/report/X61A1YJP1AXG))
@@ -80,7 +80,7 @@ My peers and I have consistently excelled in capture the flag style challenges a
 - 🦅 Achieved the rank of Eagle Scout
 - 🔒 CompTIA Security+ Certification
 
-### Contact me
+## Contact me
 - Email: collin@dewey.net
 - LinkedIn: [in/collinmdewey](https://www.linkedin.com/in/collinmdewey/)
 

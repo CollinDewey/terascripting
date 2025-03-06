@@ -2,13 +2,19 @@
 title: Pasting in Paste Restricted Locations on Windows with PowerShell
 author: Collin Dewey
 date: '2025-03-05'
-lastmod: '2025-03-05'
+lastmod: '2025-03-06'
 type: Article
 slug: paste-with-powershell
-description: "Using PowerShell to bypass paste restrictions in applications by simulating keyboard inputs with a single command. No additional software required."
+description: "Using PowerShell to bypass paste restrictions in applications by simulating keyboard inputs with a single command. No additional software required. Paste in Proxmox, paste in a Virtual Machine, paste anywhere."
 ---
 
-When you copy text, that goes into a temporary space called the clipboard. When you paste, it dumps the contents from that clipboard. Copy and Paste help speed up tasks all the time, but some applications don't want you to be able to paste. This could be pasting into text fields online (Retype your email/password), or pasting text into an online virtual machine that doesn't have that ability.
+When you copy text, that goes into a temporary space called the clipboard. When you paste, it dumps the contents from that clipboard. Copy and Paste help speed up tasks all the time, but some applications don't want or don't support pasting.
+
+This causes some common issues
+- How do I paste in Proxmox?
+- How do I paste into a Virtual Machine?
+- How do I paste in a password field where paste is disabled?
+- How do I paste in an application where normal paste doesn't work?
 
 ---
 ## TL;DR

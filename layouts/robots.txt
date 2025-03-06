@@ -3,5 +3,6 @@
 User-agent: *
 Disallow: /images
 Disallow: /css
+Disallow: /cgi-bin/
 
 Sitemap: https://collindewey.net/sitemap.xml

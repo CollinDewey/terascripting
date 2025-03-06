@@ -4,13 +4,14 @@ footnotereturnlinkcontents = "↩"
 googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 languageCode = "en-us"
-theme = "hugo-classic"
+theme = "theme"
 title = "Collin Dewey"
 enableRobotsTXT = true
 disableLiveReload = false
 minify = true
 cleanDestinationDir = true
 timeZone = "US/Eastern"
+assetsDir = "assets"
 
 [Taxonomies]
 

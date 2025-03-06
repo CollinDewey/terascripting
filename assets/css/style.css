@@ -32,8 +32,9 @@ blockquote {
   margin: auto;
 }
 
-.content-wrapper h1 {
-  line-height: 1.5em;
+#About-Me {
+  line-height: 1.2em;
+  margin-top: -0.6em;
 }
 
 .Article, .Presentation {

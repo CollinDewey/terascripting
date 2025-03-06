@@ -1,78 +1,10 @@
-/* Dark mode
-@media (prefers-color-scheme: dark) {*/
-    body {
-        background-color: #0D1117;
-        color: white;
-    }
-
-    blockquote {
-      background: #0D1117;
-    }
-
-    a {
-      color: #4B94FF;
-    }
-
-    header {
-      background: #161B22;
-    }
-
-    .article-meta, .menu a {
-      background: #0D1117;
-      color: white;
-    }
-
-    table {
-      margin: auto;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666;
-    }
-    table thead th { border-bottom: 1px solid #666; }
-    th, td { padding: 5px; }
-    tr:nth-child(odd) { background: #13161C; }
-    tr:nth-child(even) { background: #1F262F; }
-/*
-}
-
-
-/* Light mode
-@media (prefers-color-scheme: light) {
-    blockquote {
-      background: #f9f9f9;
-    }
-
-    a {
-      color: #613DC1;
-    }
-
-    header {
-      background: #613DC1;
-    }
-
-    .article-meta, .menu a {
-      background: #393E41;
-      color: #000;
-    }
-
-    table {
-      margin: auto;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666;
-    }
-    table thead th { border-bottom: 1px solid #ddd; }
-    th, td { padding: 5px; }
-    tr:nth-child(even) { background: #eee }
-
-}
-*/
-
+/* BASE STYLES */
 body {
+  font-family: sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: #0D1117;
+  color: white;
   margin: 0;
   padding: 0;
-  line-height: 1.5em;
-}
-
-h1 {
   line-height: 1.5em;
 }
 
@@ -80,75 +12,8 @@ hr {
   border-color: #21262D;
 }
 
-/* Table of Contents, if wanted
-
-Add to yaml:
-
-output:
-  blogdown::html_page:
-    toc: true
-
-    */
-
-#TableOfContents {
-  position: fixed;
-  right: 1.25em;
-  top: 100px;
-  overflow-y: auto;
-  background: #1F262F;
-  border: 1px solid #EEE;
-  border-radius: 5px;
-  padding: 0.5em;
-}
-
-#TableOfContents ul {
-  margin: 0;
-  padding-left: 0.5em;
-  list-style-type: none;
-}
-
-#TableOfContents a {
-  color: #C9CACC;
-  font-size: 0.9em;
-}
-
-#TableOfContents a:hover {
-  color: #FFF;
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 1650px) {
-  #TableOfContents {
-    position: static;
-    width: auto;
-  }
-}
-
-/* Header and Footer */
-.menu li { display: inline-block; }
-.article-meta, .menu a {
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  border-color: #30363D;
-  border-style: solid;
-  border-width: 1px;
-  margin-bottom: 20px;
-}
-
-.terms { font-size: .9em; }
-.menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
-footer a { text-decoration: none; }
-
-.pull-left {
-    float: left
-}
-.pull-right {
-    float: right
-}
-
 a {
+  color: #4B94FF;
   text-decoration: none;
 }
 
@@ -156,63 +21,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Adjust background at your leisure! */
-header {
-    position: relative;
-    max-width: 1600px;
-    margin: auto;
-    height: 1.75rem;
-    font-size: 1rem;
-}
-
-header ul,
-header ol {
-    margin: 0;
-    padding: 0;
-    list-style: none
-}
-header nav {
-    padding: 0 0.5rem
-}
-
-header a {
-    color: #FFF;
-    line-height: 1.75rem;
-    padding: 0 0.5rem
-}
-header a:hover,
-header .current a {
-    color: #FFF
-}
-
-/* Code Boxes */
-pre {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #1F262F;
-  border-radius: 6px;
-  padding: 1em;
-  overflow-x: auto;
-}
-
-pre code { 
-  background: none;
-  padding: 0;
-}
-
-code {
-  background: #1F262F;
-  padding: 0 0.4em;
-  border-radius: 0.4em;
-}
-
-/* Images, tables, misc. */
-img, iframe, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+blockquote {
+  border-left: 5px solid #1F262F;
+  padding: 3px 1em 3px;
 }
 
 main {
@@ -223,29 +34,23 @@ main {
   display: block;
   font-size: 1.1em;
 }
+
 main a {
   font-weight: bold;
-}
-
-blockquote {
-  border-left: 5px solid #1F262F;
-  padding: 3px 1em 3px;
-}
-
-footer {
-  max-width: 1600px;
-  margin: auto;
-}
-
-.article-meta {
-  max-width: 1500px;
-  margin: auto;
 }
 
 .content-wrapper {
   padding: 0px 12px 0px 12px;
   max-width: 1200px;
   margin: auto;
+}
+
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .presentation-slides {
@@ -258,14 +63,138 @@ footer {
   aspect-ratio: 16 / 9;
 }
 
-/* Fonts */
-html { font-family:
-  sans-serif,
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol';
+.menu, .article-meta, footer {
+  text-align: center;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* PAGE HEADER */
+header {
+  background: #161B22;
+  position: relative;
+  max-width: 1600px;
+  margin: auto;
+  height: 1.75rem;
+  font-size: 1rem;
+}
+
+header ul, header ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav {
+  padding: 0 0.5rem;
+}
+
+header a {
+  color: #FFF;
+  line-height: 1.75rem;
+  padding: 0 0.5rem;
+}
+
+
+/* ARTICLE HEADING */
+.article-meta, .menu a {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #30363D;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.article-meta {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/* TABLES */
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+table thead th {
+  border-bottom: 1px solid #666;
+}
+
+th, td {
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background: #13161C;
+}
+
+tr:nth-child(even) {
+  background: #1F262F;
+}
+
+/* CODE BLOCKS */
+pre {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1F262F;
+  border-radius: 6px;
+  padding: 1em;
+  scrollbar-color: #30363D #0D1117;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
 }
 
 code {
-font-family: monospace
+  font-family: monospace;
+  background: #1F262F;
+  padding: 0 0.4em;
+  border-radius: 0.4em;
+}
+
+/* TABLE OF CONTENTS */
+#TableOfContents {
+  position: fixed;
+  right: 1.25em;
+  background: #1F262F;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+#TableOfContents ul {
+  margin: 0;
+  padding-left: 0.5em;
+  list-style-type: none;
+}
+
+#TableOfContents a {
+  color: #C9CACC;
+}
+
+#TableOfContents a:hover {
+  color: #FFF;
+}
+
+@media screen and (max-width: 1650px) {
+  #TableOfContents {
+    position: static;
+    width: auto;
+  }
 }

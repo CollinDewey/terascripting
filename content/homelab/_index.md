@@ -5,7 +5,7 @@ toc: true
 ---
 
 ---
-## Introduction
+## Introduction {id="Introduction"}
 My homelab is a constantly evolving endeavor. Below are the computers actively being used, their specifications, and their purposes.
 
 ---
@@ -211,7 +211,7 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-<img src="https://img.shields.io/date/1736573399?label=Last%20Updated&style=for-the-badge">
+<img style="aspect-ratio: 242/28" alt="Image displaying last updated relative time" src="https://img.shields.io/date/1741248481?label=Last%20Updated&style=for-the-badge">
 
 ---
 

@@ -82,7 +82,7 @@ At line:5 char:1
     + FullyQualifiedErrorId : ArgumentException
 ```
 
-Get-Clipboard does support multiline text, but it adds each line to an array of strings instead of one. The `-Raw` argument outputs the entire clipboard as a continuous string. But even then we will run into the same error.
+Get-Clipboard supports multiline text, but it adds each line to an array of strings instead of just one. The `-Raw` argument outputs the entire clipboard as a continuous string. But even then we will run into an issue.
 
 We need to sanitize the inputs to avoid running into the special codes that SendKeys uses. We can replace characters with PowerShell's [replace](https://ss64.com/ps/replace.html) functionality. We have to do this with the newlines, since Windows stores newlines in the clipboard as a carriage return and a newline (\r\n), but SendKeys expects just a newline (\n). PowerShell uses \` for its escape character instead of \\.
 
@@ -116,7 +116,7 @@ From Microsoft's SendKeys documentation, we must sanitize `+`,`^`,`%`,`~`,`()`,`
 > The plus sign (+), caret (^), percent sign (%), tilde (~), and parentheses () have special meanings to SendKeys. To specify one of these characters, enclose it within braces ({}). For example, to specify the plus sign, use "{+}". To specify brace characters, use "{{}" and "{}}". Brackets ([ ]) have no special meaning to SendKeys, but you must enclose them in braces.
 
 
-Replaces the set of special characters with itself surrounded with a curly brace.
+The following replaces any character in the set of special characters with itself surrounded with a curly brace.
 ```powershell
 $clipboard_newline_escaped = $clipboard_newline -replace '[+^%~(){}\[\]]', '{$0}'
 ```
@@ -134,7 +134,7 @@ powershell -Command "Write-Host Hello"
 powershell -EncodedCommand VwByAGkAdABlAC0ASABvAHMAdAAgAEgAZQBsAGwAbwAhAA==
 ```
 
-We also want our newly spawned Window to be hidden so we can select on what we want to paste into, and PowerShell has that as the `-WindowStyle` argument. This will open and hide the new window. Although I wouldn't advise using this for `Write-Host`.
+We also want our newly spawned Window to be hidden so we can select on what we want to paste into, and PowerShell has that as the `-WindowStyle` argument. This will open and hide the new window. *Although I wouldn't advise using this for `Write-Host`.*
 
 ```sh
 powershell -WindowStyle hidden -Command "Write-Host Hello"

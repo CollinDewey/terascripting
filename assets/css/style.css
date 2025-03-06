@@ -34,7 +34,8 @@ blockquote {
 
 #About-Me {
   line-height: 1.2em;
-  margin-top: -0.6em;
+  margin-top: -0.9em;
+  font-size: 1.5em;
 }
 
 .Article, .Presentation {

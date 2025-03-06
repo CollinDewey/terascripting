@@ -32,6 +32,10 @@ blockquote {
   margin: auto;
 }
 
+.content-wrapper h1 {
+  line-height: 1.5em;
+}
+
 .Article, .Presentation {
   line-height: 1.7em;
   font-size: 1.1em;

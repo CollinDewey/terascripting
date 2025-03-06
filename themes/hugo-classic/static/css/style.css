@@ -257,3 +257,15 @@ footer {
   width: 70%;
   aspect-ratio: 16 / 9;
 }
+
+/* Fonts */
+html { font-family:
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol';
+}
+
+code {
+font-family: monospace
+}

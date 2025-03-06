@@ -9,8 +9,7 @@
 {{ if .Params.toc }}
 {{ .TableOfContents }}
 {{ end }}
-<div class="content-wrapper">
-  <main>
+<div class="content-wrapper {{ .Type }} {{ .Slug }}">
     {{ .Content }}
     <a href="/"> >> Home</a>
     <hr>
@@ -21,6 +20,5 @@
       crossorigin="anonymous"
       async>
     </script>
-  </main>
 </div>
 {{ partial "footer.html" . }}

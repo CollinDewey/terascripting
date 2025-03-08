@@ -2,7 +2,7 @@
 title: Pasting in Paste Restricted Locations on Windows with PowerShell
 author: Collin Dewey
 date: '2025-03-05'
-lastmod: '2025-03-06'
+lastmod: '2025-03-07'
 type: Article
 slug: paste-with-powershell
 description: "Using PowerShell to bypass paste restrictions in applications by simulating keyboard inputs with a single command. No additional software required. Paste in Proxmox, paste in a Virtual Machine, paste anywhere."
@@ -21,7 +21,7 @@ This causes some common issues
 
 Open the Run dialog box by pressing Win+R, and paste this in. It will stay in the Run dialog for future invocations. When you run it, quickly select your desired application and watch the contents of your clipboard be pasted letter by letter to whatever application you're using.
 ```
-powershell -w hidden -c "sleep 2;Add-Type -A System.Windows.Forms;[Windows.Forms.SendKeys]::SendWait(((Get-Clipboard -Raw) -replace '`r`n','`n' -replace '[+^%~(){}\[\]]','{$0}'))"
+powershell -w h -c "sleep 2;add-type -a system.windows.forms;[windows.forms.sendkeys]::sendwait(((gcb -r)-replace'\r',''-replace'[+^%~(){}\[\]]','{$0}'))"
 ```
 
 <video style="max-height:40vh; aspect-ratio: 738 / 641;" controls preload="none" poster="paste.webp" alt="A preview of copying some text, opening the Windows Run dialog, running the line of PowerShell, and pasting the clipboard's contents to a selected window"><source src="paste.webm"></video>
@@ -90,12 +90,12 @@ At line:5 char:1
 
 Get-Clipboard supports multiline text, but it adds each line to an array of strings instead of just one. The `-Raw` argument outputs the entire clipboard as a continuous string. But even then we will run into an issue.
 
-We need to sanitize the inputs to avoid running into the special codes that SendKeys uses. We can replace characters with PowerShell's [replace](https://ss64.com/ps/replace.html) functionality. We have to do this with the newlines, since Windows stores newlines in the clipboard as a carriage return and a newline (\r\n), but SendKeys expects just a newline (\n). PowerShell uses \` for its escape character instead of \\.
+We need to sanitize the inputs to avoid running into the special codes that SendKeys uses. We can replace characters with PowerShell's [replace](https://ss64.com/ps/replace.html) functionality. We have to do this with the newlines, since Windows often stores newlines as a carriage return and a linefeed (CRLF) (\r\n), but SendKeys wants just a linefeed (LF) (\n).
 
 
 ```powershell
 # Replaces \r\n with \n
-$clipboard_newline = $clipboard -replace '`r`n', '`n'
+$clipboard_newline = $clipboard -replace "\r\n", "\n"
 ```
 
 Now running SendKeys, it can write out multiple lines, but it still fails if we don't deal with the other special characters that SendKeys uses.
@@ -156,7 +156,7 @@ All together, we have this, which is to be invoked with `powershell -WindowStyle
 Start-Sleep -Seconds 2
 Add-Type -AssemblyName System.Windows.Forms
 $clipboard = Get-Clipboard -Raw
-$clipboard_newline = $clipboard -replace '`r`n','`n'
+$clipboard_newline = $clipboard -replace "\r\n","\n"
 $clipboard_newline_escaped = $clipboard_newline -replace '[+^%~(){}\[\]]', '{$0}'
 [System.Windows.Forms.SendKeys]::SendWait($clipboard_newline_escaped)
 ```
@@ -166,29 +166,48 @@ But it can be made shorter. First we can collapse the replacments into one long 
 ```powershell
 Start-Sleep -Seconds 2
 Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.Forms.SendKeys]::SendWait(((Get-Clipboard -Raw) -replace '`r`n', '`n' -replace '[+^%~(){}\[\]]', '{$0}'))
+[System.Windows.Forms.SendKeys]::SendWait(((Get-Clipboard -Raw) -replace "\r\n", "\n" -replace '[+^%~(){}\[\]]', '{$0}'))
 ```
 
 Then there's a few things we can substitute with shorter commands/arguments.
-|Initial|New|
-|---|---|
-|Add-Type -AssemblyName|Add-Type -A|
-|Start-Sleep -Seconds|sleep|
-|System.Windows.Forms.SendKeys|Windows.Forms.SendKeys|
-|powershell -Command|powershell -c|
-|powershell -WindowStyle|powershell -w|
+|Initial|New|Change|
+|---|---|---|
+|Add-Type -AssemblyName|Add-Type -A|Use aliases|
+|Start-Sleep -Seconds|sleep|Use aliases|
+|Get-Clipboard -Raw|gcb -r|Use aliases|
+|System.Windows.Forms.SendKeys|Windows.Forms.SendKeys|System isn't necessary|
+|powershell -Command|powershell -c|Use aliases|
+|powershell -WindowStyle hidden|powershell -w h|Use aliases|
+|"\r\n", "\n"|'\r', ''|Instead of replacing \r\n with \n, just strip \r|
 
 ```powershell
 sleep 2
 Add-Type -A System.Windows.Forms
-[Windows.Forms.SendKeys]::SendWait(((Get-Clipboard -Raw) -replace '`r`n', '`n' -replace '[+^%~(){}\[\]]', '{$0}'))
+[Windows.Forms.SendKeys]::SendWait(((gcb -r) -replace '\r', '' -replace '[+^%~(){}\[\]]', '{$0}'))
 ```
-We can put all of that onto one line with semicolons, remove excess space, and that gives us
+We can put all of that onto one line with semicolons, remove excess space, convert to lowercase, and that gives us
 ```powershell
-sleep 2;Add-Type -A System.Windows.Forms;[Windows.Forms.SendKeys]::SendWait(((Get-Clipboard -Raw) -replace '`r`n','`n' -replace '[+^%~(){}\[\]]','{$0}'))
+sleep 2;add-type -a system.windows.forms;[windows.forms.sendkeys]::sendwait(((gcb -r)-replace'\r',''-replace'[+^%~(){}\[\]]','{$0}'))
 ```
 Add the call to PowerShell for running from the Run dialog
 ```batch
-powershell -w hidden -c "sleep 2;Add-Type -A System.Windows.Forms;[Windows.Forms.SendKeys]::SendWait(((Get-Clipboard -Raw) -replace '`r`n','`n' -replace '[+^%~(){}\[\]]','{$0}'))"
+powershell -w h -c "sleep 2;add-type -a system.windows.forms;[windows.forms.sendkeys]::sendwait(((gcb -r)-replace'\r',''-replace'[+^%~(){}\[\]]','{$0}'))"
 ```
 Which fits all of the requirements I had set. It's even short enough that you could reasonably put it on a sticky note.
+
+---
+
+## [WScript.Shell.SendKeys](https://learn.microsoft.com/en-us/archive/technet-wiki/5169.vbscript-sendkeys-method)
+
+VBScript has a similar SendKeys method to that of Windows.Forms. Even needing the same replacements.
+
+```powershell
+$var = New-Object -ComObject WScript.Shell
+$var.SendKeys("Hello")
+```
+
+Using this gives us a shorter result that works, but in my testing it seemed to break with large amounts of text. Hence my suggestion to use Windows.Forms.SendKeys.
+
+```
+powershell -w h -c "sleep 2;(New-Object -co WScript.Shell).SendKeys(((gcb -r)-replace'\r',''-replace'[+^%~(){}\[\]]','{$0}'))"
+```

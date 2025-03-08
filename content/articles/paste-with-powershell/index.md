@@ -190,7 +190,7 @@ We can put all of that onto one line with semicolons, remove excess space, conve
 sleep 2;add-type -a system.windows.forms;[windows.forms.sendkeys]::sendwait(((gcb -r)-replace'\r',''-replace'[+^%~(){}\[\]]','{$0}'))
 ```
 Add the call to PowerShell for running from the Run dialog
-```batch
+```
 powershell -w h -c "sleep 2;add-type -a system.windows.forms;[windows.forms.sendkeys]::sendwait(((gcb -r)-replace'\r',''-replace'[+^%~(){}\[\]]','{$0}'))"
 ```
 Which fits all of the requirements I had set. It's even short enough that you could reasonably put it on a sticky note.

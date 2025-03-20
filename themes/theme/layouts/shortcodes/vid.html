@@ -1,0 +1,60 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $poster := .Get "poster" -}}
+{{- $manualAspect := .Get "aspect" -}}
+{{- $minWidth := .Get "min-width" -}}
+{{- $maxHeight := default "40vh" (.Get "max-height") -}}
+{{- $aspect := $manualAspect -}}
+{{- $autoplay := .Get "autoplay" | default true -}}
+{{- $loop := .Get "loop" | default true -}}
+{{- $muted := .Get "muted" | default true -}}
+{{- $controls := .Get "controls" | default false -}}
+
+{{- if not $aspect -}}
+  {{- $posterResource := "" -}}
+  {{- if $poster -}}
+    {{- $posterResource = $.Page.Resources.GetMatch $poster -}}
+  {{- else -}}
+    {{- $posterResource = $.Page.Resources.GetMatch (printf "%s.jpg" (path.BaseName $src)) -}}
+  {{- end -}}
+  
+  {{- with $posterResource -}}
+    {{- if and .Width .Height -}}
+      {{- $aspect = printf "%d/%d" .Width .Height -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $style := "" -}}
+{{- if $minWidth -}}
+  {{- $style = printf "min-width: %s; " $minWidth -}}
+{{- end -}}
+{{- $style = printf "%smax-height: %s;" $style $maxHeight -}}
+{{- if $aspect -}}
+  {{- $style = printf "%s aspect-ratio: %s;" $style $aspect -}}
+{{- end -}}
+
+{{- $posterPath := $poster -}}
+{{- if not $posterPath -}}
+  {{- $defaultPosterName := printf "%s.jpg" (path.BaseName $src) -}}
+  {{- with $.Page.Resources.GetMatch $defaultPosterName -}}
+    {{- $posterPath = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+<video 
+  style="{{ $style | safeCSS }}"
+  {{ if $autoplay }}autoplay{{ end }}
+  {{ if $loop }}loop{{ end }}
+  {{ if $muted }}muted{{ end }}
+  {{ if $controls }}controls{{ end }}
+  {{ with $posterPath }}poster="{{ . }}"{{ end }}
+  loading="lazy"
+  {{ with $alt }}title="{{ . }}"{{ end }}>
+  {{ with $.Page.Resources.GetMatch (printf "%s.webm" (path.BaseName $src)) }}
+    <source src="{{ .RelPermalink }}" type="video/webm">
+  {{ end }}
+  {{ with $.Page.Resources.GetMatch (printf "%s.mp4" (path.BaseName $src)) }}
+    <source src="{{ .RelPermalink }}" type="video/mp4">
+  {{ end }}
+</video>

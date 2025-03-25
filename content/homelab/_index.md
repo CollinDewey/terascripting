@@ -211,14 +211,23 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-<img style="aspect-ratio: 242/28" alt="Image displaying last updated relative time" src="https://img.shields.io/date/1741248481?label=Last%20Updated&style=for-the-badge">
+<img style="aspect-ratio: 242/28" alt="Image displaying last updated relative time" src="https://img.shields.io/date/1742890886?label=Last%20Updated&style=for-the-badge">
 
 ---
 
-<script src="https://utteranc.es/client.js"
-  repo="CollinDewey/terascripting"
-  issue-term="og:title"
-  theme="icy-dark"
-  crossorigin="anonymous"
-  async>
+<script src="https://giscus.app/client.js"
+    data-repo="CollinDewey/terascripting"
+    data-repo-id="R_kgDOGtR7ZA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOGtR7ZM4Cob7M"
+    data-mapping="og:title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="dark"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
 </script>

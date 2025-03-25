@@ -61,6 +61,10 @@ img, iframe, video {
   aspect-ratio: 16 / 9;
 }
 
+.giscus {
+  margin-top: 1.5em;
+}
+
 .giscus-frame {
   max-width: 900px;
 }

@@ -11,10 +11,10 @@ theme: default
 size: 16:9
 ---
 
-<link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
 ## Scanning & Reconnaissance Basics
+<!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 

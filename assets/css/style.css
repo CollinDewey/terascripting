@@ -208,3 +208,10 @@ code {
     width: auto;
   }
 }
+
+/* PRESENTATION */
+
+div.Presentation div.is-marp {
+  display: none;
+  content-visibility: hidden;
+}

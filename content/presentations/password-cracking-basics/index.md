@@ -11,7 +11,6 @@ class: invert
 size: 16:9
 ---
 
-<link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
 ## Password Cracking Basics

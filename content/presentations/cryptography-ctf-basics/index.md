@@ -10,7 +10,6 @@ class: invert
 theme: default
 size: 16:9
 ---
-<link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
 ## Cryptography Basics

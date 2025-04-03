@@ -12,6 +12,7 @@ DEPLOY_DEST="collin@teal.terascripting:/services/hugo/www"
 # --- Marp ---
 MARP_ARGS="--html true"
 HUGO_ARGS="--gc --ignoreCache --noBuildLock --panicOnWarning --cleanDestinationDir --destination $TMPDIR"
+EXTRA_CSS="div.is-hugo{display:none;content-visibility:hidden;}"
 
 # --- Build ---
 hugo build $HUGO_ARGS
@@ -22,6 +23,7 @@ for dir in content/presentations/*/; do
             name="$TMPDIR/presentations/$(basename $dir)/slides.html"
 
             cp $file $tmpfile
+            sed -i "s/{{< slides >}}/<style>$EXTRA_CSS<\/style>/g" "$tmpfile"
             sed -i 's/{{<[^>]*>}}//g' "$tmpfile"
             marp "$tmpfile" $MARP_ARGS --output $name
             rm "$tmpfile"

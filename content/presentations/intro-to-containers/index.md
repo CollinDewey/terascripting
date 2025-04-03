@@ -11,7 +11,6 @@ theme: default
 size: 16:9
 ---
 
-<link rel="stylesheet" href="../presentations.css">
 {{< slides >}}
 
 ## Introduction to Containers

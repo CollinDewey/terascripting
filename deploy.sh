@@ -1,7 +1,7 @@
 #!/usr/bin/env nix
 #!nix shell nixpkgs#bash nixpkgs#hugo nixpkgs#marp-cli nixpkgs#rsync -c bash
 
-setopt -euo pipefail
+set -euo pipefail
 TMPDIR=$(mktemp -d)
 chmod 755 $TMPDIR
 
@@ -36,7 +36,6 @@ done
 
 # --- Copy ---
 $COPY_COMMAND $TMPDIR/ $DEPLOY_DEST
-$POST_DEPLOY_COMMAND
 
 # --- Cleanup ---
 rm -rf $TMPDIR

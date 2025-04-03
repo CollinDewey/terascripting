@@ -1,6 +1,8 @@
 #!/usr/bin/env nix
 #!nix shell nixpkgs#bash nixpkgs#marp-cli -c bash
 
+set -euo pipefail
+
 # --- Settings ---
 DEPLOY_DEST="./public"
 MARP_ARGS="--html true"

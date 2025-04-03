@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180"    href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/images/site.webmanifest">
@@ -18,8 +18,8 @@
     <link rel="canonical" href="https://collindewey.net{{ .RelPermalink }}">
     {{ end }}
     {{ $css := resources.Get "css/style.css" }}
-    {{ $style := $css | minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $style := $css | minify | fingerprint }}
+    <link crossorigin="anonymous" rel="preload stylesheet" as="style" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ range .Site.Params.custom_css -}}
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}

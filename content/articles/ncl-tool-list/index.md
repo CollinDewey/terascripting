@@ -2,7 +2,7 @@
 title: National Cyber League Tool List
 author: Collin Dewey
 date: '2024-10-25'
-lastmod: '2025-03-25'
+lastmod: '2025-04-15'
 type: Article
 slug: ncl-tool-list
 description: "A list of many tools used for solving challenges within the National Cyber League Capture The Flag competition"
@@ -81,6 +81,8 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 
 [binwalk](https://github.com/ReFirmLabs/binwalk) - Extract files embedded inside other files
 
+[foremost](https://salsa.debian.org/rul/foremost/tree/debian/sid) - Similar to binwalk
+
 `strings` - List user readable strings within a file.
 
 [Photorec](https://www.cgsecurity.org/wiki/photoRec) - File Recovery Utility
@@ -157,10 +159,11 @@ LLMs - Good for writing Python scripts
 ## Web Application Exploitation
 ---
 
-`curl` - Make custom network requests. (Custom POST)
+`curl` - Make custom network requests
 
-[Burp Suite Community Edition](https://portswigger.net/burp/communitydownload) - Intercept and change website requests.
+[Burp Suite Community Edition](https://portswigger.net/burp/communitydownload) - Intercept and change website requests
 
+[Wappalyzer](https://www.wappalyzer.com/) - Website stack analyzer
 
 ---
 ## Enumeration and Exploitation

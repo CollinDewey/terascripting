@@ -76,7 +76,7 @@ My peers and I have consistently excelled in capture the flag style challenges a
   <ul style="margin-top: 0.5em;margin-bottom: 0.5em;">
     <div style="margin-left: -1em;"><b>Individual:</b></div>
     <li>3<sup>rd</sup> / 602 - Spring 2025 (Experienced Division)</li>
-    <li>15<sup>th</sup> / 688 - <a href="https://cyberskyline.com/report/FKN90NBBE9V7">Fall 2024</a> (Experienced Division)</li>
+    <li>15<sup>th</sup> / 691 - <a href="https://cyberskyline.com/report/FKN90NBBE9V7">Fall 2024</a> (Experienced Division)</li>
     <li>7<sup>th</sup> / 7406 - <a href="https://cyberskyline.com/report/A3P98W8NBN5G">Spring 2024</a></li>
     <li>17<sup>th</sup> / 7879 - <a href="https://cyberskyline.com/report/X61A1YJP1AXG">Fall 2023</a></li>
     <li>24<sup>th</sup> / 6675 - <a href="https://cyberskyline.com/report/FHXANT5RYA63">Fall 2022</a></li>
@@ -84,7 +84,7 @@ My peers and I have consistently excelled in capture the flag style challenges a
   </ul>
   <ul style="margin-top: 0.5em;padding-bottom: 0.5em;">
     <div style="margin-left:-1em;"><b>Team:</b></div>
-    <li>12<sup>th</sup> / 534 - <a href="https://cyberskyline.com/report/7HNVVVPFXCQ8">Spring 2024</a> (Experienced Division)</li>
+    <li>12<sup>th</sup> / 532 - <a href="https://cyberskyline.com/report/7HNVVVPFXCQ8">Fall 2024</a> (Experienced Division)</li>
     <li>11<sup>th</sup> / 4672 - <a href="https://cyberskyline.com/report/48E67EVGQT6C">Fall 2023</a></li>
   </ul>
 </details>

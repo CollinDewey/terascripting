@@ -11,7 +11,7 @@ My homelab is a constantly evolving endeavor. Below are the computers actively b
 ---
 ## CYAN - Workstation {id="CYAN"}
 
-[NixOS 25.05 (Warbler)](https://nixos.org/)
+[NixOS 25.11 (Xantusia)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -39,7 +39,7 @@ This is my main PC where I do most of my computing at home, including compiling 
 ---
 ## TEAL - Server {id="TEAL"}
 
-[NixOS 24.11 (Vicuña)](https://nixos.org/)
+[NixOS 25.05 (Warbler)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -160,7 +160,7 @@ Going into a job where I worked on Windows computers, I wanted to supplement my 
 ---
 ## BROWN/RUBY/SCARLET - VPS {id="VPS"}
 
-[NixOS 24.11 (Vicuña)](https://nixos.org/)
+[NixOS 25.05 (Warbler)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -190,7 +190,7 @@ BROWN, RUBY, and SCARLET are all aarch64 Virtual Private Servers. These host var
 ---
 ## AZUL - 3D Printer Controller {id="AZUL"}
 
-[NixOS 25.05 (Warbler)](https://nixos.org/)
+[NixOS 25.11 (Xantusia)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -211,7 +211,7 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-<img style="aspect-ratio: 242/28" alt="Image displaying last updated relative time" src="https://img.shields.io/date/1742890886?label=Last%20Updated&style=for-the-badge">
+<img style="aspect-ratio: 242/28" alt="Image displaying last updated relative time" src="https://img.shields.io/date/1748056190?label=Last%20Updated&style=for-the-badge">
 
 ---
 

@@ -2,7 +2,7 @@
 title: Pasting in Paste Restricted Locations on Windows with PowerShell
 author: Collin Dewey
 date: '2025-03-05'
-lastmod: '2025-03-07'
+lastmod: '2025-08-28'
 type: Article
 slug: paste-with-powershell
 description: "Using PowerShell to bypass paste restrictions in applications by simulating keyboard inputs with a single command. No additional software required. Paste in Proxmox, paste in a Virtual Machine, paste anywhere."
@@ -25,6 +25,8 @@ powershell -w h -c "sleep 2;add-type -a system.windows.forms;[windows.forms.send
 ```
 
 <video style="max-height:40vh; aspect-ratio: 738 / 641;" controls preload="none" poster="paste.webp" alt="A preview of copying some text, opening the Windows Run dialog, running the line of PowerShell, and pasting the clipboard's contents to a selected window"><source src="paste.webm"></video>
+
+> You cannot use this to type into an administrative window without running the command as an administrator.
 
 ---
 ## Existing approaches

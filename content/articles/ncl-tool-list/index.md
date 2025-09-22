@@ -12,7 +12,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 
 ---
 
-## OSINT
+## OSINT {id="OSINT"}
 ---
 
 [OSINT Framework](https://osintframework.com/) - Lots of links to OSINT oriented websites, such as flights, weather, and public records
@@ -32,7 +32,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 [Overpass Turbo](https://overpass-turbo.eu/) - Advanced Map Search Engine
 
 ---
-## Cryptography
+## Cryptography {id="Cryptography"}
 ---
 
 [dCode](https://www.dcode.fr/en) - Lots of tools for cipher solving
@@ -48,7 +48,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 [QuipQuip](https://quipqiup.com/) - Cipher solver tool
 
 ---
-## Password Cracking
+## Password Cracking {id="PasswordCracking"}
 ---
 
 [Name-That-Hash](https://nth.skerritt.blog/) - Hash identification tool
@@ -76,7 +76,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 [Wikidata Query Service](https://query.wikidata.org/) - Tool to query data from Wikipedia for Wordlists
 
 ---
-## Forensics
+## Forensics {id="Forensics"}
 ---
 
 [binwalk](https://github.com/ReFirmLabs/binwalk) - Extract files embedded inside other files
@@ -106,7 +106,7 @@ These are the majority of the tools that I commonly use in the National Cyber Le
 [sherloq](https://github.com/GuidoBartoli/sherloq) - Image Forensics
 
 ---
-## Log Analysis
+## Log Analysis {id="LogAnalysis"}
 ---
 
 `cut` - Cut strings by a delimiter and select one part
@@ -131,7 +131,7 @@ LLMs - Good for writing Python scripts
 
 
 ---
-## Network Traffic Analysis
+## Network Traffic Analysis {id="NetworkTrafficAnalysis"}
 ---
 
 [Wireshark](https://www.wireshark.org/) - Network Protocol Analyzer
@@ -142,7 +142,7 @@ LLMs - Good for writing Python scripts
 
 
 ---
-## Scanning and Reconnaissance
+## Scanning and Reconnaissance {id="ScanningAndReconnaissance"}
 ---
 
 [nmap](https://nmap.org/) - TCP/UDP Scanning utility
@@ -156,7 +156,7 @@ LLMs - Good for writing Python scripts
 [crt.sh](https://crt.sh/) - Certificate search tool
 
 ---
-## Web Application Exploitation
+## Web Application Exploitation {id="WebApplicationExploitation"}
 ---
 
 `curl` - Make custom network requests
@@ -166,7 +166,7 @@ LLMs - Good for writing Python scripts
 [Wappalyzer](https://www.wappalyzer.com/) - Website stack analyzer
 
 ---
-## Enumeration and Exploitation
+## Enumeration and Exploitation {id="EnumerationAndExploitation"}
 ---
 
 [Ghidra](https://ghidra-sre.org) - Reverse Engineering Tool

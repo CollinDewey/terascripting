@@ -2,6 +2,7 @@
 title: Scanning & Reconnaissance Basics
 author: Collin Dewey
 date: '2024-10-03'
+lastmod: '2025-09-25'
 type: Presentation
 slug: scanning-reconnaissance-ctf-basics
 description: "Presentation slides for scanning and reconnaissance basics for beginner level Capture The Flag style cybersecurity challenges"
@@ -23,9 +24,17 @@ For CTF Competitions
 ## What is Scanning & Reconnaissance?
 
 Scanning
-- Probing systems to identity what data they are sending out
+- Probing systems to identity what they are hosting
+
 Reconnaissance
 - Gathering information about a target
+
+---
+
+## What is an IP?
+
+Each computer has a numeric address
+google.com is an alias to 142.250.191.110
 
 ---
 
@@ -61,6 +70,7 @@ Reconnaissance
 [nmap](https://nmap.org/)
 - Scans for open ports
 - `nmap -p- [target]` To Scan TCP
+- `nmap -sV -p ## [target]` To get information about a port
 - `nmap -sU [target]` To Scan UDP
     - UDP scans are often unreliable
 

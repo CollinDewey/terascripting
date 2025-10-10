@@ -2,6 +2,7 @@
 title: Password Cracking Basics
 author: Collin Dewey
 date: '2024-09-19'
+lastmod: '2025-10-09'
 type: Presentation
 slug: password-cracking-basics
 description: "Presentation slides for password cracking basics for beginner level Capture The Flag style cybersecurity challenges. Using tools such as hashcat and john."
@@ -59,11 +60,12 @@ These are not <ins>passwords</ins>, rather different representations of the lett
 <!--These are one input to one output math functions that are easy to perform one way, but hard the reverse way.-->
 
 Passwords are hashed
-- One-way function - cannot easily get password from hash
+- Put in a password, get `50585be4e3159a71c874c590d2ba12ec`
+- One-way math function - cannot easily get password from hash
 - Given the same input, always gives the same output
 - No two inputs give the same output
 
-If you hit "Forgot Password" and were emailed your password back, think again about using that service.
+<!--If you hit "Forgot Password" and were emailed your password back, think again about using that service.-->
 
 ---
 
@@ -75,10 +77,10 @@ If you hit "Forgot Password" and were emailed your password back, think again ab
 
 Passwords are often "salted"
 - Random data added as an input to the hashing algorithm
-- Different salt per-password
-- Salt is saved next to hash and isn't *secret*
+- Each user has a different salt
+- The salt isn't *secret*
 
-|Algorithm|To Be Hashed|Hashed Value|
+|Algorithm|Hashed Text|Hashed Value|
 |---|---|---|
 |md5("Cyber")|Cyber|046e43ea3926a2f12f416a870f995a62|
 |md5("Cyber"+"hSgcC")|CyberhSgcC|79cca74badfe10909be5fd43a61e2f30|
@@ -100,13 +102,13 @@ Passwords are often "salted"
 Hash tables are precomputed lookup tables of passwords and their hashed variants which leads to near-instant decoding of hashes.
 
 - Makes cracking common passwords trivial
-- Salting would make these tables impossibly big
+- Salting works around this
 
 ---
 
 ## Brute Force
 Try every combination of characters for increasing lengths
-- Might take a few lifetimes of the universe for longer passwords
+- Might take several lifetimes of the universe to crack
 ```
 abcdefghijklmnopqrstuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -120,12 +122,13 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ## Dictionary Attacks
 - Words are easy to remember
 - People like remembering passwords
+- Word lists
 
 ## RockYou
-- Social Media Widget Maker Company
-- Easy SQL Injection
+- Social media widget maker company
+- Was vulnerable to an easy SQL injection
 - Stored 32 million user's passwords in plaintext
-- This was dumb, even in 2009
+- Makes a good baseline list
 
 ---
 
@@ -147,7 +150,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 ---
 
-## Online Hash Cracking Services
+## Online Non-Salted Hash Cracking Services
 http://rainbowtables.it64.com/
 - Cracks LM Hashes
 
@@ -170,7 +173,7 @@ ophcrack is a free Windows (LM/NTLM) password cracker using Rainbow Tables
 |XP Special*|[0-9],[a-z],[A-Z], !"#\$%&'()*+,-./:;<=>?@[\\]^_`{\|}~|1-14|7.5
 |Vista Proba 60G|[0-9],[a-z],[A-Z], !"#\$%&'()*+,-./:;<=>?@[\\]^_`{\|}~|5-10|60
 |Vista SpecialXL|[0-9],[a-z],[A-Z], !"#\$%&'()*+,-./:;<=>?@[\\]^_`{\|}~|1-7|107
-|Vista eightXL|[0-9],[a-z],[A-Z], !"#\$%&'()*+,-./:;<=>?@[\\]^_`{\|}~|8|2007
+<!--|Vista eightXL|[0-9],[a-z],[A-Z], !"#\$%&'()*+,-./:;<=>?@[\\]^_`{\|}~|8|2007-->
 
 ---
 
@@ -200,7 +203,7 @@ CPU Password Cracker
 {{< img src="hashcat-logo.svg" alt="Hashcat Logo" min-width="40vw" max-height="30vh">}}
 {{< /hugo >}}
 
-GPU Accelerated Password Cracker
+CPU/GPU Accelerated Password Cracker
 
 - Fast
 - Can use multiple GPUs
@@ -225,7 +228,7 @@ GPU Accelerated Password Cracker
 - RockYou
 - Find one online
 - Make your own list
-    - Scrape Wikipedia Articles
+    - [Scrape Wikipedia](https://query.wikidata.org/)
     - Kaggle (Dataset Website)
 
 ---
@@ -234,16 +237,18 @@ GPU Accelerated Password Cracker
 
 Specify [hash type](https://hashcat.net/wiki/doku.php?id=example_hashes) with `-m #`
 
+- Adding `--show` shows cracked hashes
+
 Specify attack mode with `-a #`
 
 Speedup Arguments
 
 - `-O` uses "optimized kernels". Limits max length.
 - `-w #` sets the workload profile
-    - 1 is Low
-    - 2 is Normal
-    - 3 is High - Will lag system GUI
-    - 4 is "Nightmare" - Will lag system GUI
+    - 1 - Low
+    - 2 - Normal
+    - 3 - High
+    - 4 - Highest
 
 ---
 
@@ -306,6 +311,34 @@ hashcat -m 0 -r leetspeak.rule -r toggles1.rule -a 0 MD5_Hash_File.txt wordlist.
 ```
 > Passw0rd
 > pa55woRd
+
+---
+
+## Hashcat Commands Quick Reference
+
+```sh
+# Mode 0 - Dictionary Attack - direct wordlist
+hashcat -m 0 -a 0 MD5_Hash_File.txt wordlist.txt
+
+# Mode 1 - Combinator Attack - combines multiple wordlists
+hashcat -m 0 -a 1 MD5_Hash_File.txt animal_names.txt city_names.txt
+
+# Mode 3 - Mask Attack - character brute-forcing
+hashcat -m 0 -a 3 MD5_Hash_File.txt CTF-?u?u?u?u-?d?d?d?d
+
+# Mode 6 - Hybrid Attack - wordlist + mask
+hashcat -m 0 -a 6 MD5_Hash_File.txt wordlist.txt ?d?d?d?d
+
+# Mode 7 - Hybrid Attack - mask + wordlist
+hashcat -m 0 -a 7 MD5_Hash_File.txt ?d?d?d?d wordlist.txt
+
+# Dictionary Attack with Rules - modifies wordlist
+hashcat -m 0 -r leetspeak.rule -r toggles1.rule -a 0 MD5_Hash_File.txt wordlist.txt
+
+# Show cracked hashes
+hashcat -m 0 --show MD5_Hash_File.txt
+```
+
 ---
 
 ## aircrack-ng
@@ -326,6 +359,7 @@ Convert wireless captures to JtR/Hashcat
 [Name That Hash](https://nth.skerritt.blog/)
 
 [John The Ripper Tools Online](https://hashes.com/en/johntheripper)
+- pdf2john, rar2john, zip2john, 7z2john, office2john
 
 ---
 
@@ -346,3 +380,15 @@ Convert wireless captures to JtR/Hashcat
 [Kaonashi](https://github.com/kaonashi-passwords/Kaonashi)
 
 [Hashcat Rules](https://github.com/hashcat/hashcat/tree/master/rules)
+
+<!--
+---
+
+## VM Support
+
+You really shouldn't use Hashcat within a Virtual Machine, since the performance on any GPU will be significantly better. If you decide to, install the Intel OpenCL Drivers. On Kali, this is the `intel-opencl-icd` package.
+
+```
+sudo apt install intel-opencl-icd
+```
+-->

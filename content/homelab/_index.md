@@ -29,7 +29,7 @@ Radeon RX 6800-XT / GeForce RTX 2080
  - Primary Computer
  - Temporary Cybersecurity Virtual Machines for Training
  - GPU Compute (Hashcat)
- - AI (Stable Diffusion / RVC / Ollama)
+ - AI (ComfyUI / Ollama)
  - VFIO GPU Passthrough for one VM
 
 #### Description
@@ -71,12 +71,12 @@ GeForce RTX 2070 Super
  - [Error Pages](https://github.com/tarampampam/error-pages)
  - [Lancache](https://lancache.net/)
  - [Jellyfin](https://jellyfin.org/)
- - [Vaultwarden Password Safe](https://github.com/dani-garcia/vaultwarden)
- - [Adguardhome](https://github.com/AdguardTeam/AdGuardHome)
- - [Microbin](https://github.com/szabodanika/microbin)
+ - [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
  - [Syncthing](https://syncthing.net/)
  - [Immich](https://immich.app/)
  - [Netdata](https://github.com/netdata/netdata)
+ - [Open-WebUI](https://github.com/open-webui/open-webui)
+ - [Copyparty](https://github.com/9001/copyparty)
 
 #### Description
 
@@ -96,7 +96,6 @@ TEAL is my server, it's running on a rather outdated Xeon processor, but due to 
  - Wireguard (Road Warrior)
  - Data Traffic Analysis
  - DHCP Server
- - Static ARP Routes
 
 #### Description
 
@@ -211,7 +210,7 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-<img style="aspect-ratio: 242/28" alt="Image displaying last updated relative time" src="https://img.shields.io/date/1748121486?label=Last%20Updated&style=for-the-badge">
+{{< img src="https://img.shields.io/date/1760261927?label=Last%20Updated&style=for-the-badge" alt="Last updated relative time" aspect="242/28" max-height="28px" min-width="242px" >}}
 
 ---
 

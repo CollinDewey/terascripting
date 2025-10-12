@@ -149,7 +149,7 @@ XOR-->
 ![](Qapla.svg)
 {{< /marp >}}{{< hugo >}}
 <div style="background-color: #ffffff;">
-{{< img src="Qapla.svg" alt="Qapla written in pIqaD script" min-width="40vw" max-height="30vh">}}
+{{< img src="Qapla.svg" alt="Qapla written in pIqaD script" min-width="30vw" max-height="30vh">}}
 </div>
 {{< /hugo >}}
 

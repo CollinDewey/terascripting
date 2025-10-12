@@ -20,7 +20,7 @@ For CTF Competitions
 ![bg invert right:55%](Pigpen_cipher_key.svg)
 {{< /marp >}}{{< hugo >}}
 <div style="filter: invert(1);">
-{{< img src="Pigpen_cipher_key.svg" alt="Pigpen Cipher" min-width="30vw">}}
+{{< img src="Pigpen_cipher_key.svg" alt="Pigpen Cipher" min-width="15vw">}}
 </div>
 {{< /hugo >}}
 

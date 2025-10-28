@@ -2,7 +2,7 @@
 title: Custom UEFI boot logo in QEMU/KVM on NixOS
 author: Collin Dewey
 date: '2025-03-20'
-lastmod: '2025-03-20'
+lastmod: '2025-10-28'
 type: Article
 slug: custom-uefi-logo-qemu-kvm-on-nixos
 description: "Using a NixOS overlay to set a custom UEFI logo in QEMU/KVM to replace the TianoCore logo when booting virtual machines"
@@ -60,13 +60,13 @@ When I make a VM with virt-manager, by default it uses the `edk2-x86_64-secure-c
 </os>
 ```
 
-The OS block can be replaced with a block similar to the below, replacing the `/nix/store` paths with `/run/libvirt/nix-ovmf/OVMF_CODE.fd` and `/run/libvirt/nix-ovmf/OVMF_VARS.fd`.
+The OS block can be replaced with a block similar to the below, replacing the `/nix/store` paths with `/run/libvirt/nix-ovmf/edk2-x86_64-secure-code.fd` and `/run/libvirt/nix-ovmf/edk2-i386-vars.fd`.
 
 ```xml
 <os>
   <type arch="x86_64" machine="pc-q35-9.2">hvm</type>
-  <loader readonly="yes" secure="yes" type="pflash" format="raw">/run/libvirt/nix-ovmf/OVMF_CODE.fd</loader>
-  <nvram template="/run/libvirt/nix-ovmf/OVMF_VARS.fd" templateFormat="raw" format="raw">/var/lib/libvirt/qemu/nvram/virt_VARS.fd</nvram>
+  <loader readonly="yes" secure="yes" type="pflash" format="raw">/run/libvirt/nix-ovmf/edk2-x86_64-secure-code.fd</loader>
+  <nvram template="/run/libvirt/nix-ovmf/edk2-i386-vars.fd" templateFormat="raw" format="raw">/var/lib/libvirt/qemu/nvram/virt_VARS.fd</nvram>
   <boot dev="cdrom"/>
 </os>
 ```

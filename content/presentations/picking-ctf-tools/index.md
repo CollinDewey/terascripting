@@ -11,6 +11,7 @@ theme: default
 size: 16:9
 ---
 
+{{< slides >}}
 
 ## Which CTF tool should I use?
 <!-- _footer: By Collin Dewey-->

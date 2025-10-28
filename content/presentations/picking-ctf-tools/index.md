@@ -8,6 +8,7 @@ slug: picking-ctf-tools
 description: "Which CTF tool should I use to complete a problem? How do I start?"
 marp: true
 theme: default
+class: invert
 size: 16:9
 ---
 
@@ -279,5 +280,3 @@ What language is this? (file)
 | crx | Javascript| [crxviewer](https://robwu.nl/crxviewer) |
 | ELF | ? | [Ghidra](https://ghidra-sre.org/) |
 | ELF | ? | [dogbolt](https://dogbolt.org/) |
-
----

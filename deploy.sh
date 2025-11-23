@@ -15,8 +15,8 @@ MARP_ARGS="--html true"
 HUGO_ARGS="--gc --ignoreCache --noBuildLock --panicOnWarning --cleanDestinationDir --destination $TMPDIR"
 EXTRA_CSS="div.is-hugo{display:none;content-visibility:hidden;}"
 
-# --- Build ---
-hugo build "$HUGO_ARGS"
+# shellcheck disable=SC2086
+hugo build $HUGO_ARGS
 for dir in content/presentations/*/; do
     if [ -d "$dir" ]; then
         for file in "$dir"*.md; do

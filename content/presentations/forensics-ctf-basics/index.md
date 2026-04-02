@@ -2,6 +2,7 @@
 title: Forensics Basics
 author: Collin Dewey
 date: '2024-10-03'
+lastmod: '2026-04-02'
 type: Presentation
 slug: forensics-ctf-basics
 description: "Presentation slides for forensics basics for beginner level Capture The Flag style cybersecurity challenges."
@@ -32,6 +33,8 @@ binwalk
 
 - Scans a file for files within the data
 - `binwalk --dd='.*' <file>`
+
+CyberChef's [Extract Files Recipe](https://gchq.github.io/CyberChef/#recipe=Extract_Files(true,true,true,true,true,true,false,true,100)&oeol=NEL)
 
 strings
 

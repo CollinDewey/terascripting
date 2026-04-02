@@ -2,7 +2,7 @@
 title: Password Cracking Basics
 author: Collin Dewey
 date: '2024-09-19'
-lastmod: '2025-10-09'
+lastmod: '2026-04-02'
 type: Presentation
 slug: password-cracking-basics
 description: "Presentation slides for password cracking basics for beginner level Capture The Flag style cybersecurity challenges. Using tools such as hashcat and john."
@@ -350,6 +350,20 @@ aircrack-ng -w dictionary.txt wireless.cap
 
 ## hcxtools
 Convert wireless captures to JtR/Hashcat
+
+---
+
+## wpa_supplicant PSK
+
+If you have a list that gives you just an SSID and PSK. 
+- Convert the SSID to base64
+- Convert the PSK from hex to base64
+- Use mode 12000
+Format it like
+```sh
+sha1:4096:SSID:PSK
+sha1:4096:aGFzaGNhdA==:VGhpcyBpcyBpbnZhbGlkIFNvcnJ5IGFib3V0IHRoYXQ=
+```
 
 ---
 

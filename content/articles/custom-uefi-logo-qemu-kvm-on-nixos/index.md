@@ -2,7 +2,7 @@
 title: Custom UEFI boot logo in QEMU/KVM on NixOS
 author: Collin Dewey
 date: '2025-03-20'
-lastmod: '2025-10-28'
+lastmod: '2026-04-03'
 type: Article
 slug: custom-uefi-logo-qemu-kvm-on-nixos
 description: "Using a NixOS overlay to set a custom UEFI logo in QEMU/KVM to replace the TianoCore logo when booting virtual machines"
@@ -20,16 +20,26 @@ When launching virtual machines on my computer, I am greeted with the TianoCore 
 
 ## Overriding the logo
 
-I wanted to change that logo to have a slightly nicer thing to look at for 10-20 seconds while Windows boots. Looking up how to change the logo with KVM's UEFI, I am brought to an [article by Gary Hawkins](https://www.garyhawkins.me.uk/custom-logo-on-uefi-boot-screen/) from 2013. Their approach involves modifying the EDK II source code for its sample OVMF firmware, replacing the logo in the source. In NixOS, patching this file is relatively easy by using an overlay included in your Nix configuration. This overlay copies a local `Logo.bmp` over the one located within the package in the postPatch phase, and Nix does the work of compiling it.
-
+I wanted to change that logo to have a slightly nicer thing to look at for 10-20 seconds while Windows boots. Looking up how to change the logo with KVM's UEFI, I am brought to an [article by Gary Hawkins](https://www.garyhawkins.me.uk/custom-logo-on-uefi-boot-screen/) from 2013. Their approach involves modifying the EDK II source code for its sample OVMF firmware, replacing the logo in the source. In NixOS, patching this file is relatively easy by using an overlay included in your Nix configuration. This overlay copies a local `Logo.bmp` over the one located within the package in the postPatch phase, and Nix does the work of compiling it. Since Nix defaults to using the EDK II package included within QEMU, we will also have to replace the EDK II package that's in QEMU with one we compile ourselves. This unfortunately does trigger a build of QEMU, which takes a little bit of time.
 
 ```nix
 nixpkgs.overlays = [
   (final: prev: {
-    OVMF = prev.OVMF.overrideAttrs (old: {
-      postPatch = (old.postPatch or "") + ''
-        cp ${./Logo.bmp} ./MdeModulePkg/Logo/Logo.bmp
-      '';
+    OVMFFull = prev.OVMFFull.overrideAttrs (old: {
+      postPatch =
+        (old.postPatch or "")
+        + ''
+          cp ${./Logo.bmp} ./MdeModulePkg/Logo/Logo.bmp
+        '';
+    });
+
+    qemu = prev.qemu.overrideAttrs (old: {
+      postInstall =
+        (old.postInstall or "")
+        + ''
+          cp -f ${final.OVMFFull.fd}/FV/OVMF_CODE.fd $out/share/qemu/edk2-x86_64-code.fd
+          cp -f ${final.OVMFFull.fd}/FV/OVMF_CODE.ms.fd $out/share/qemu/edk2-x86_64-secure-code.fd
+        '';
     });
   })
 ];
@@ -41,35 +51,6 @@ magick convert Logo.png -background black -alpha remove -define bmp:format=bmp3 
 ```
 
 Put your Logo.bmp along with your Nix configuration files and rebuild.
-
----
-
-## Using custom OVMF firmware
-
-When I make a VM with virt-manager, by default it uses the `edk2-x86_64-secure-code.fd` that was included along with QEMU.
-```xml
-<os firmware="efi">
-  <type arch="x86_64" machine="pc-q35-9.2">hvm</type>
-  <firmware>
-    <feature enabled="no" name="enrolled-keys"/>
-    <feature enabled="yes" name="secure-boot"/>
-  </firmware>
-  <loader readonly="yes" secure="yes" type="pflash" format="raw">/nix/store/xxxxxx-qemu-9.2.2/share/qemu/edk2-x86_64-secure-code.fd</loader>
-  <nvram template="/nix/store/xxxxxx-qemu-9.2.2/share/qemu/edk2-i386-vars.fd" templateFormat="raw" format="raw">/var/lib/libvirt/qemu/nvram/virt_VARS.fd</nvram>
-  <boot dev="cdrom"/>
-</os>
-```
-
-The OS block can be replaced with a block similar to the below, replacing the `/nix/store` paths with `/run/libvirt/nix-ovmf/edk2-x86_64-secure-code.fd` and `/run/libvirt/nix-ovmf/edk2-i386-vars.fd`.
-
-```xml
-<os>
-  <type arch="x86_64" machine="pc-q35-9.2">hvm</type>
-  <loader readonly="yes" secure="yes" type="pflash" format="raw">/run/libvirt/nix-ovmf/edk2-x86_64-secure-code.fd</loader>
-  <nvram template="/run/libvirt/nix-ovmf/edk2-i386-vars.fd" templateFormat="raw" format="raw">/var/lib/libvirt/qemu/nvram/virt_VARS.fd</nvram>
-  <boot dev="cdrom"/>
-</os>
-```
 
 ---
 

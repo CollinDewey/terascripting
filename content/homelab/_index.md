@@ -29,12 +29,28 @@ Radeon RX 6800-XT / GeForce RTX 2080
  - Primary Computer
  - Temporary Cybersecurity Virtual Machines for Training
  - GPU Compute (Hashcat)
- - AI (ComfyUI / Ollama)
  - VFIO GPU Passthrough for one VM
 
 #### Description
 
-This is my main PC where I do most of my computing at home, including compiling and deploying updates to my NixOS machines. Having two GPUs allows me to use NVIDIA's CUDA as well as AMD's ROCm for AI workloads. I can also passthrough the GPUs to Virtual Machines using VFIO, meaning I can have a VM that performs graphically demanding tasks at the same time as my host OS. 96GB of RAM and a fast CPU is useful for running many VMs for studies or experimenting, whether studying for certifications or testing scripts for competitions.
+This is my main PC where I do most of my computing at home, including compiling and deploying updates to my NixOS machines. Having two GPUs means I can pass through a GPU to a Virtual Machine using VFIO, so I can have a VM that performs graphically demanding tasks at the same time as my host OS. 96GB of RAM and a fast CPU is useful for running many VMs for studies or experimenting, whether studying for certifications or testing scripts for competitions.
+
+---
+## VIRIDIAN - Local AI Mini PC {id="VIRIDIAN"}
+
+[DGX OS (Ubuntu 24.04)](https://docs.nvidia.com/dgx/dgx-spark/dgx-os.html)
+
+NVIDIA GB10
+
+128GB RAM LPDDR5x
+
+#### Storage
+ - 1TB SSD
+
+#### Usage
+ - Text to Speech
+ - Large Language Models
+ - GPU Compute
 
 ---
 ## TEAL - Server {id="TEAL"}
@@ -210,7 +226,7 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-{{< img src="https://img.shields.io/date/1764627073?label=Last%20Updated&style=for-the-badge" alt="Last updated relative time" aspect="242/28" max-height="28px" min-width="242px" >}}
+{{< img src="https://img.shields.io/date/1775248981?label=Last%20Updated&style=for-the-badge" alt="Last updated relative time" aspect="242/28" max-height="28px" min-width="242px" >}}
 
 ---
 

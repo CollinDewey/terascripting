@@ -14,7 +14,7 @@ size: 16:9
 
 {{< slides >}}
 
-## Introduction to Managing systemd
+## Introduction to Managing systemd {id="IntroductionToManagingSystemd"}
 <!-- _footer: By Collin Dewey-->
 
 {{< marp >}}
@@ -25,7 +25,7 @@ size: 16:9
 
 ---
 
-## What is systemd
+## What is systemd {id="Systemd"}
 
 - Magages
   - Services
@@ -34,7 +34,7 @@ size: 16:9
 
 ---
 
-## How do I know if I'm running systemd?
+## How do I know if I'm running systemd? {id="HowDoIKnowIfImRunningSystemd"}
 
 ```bash
 systemctl --version
@@ -47,7 +47,7 @@ systemd 258 (258)
 
 ---
 
-## [systemd units](https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html)
+## [systemd units](https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html) {id="SystemdUnits"}
 
 Commonly
 - [`.service`](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html#) - Services (Background Applications)
@@ -77,7 +77,7 @@ Can also be
 
 ---
 
-## Let's take a look at your units
+## Let's take a look at your units {id="LetsTakeALookAtYourUnits"}
 
 ```
 systemctl list-units
@@ -94,7 +94,7 @@ systemctl status [SERVICE]
 
 ---
 
-## Status/Stop/Start/Restart
+## Status/Stop/Start/Restart {id="StatusStopStartRestart"}
 
 ```
 systemctl status [SERVICE]
@@ -105,7 +105,7 @@ systemctl restart [SERVICE]
 
 ---
 
-## Automatically start service
+## Automatically start service {id="AutomaticallyStartService"}
 ```
 systemctl enable [SERVICE]
 systemctl disable [SERVICE]
@@ -114,7 +114,7 @@ systemctl is-enabled [SERVICE]
 
 ---
 
-## Disable service from ever running
+## Disable service from ever running {id="DisableServiceFromEverRunning"}
 ```
 systemctl mask [SERVICE]
 systemctl unmask [SERVICE]
@@ -122,7 +122,7 @@ systemctl unmask [SERVICE]
 
 ---
 
-## Viewing logs
+## Viewing logs {id="ViewingLogs"}
 
 `journalctl -f` - Follows all logs
 `journalctl -b` - Logs from this boot
@@ -132,7 +132,7 @@ journalctl -xeu [SERVICE]
 ```
 
 ---
-## Properties
+## Properties {id="Properties"}
 
 ```
 systemctl show [SERVICE]
@@ -140,7 +140,7 @@ systemctl show [SERVICE]
 
 ---
 
-## [Resource Control](https://www.freedesktop.org/software/systemd/man/latest/systemd.resource-control.html#) 
+## [Resource Control](https://www.freedesktop.org/software/systemd/man/latest/systemd.resource-control.html#) {id="ResourceControl"} 
 
 Use `systemd-cgtop` to view slice resource usage
 
@@ -163,21 +163,21 @@ Use `systemd-cgtop` to view slice resource usage
 
 ---
 
-## Security Settings
+## Security Settings {id="SecuritySettings"}
 ```
 systemd-analyze security [SERVICE]
 ```
 
 ---
 
-## Editing a unit
+## Editing a unit {id="EditingAUnit"}
 
 ### Temporary/Runtime
 ```
 systemctl set-property [SERVICE/SLICE] ProtectSystem=strict
 ```
 
-## Permanent
+## Permanent {id="Permanent"}
 ```
 systemctl edit [SERVICE]
 ```

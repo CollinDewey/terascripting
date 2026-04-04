@@ -14,7 +14,7 @@ In my 2008 Mazda I use an aftermarket [Kenwood KDC-162U](https://www.kenwood.com
 
 ---
 
-## Reading button presses from the Steering Wheel Controls
+## Reading button presses from the Steering Wheel Controls {id="ReadingPresses"}
 
 There are multiple ways in which steering wheel controls are implemented. My car has resistance based steering wheel controls, and doesn't communicate to the car's computer. There is a wire that goes from the back of the stereo to the buttons which change the resistance across the wire, back through to the stereo. You'll need to find your car's repair manual and figure out which wires these are. In my case, a Black/White wire and a Brown/Yellow wire. Taking a multimeter to these connections and pressing the buttons, you can watch the resistance change. My car's repair manuals happened to have the acceptable ranges for the resistances on my car.
 
@@ -74,7 +74,7 @@ switch (most_pressed(hits)) { // Select which button has the most hits
 
 ---
 
-## Sending Commands
+## Sending Commands {id="SendingCommands"}
 
 It surprised me to learn that there's a remote controller for this stereo. Not very practical for the driver or passenger to use, since you'd need to point it at the radio. *Kenwood has given too much power to children in the backseat.*
 
@@ -156,7 +156,7 @@ void repeat_frame() {
 
 ---
 
-## Installing
+## Installing {id="Installing"}
 
 I went with an Arduino Nano. It's small, fast enough for our cases, and I could buy it with a breakout board that has screw terminals so I can avoid soldering anything. It can also run directly off the car's 12V power [^2]. You can find one of these on Aliexpress for a few dollars as long as you're okay with the two week shipping time.
 

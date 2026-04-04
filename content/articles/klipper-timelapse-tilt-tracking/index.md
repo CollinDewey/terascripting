@@ -8,7 +8,7 @@ description: "Using the Logitech QuickCam Orbit to take timelapses of Klipper-ba
 ---
 
 ---
-## Klipper + Moonraker
+## Klipper + Moonraker {id="KlipperMoonraker"}
 
 There are a few different firmwares for 3D printers to run. A large number of printers use the [Marlin](https://marlinfw.org/) firmware. Marlin runs everything related to printing on the printer itself. You generally will put the 3D print file (gcode) on an SD card, insert it into the printer, and then select the 3D print from a menu attached to the 3D printer. Klipper takes a different approach, offloading a lot of the processing to another computer. This helps with being able to perform some calculations that can improve print quality, such as [input shaping](https://www.youtube.com/watch?v=gzBhTrHv0-c) to make sure the print head doesn't leave ringing. Klipper runs on both the printer and the computer connected to it. But if you want to control the printer from not that computer, you can use one of the many web front-ends for Klipper, such as [Fluidd](https://docs.fluidd.xyz/) and [Mainsail](https://docs.mainsail.xyz/). However, to control Klipper via the web, they all use an application called Moonraker, which performs the bridge from Web to Klipper through implementing a web API. This allows other applications to easily gather information about the state of the printer, and control the printer.
 
@@ -108,7 +108,7 @@ This is how to query the toolhead, which returns something like this in JSON. On
 
 ---
 
-## Moonraker Timelapse
+## Moonraker Timelapse {id="MoonrakerTimelapse"}
 
 There's a 3rd party Add-On for Moonraker called Moonraker Timelapse. It's used for just that, creating a timelapse of the progress of your 3D print. You connect a camera to it and when the print reaches a certain command after every layer change, a picture can be taken. When the print is done, all of those pictures can be combined to take a timelapse. They're fun to look at after the print. However the camera position becomes problematic if the print is very tall.
 
@@ -125,7 +125,7 @@ There's a 3rd party Add-On for Moonraker called Moonraker Timelapse. It's used f
 
 ---
 
-## Logitech QuickCam Orbit
+## Logitech QuickCam Orbit {id="LogitechQuickCamOrbit"}
 
 Logitech in the past released some spherical cameras for business video conferencing. These cameras are special however, they're motorized to support both pan and tilt. This was intended for face tracking, but we can use that tilting ability to angle the camera up when we want it to.
 
@@ -135,7 +135,7 @@ Logitech in the past released some spherical cameras for business video conferen
 
 ---
 
-## Controlling the Camera
+## Controlling the Camera {id="ControllingTheCamera"}
 
 To control the camera, we need to access that specific camera. This is generally something like `/dev/video#`, but it's better to access it by its ID since the `/dev/video#` numbers may change across reboots. The camera IDs can be found at `/dev/v4l/by-id/#############`. In my case, my camera is `/dev/v4l/by-id/usb-046d_0994_9CDF88E2-video-index0`.
 
@@ -151,7 +151,7 @@ To move the camera up and down, you set tilt_relative, and it will move the came
 
 ---
 
-## Scripting the Camera movement
+## Scripting the Camera movement {id="ScriptingTheCameraMovement"}
 
 We can combine calls to v4l2-ctl, with our interactions with the Moonraker API. We can't assume the state of the camera, so when the printer homes, lets reset the camera. We can check if the printer's toolhead is homed.
 
@@ -169,7 +169,7 @@ else:
 
 ---
 
-## Code
+## Code {id="Code"}
 
 We need to keep track of the toolhead's state, and reset once whenever the toolhead is not homed. So we need to keep track of a state of the camera being homed, and a state of the toolhead being homed. Because I can't line up the level of the Z axes one to one, I have to hold some sort of camera Z and relate that to the printer Z. After some messing around, I came up with the below.
 
@@ -240,7 +240,7 @@ WantedBy=multi-user.target
 
 ---
 
-## Results
+## Results {id="Results"}
 
 Now when the print toolhead raises, the camera moves up as well
 

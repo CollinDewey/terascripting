@@ -13,28 +13,28 @@ size: 16:9
 
 {{< slides >}}
 
-## Compose
+## Compose {id="Compose"}
 <!-- _footer: By Collin Dewey-->
 
 Docker/Podman Compose
 
 ---
 
-## What is Compose?
+## What is Compose? {id="WhatIsCompose"}
 
 Managing multiple containers at a time.
 Managing multiple networks at a time.
 
 ---
 
-## Why use it over regular Docker or Kubernetes?
+## Why use it over regular Docker or Kubernetes? {id="WhyUseCompose"}
 
 Kubernetes has lots of features that many people just don't need.
 Running a bunch of different CLI commands for managing multiple containers is a pain.
 
 ---
 
-## What is in compose.yml
+## What is in compose.yml {id="WhatIsInComposeYml"}
 
 YAML Formatted File with definitions of...
 - Services
@@ -44,7 +44,7 @@ YAML Formatted File with definitions of...
 
 ---
 
-## Services [^1]
+## Services [^1] {id="Services"}
 <!-- _footer: docs.docker.com/reference/compose-file/services -->
 
 - Name
@@ -62,7 +62,7 @@ YAML Formatted File with definitions of...
 
 ---
 
-## Service Example
+## Service Example {id="ServiceExample"}
 
 ```yaml
 services:
@@ -104,7 +104,7 @@ services:
 
 ---
 
-## Networks [^2]
+## Networks [^2] {id="Networks"}
 <!-- _footer: docs.docker.com/reference/compose-file/networks -->
 
 Networks can be defined through Compose files
@@ -132,7 +132,7 @@ networks:
 
 ---
 
-## Volumes [^3]
+## Volumes [^3] {id="Volumes"}
 <!-- _footer: docs.docker.com/reference/compose-file/volumes -->
 
 Persistent folders that can be used across services
@@ -151,7 +151,7 @@ volumes:
 
 ---
 
-## Secrets [^4]
+## Secrets [^4] {id="Secrets"}
 <!-- _footer: docs.docker.com/reference/compose-file/secrets-->
 
 Secrets are data placed into the running container
@@ -170,7 +170,7 @@ Copies `flag.txt` to `/run/secrets/cool_flag` within the container.
 
 ---
 
-## Running Compose
+## Running Compose {id="RunningCompose"}
 
 |docker compose|Purpose|
 |---|---|
@@ -205,7 +205,7 @@ docker compose up --no-recreate -d
 
 ---
 
-## Container Management Tools
+## Container Management Tools {id="ContainerManagementTools"}
 
 |Name|Purpose|
 |---|---|
@@ -215,7 +215,7 @@ docker compose up --no-recreate -d
 
 ---
 
-## Notes
+## Notes {id="Notes"}
 Docker used to not come with compose. Instead using a package named docker-compose.
 - Use `docker-compose` instead of `docker compose`
 - Use `docker-compose.yml` instead of `compose.yml`

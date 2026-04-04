@@ -14,7 +14,7 @@ size: 16:9
 
 {{< slides >}}
 
-## Password Cracking Basics
+## Password Cracking Basics {id="PasswordCrackingBasics"}
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
 
@@ -28,7 +28,7 @@ For CTF Competitions
 
 ---
 
-## Preface - Different Representations of ASCII
+## Preface - Different Representations of ASCII {id="TextFormatting"}
 <!-- _footer: Convert these using https://gchq.github.io/CyberChef/-->
 
 <!-- There are multiple ways to represent text. -->
@@ -52,7 +52,7 @@ These are not <ins>passwords</ins>, rather different representations of the lett
 
 ---
 
-## Why do passwords need to be "cracked"?
+## Why do passwords need to be "cracked"? {id="WhyDoPasswordsNeedToBeCracked"}
 
 <!-- People (unfortunately) tend to use the same password on multiple websites. -->
 <!--Passwords are meant to be secret, even in the event of a data breach, your passwords should remain secret.-->
@@ -69,7 +69,7 @@ Passwords are hashed
 
 ---
 
-## Password Salting
+## Password Salting {id="PasswordSalting"}
 <!-- _footer: Longer salts need to be used in reality -->
 
 <!-- Passwords are often salted, which is adding a random extra data to the input password.-->
@@ -88,7 +88,7 @@ Passwords are often "salted"
 
 ---
 
-## Approaches
+## Approaches {id="Approaches"}
 
 - Hash Tables
 - Brute Force
@@ -96,7 +96,7 @@ Passwords are often "salted"
 
 ---
 
-## Hash Tables
+## Hash Tables {id="HashTables"}
 
 <!-- Why would people salt passwords? To prevent the usage of hash tables -->
 Hash tables are precomputed lookup tables of passwords and their hashed variants which leads to near-instant decoding of hashes.
@@ -106,7 +106,7 @@ Hash tables are precomputed lookup tables of passwords and their hashed variants
 
 ---
 
-## Brute Force
+## Brute Force {id="BruteForce"}
 Try every combination of characters for increasing lengths
 - Might take several lifetimes of the universe to crack
 ```
@@ -119,12 +119,12 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 ---
 
-## Dictionary Attacks
+## Dictionary Attacks {id="DictionaryAttacks"}
 - Words are easy to remember
 - People like remembering passwords
 - Word lists
 
-## RockYou
+## RockYou {id="RockYou"}
 - Social media widget maker company
 - Was vulnerable to an easy SQL injection
 - Stored 32 million user's passwords in plaintext
@@ -132,7 +132,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 ---
 
-## Common Hash Types
+## Common Hash Types {id="CommonHashTypes"}
 <!-- _footer: https://hashcat.net/wiki/doku.php?id=example_hashes-->
 
 |Hash-Name|Example Hash|
@@ -144,13 +144,13 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 ---
 
-## [List of Example Hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)
-## [Name That Hash](https://nth.skerritt.blog/)
+## [List of Example Hashes](https://hashcat.net/wiki/doku.php?id=example_hashes) {id="ListOfExampleHashes"}
+## [Name That Hash](https://nth.skerritt.blog/) {id="NameThatHash"}
 - There are multiple tools for identifying hashes, this is just one of them
 
 ---
 
-## Online Non-Salted Hash Cracking Services
+## Online Non-Salted Hash Cracking Services {id="OnlineNonSaltedHashCrackingServices"}
 http://rainbowtables.it64.com/
 - Cracks LM Hashes
 
@@ -164,7 +164,7 @@ https://crackstation.net/
 <!-- _backgroundImage: "linear-gradient(45deg, #980000, #c05400, #d39b00, #347235, #0047ab, #29196f, #4f2d75);" -->
 <!-- _class: invert -->
 <!-- _footer: Some CTFs likes to use XP Special-->
-## ophcrack
+## ophcrack {id="Ophcrack"}
 ophcrack is a free Windows (LM/NTLM) password cracker using Rainbow Tables
 
 |Table|Charset|Length|GiB|
@@ -177,7 +177,7 @@ ophcrack is a free Windows (LM/NTLM) password cracker using Rainbow Tables
 
 ---
 
-## John The Ripper
+## John The Ripper {id="JohnTheRipper"}
 <!-- _footer: https://hashes.com/en/johntheripper -->
 
 {{< marp >}}
@@ -195,7 +195,7 @@ CPU Password Cracker
 
 ---
 
-## Hashcat
+## Hashcat {id="Hashcat"}
 
 {{< marp >}}
 ![bg right:42%](hashcat-logo.svg)
@@ -211,7 +211,7 @@ CPU/GPU Accelerated Password Cracker
 
 ---
 
-## Hashcat Attack Modes
+## Hashcat Attack Modes {id="HashcatAttackModes"}
 
 |Mode #|Attack Type|Method|
 |---|---|---|
@@ -223,7 +223,7 @@ CPU/GPU Accelerated Password Cracker
 
 ---
 
-## Picking a Wordlist
+## Picking a Wordlist {id="PickingAWordlist"}
 
 - RockYou
 - Find one online
@@ -233,7 +233,7 @@ CPU/GPU Accelerated Password Cracker
 
 ---
 
-## Hashcat Arguments
+## Hashcat Arguments {id="HashcatArguments"}
 
 Specify [hash type](https://hashcat.net/wiki/doku.php?id=example_hashes) with `-m #`
 
@@ -252,14 +252,14 @@ Speedup Arguments
 
 ---
 
-## Dictionary Attack (Mode 0)
+## Dictionary Attack (Mode 0) {id="DictionaryAttackMode0"}
 
 ```sh
 hashcat -m 0 -a 0 MD5_Hash_File.txt wordlist.txt
 ```
 >password
 
-## Combinator Attack (Mode 1)
+## Combinator Attack (Mode 1) {id="CombinatorAttackMode1"}
 
 ```sh
 hashcat -m 0 -a 1 MD5_Hash_File.txt animal_names.txt city_names.txt
@@ -268,7 +268,7 @@ hashcat -m 0 -a 1 MD5_Hash_File.txt animal_names.txt city_names.txt
 
 ---
 
-## Mask Attacks (Mode 3)
+## Mask Attacks (Mode 3) {id="MaskAttacksMode3"}
 
 ```sh
 hashcat -m 0 -a 3 MD5_Hash_File.txt CTF-?u?u?u?u-?d?d?d?d
@@ -284,13 +284,13 @@ hashcat -m 0 -a 3 MD5_Hash_File.txt CTF-?u?u?u?u-?d?d?d?d
 
 ---
 
-## Hybrid Attacks (Mode 6)
+## Hybrid Attacks (Mode 6) {id="HybridAttacksMode6"}
 ```sh
 hashcat -m 0 -a 6 MD5_Hash_File.txt wordlist.txt ?d?d?d?d
 ```
 >password0000 through lastpassword9999
 
-## Hybrid Attacks (Mode 7)
+## Hybrid Attacks (Mode 7) {id="HybridAttacksMode7"}
 ```sh
 hashcat -m 0 -a 7 MD5_Hash_File.txt ?d?d?d?d wordlist.txt
 ```
@@ -298,7 +298,7 @@ hashcat -m 0 -a 7 MD5_Hash_File.txt ?d?d?d?d wordlist.txt
 
 ---
 
-## Rules
+## Rules {id="Rules"}
 Works on Dictionary Attacks and Hybrid Attacks
 
 - OneRuleToRuleThemAll (Universal Rule)
@@ -314,7 +314,7 @@ hashcat -m 0 -r leetspeak.rule -r toggles1.rule -a 0 MD5_Hash_File.txt wordlist.
 
 ---
 
-## Hashcat Commands Quick Reference
+## Hashcat Commands Quick Reference {id="HashcatCommandsQuickReference"}
 
 ```sh
 # Mode 0 - Dictionary Attack - direct wordlist
@@ -341,19 +341,19 @@ hashcat -m 0 --show MD5_Hash_File.txt
 
 ---
 
-## aircrack-ng
+## aircrack-ng {id="AircrackNg"}
 Crack WEP/WPA-PSK passwords
 
 ```sh
 aircrack-ng -w dictionary.txt wireless.cap
 ```
 
-## hcxtools
+## hcxtools {id="Hcxtools"}
 Convert wireless captures to JtR/Hashcat
 
 ---
 
-## wpa_supplicant PSK
+## wpa_supplicant PSK {id="WpaSupplicantPsk"}
 
 If you have a list that gives you just an SSID and PSK. 
 - Convert the SSID to base64
@@ -367,7 +367,7 @@ sha1:4096:aGFzaGNhdA==:VGhpcyBpcyBpbnZhbGlkIFNvcnJ5IGFib3V0IHRoYXQ=
 
 ---
 
-## Useful Links
+## Useful Links {id="UsefulLinks"}
 [Hashcat Example Hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)
 
 [Name That Hash](https://nth.skerritt.blog/)
@@ -377,7 +377,7 @@ sha1:4096:aGFzaGNhdA==:VGhpcyBpcyBpbnZhbGlkIFNvcnJ5IGFib3V0IHRoYXQ=
 
 ---
 
-## Wordlist Sites
+## Wordlist Sites {id="WordlistSites"}
 [Weakpass](https://weakpass.com/)
 
 [SecLists](https://github.com/danielmiessler/SecLists)
@@ -386,7 +386,7 @@ sha1:4096:aGFzaGNhdA==:VGhpcyBpcyBpbnZhbGlkIFNvcnJ5IGFib3V0IHRoYXQ=
 
 ---
 
-## Hashcat Rules
+## Hashcat Rules {id="HashcatRules"}
 [One Rule To Rule Them All](https://github.com/NotSoSecure/password_cracking_rules)
 
 [Pantagrule](https://github.com/rarecoil/pantagrule)

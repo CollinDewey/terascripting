@@ -13,7 +13,7 @@ size: 16:9
 
 {{< slides >}}
 
-## Introduction to Using Containers
+## Introduction to Using Containers {id="IntroductionToUsingContainers"}
 <!-- _footer: By Collin Dewey-->
 
 {{< marp >}}
@@ -24,7 +24,7 @@ size: 16:9
 
 ---
 
-## Machine in a Machine
+## Machine in a Machine {id="MachineInAMachine"}
 <!-- Normally done with a VM, but using a bunch of kernel features, we can get most the way there with less of a performance penalty-->
 
 - Can run temporary software
@@ -35,7 +35,7 @@ size: 16:9
 
 ---
 
-## Install Docker - Linux
+## Install Docker - Linux {id="InstallDockerLinux"}
 
 ### Docker
 ```bash
@@ -51,7 +51,7 @@ sudo apt install podman
 
 ---
 
-## Install Docker - Windows
+## Install Docker - Windows {id="InstallDockerWindows"}
 <!-- _footer: To install Winget - Admin Pwsh - `irm winget.pro | iex`-->
 
 ### Install WSL (reboot if needed)
@@ -70,7 +70,7 @@ podman machine start
 
 ---
 
-## docker run
+## docker run {id="DockerRun"}
 
 Download and run a container
 ```sh
@@ -99,7 +99,7 @@ cat /etc/os-release
 
 ---
 
-## Where to find images
+## Where to find images {id="WhereToFindImages"}
 
 [Docker Hub](https://hub.docker.com/)
 
@@ -125,7 +125,7 @@ docker run -p 8080:80 -d httpd
 
 ---
 
-## List and manage containers
+## List and manage containers {id="ListAndManageContainers"}
 
 Lists containers
 
@@ -158,7 +158,7 @@ docker exec -it web-server bash
 
 ---
 
-## Some cleanup
+## Some cleanup {id="SomeCleanup"}
 
 ```
 docker container prune
@@ -173,7 +173,7 @@ docker system prune -a
 
 ---
 
-## Compose
+## Compose {id="Compose"}
 
 Define multiple containers in YAML
 
@@ -192,7 +192,7 @@ services:
 
 ---
 
-## Using Compose
+## Using Compose {id="UsingCompose"}
 
 ```sh
 docker compose up -d
@@ -207,7 +207,7 @@ docker compose -f ./folder/compose-file.yml up -d
 
 ---
 
-## Let's run a search engine
+## Let's run a search engine {id="LetsRunASearchEngine"}
 
 [SearXNG](https://docs.searxng.org/)
 ```yaml
@@ -225,7 +225,7 @@ services:
 
 ---
 
-## Media Server
+## Media Server {id="MediaServer"}
 
 [Jellyfin](https://jellyfin.org/docs/general/installation/container/)
 ```yaml
@@ -245,7 +245,7 @@ services:
 
 ---
 
-## Ad Blocking DNS Server
+## Ad Blocking DNS Server {id="AdBlockingDnsServer"}
 
 [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)
 

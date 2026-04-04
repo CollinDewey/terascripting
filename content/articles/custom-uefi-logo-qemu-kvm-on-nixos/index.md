@@ -8,7 +8,7 @@ slug: custom-uefi-logo-qemu-kvm-on-nixos
 description: "Using a NixOS overlay to set a custom UEFI logo in QEMU/KVM to replace the TianoCore logo when booting virtual machines"
 ---
 
-## TianoCore
+## TianoCore {id="TianoCore"}
 
 When launching virtual machines on my computer, I am greeted with the TianoCore logo in the middle of the black boot screen. [TianoCore EDK II](https://www.tianocore.org/) is a reference implementation of UEFI firmware. It's what KVM uses for its UEFI implementation. Booting a Windows VM results in this logo staying on the screen for the duration that Windows takes to load to get to the lock screen. This logo doesn't look very *cool* though. 
 
@@ -18,7 +18,7 @@ When launching virtual machines on my computer, I am greeted with the TianoCore 
 
 ---
 
-## Overriding the logo
+## Overriding the logo {id="OverridingTheLogo"}
 
 I wanted to change that logo to have a slightly nicer thing to look at for 10-20 seconds while Windows boots. Looking up how to change the logo with KVM's UEFI, I am brought to an [article by Gary Hawkins](https://www.garyhawkins.me.uk/custom-logo-on-uefi-boot-screen/) from 2013. Their approach involves modifying the EDK II source code for its sample OVMF firmware, replacing the logo in the source. In NixOS, patching this file is relatively easy by using an overlay included in your Nix configuration. This overlay copies a local `Logo.bmp` over the one located within the package in the postPatch phase, and Nix does the work of compiling it. Since Nix defaults to using the EDK II package included within QEMU, we will also have to replace the EDK II package that's in QEMU with one we compile ourselves. This unfortunately does trigger a build of QEMU, which takes a little bit of time.
 

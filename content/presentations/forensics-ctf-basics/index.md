@@ -14,20 +14,20 @@ size: 16:9
 
 {{< slides >}}
 
-## Forensics Basics
+## Forensics Basics {id="ForensicsBasics"}
 <!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 
 ---
 
-## What is forensics?
+## What is forensics? {id="Forensics"}
 
 Identify/Obtain Evidence
 
 ---
 
-## Carving
+## Carving {id="Carving"}
 
 binwalk
 
@@ -47,7 +47,7 @@ photorec
 
 ---
 
-## Filesystem Forensics
+## Filesystem Forensics {id="FilesystemForensics"}
 
 RAW Image - A copy of the raw bytes that are stored on a hard drive.
 
@@ -60,7 +60,7 @@ RAW Image - A copy of the raw bytes that are stored on a hard drive.
 
 ---
 
-## Windows Registry
+## Windows Registry {id="WindowsRegistry"}
 
 Where Windows stores a lot of configuration
 
@@ -69,7 +69,7 @@ Where Windows stores a lot of configuration
 
 ---
 
-## RAM Forensics
+## RAM Forensics {id="RamForensics"}
 
 Volatility
 
@@ -83,7 +83,7 @@ Volatility
 
 ---
 
-## Steganography
+## Steganography {id="Steganography"}
 
 - Hide special data within seemingly innocent data (Not metadata)
 - Usually images or audio
@@ -91,7 +91,7 @@ Volatility
 
 ---
 
-## Steganography Methods
+## Steganography Methods {id="SteganographyMethods"}
 - BlindHide
     - Changes the Least Significant Bit of Colors, and uses them for data
     - Starts at top left, works its way right, then down
@@ -105,7 +105,7 @@ Volatility
 
 ---
 
-## Steganography Tools
+## Steganography Tools {id="SteganographyTools"}
 
 Any advanced photo editor (Paint.NET, Krita, GIMP, Photoshop, Photopea)
 
@@ -119,7 +119,7 @@ Any advanced photo editor (Paint.NET, Krita, GIMP, Photoshop, Photopea)
 
 ---
 
-## Unredacter
+## Unredacter {id="Unredacter"}
 
 De-pixelate Text
 - Specific font

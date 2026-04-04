@@ -13,14 +13,14 @@ size: 16:9
 
 {{< slides >}}
 
-## OSINT Basics
+## OSINT Basics {id="OsintBasics"}
 <!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 
 ---
 
-## What is OSINT?
+## What is OSINT? {id="OSINT"}
 
 
 `O`pen `S`ource `INT`elligence
@@ -29,7 +29,7 @@ OSINT is using freely available websites on the internet to find information.
 
 ---
 
-## Methods
+## Methods {id="Methods"}
 
 Image Metadata
 - Additional Data
@@ -65,7 +65,7 @@ clip.apples.leap
 
 ---
 
-## More Resources
+## More Resources {id="MoreResources"}
 
 [OSINTframework](https://osintframework.com/)
 

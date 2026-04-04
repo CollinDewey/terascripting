@@ -16,13 +16,13 @@ description: "Installing and Running the Nix package manager on a jailbroken Ama
 
 ---
 
-## Kindle
+## Kindle {id="Kindle"}
 
 The Amazon Kindle is an e-reader, meant for purely e-reading purposes. I've loved reading books, textbooks, and papers on it. The screen is much easier on the eyes. It's also a good way to have a distraction-free environment where I don't have a good way to get sidetracked. Let's ruin that by jailbreaking it and installing whatever software we like.
 
 ---
 
-## Jailbreak
+## Jailbreak {id="Jailbreak"}
 
 To get more out of your Kindle, you'll want to jailbreak it. This lets you install and run non-Amazon software. If you're interested, there's an available jailbreak at the [Kindle Modding Wiki](https://kindlemodding.org/jailbreaking/getting-started).
 
@@ -30,13 +30,13 @@ One of the nicest tools to install is [KOReader](https://koreader.rocks/), an e-
 
 ---
 
-## What does Nix offer you?
+## What does Nix offer you? {id="WhatDoesNixOfferYou"}
 
 Nix can be used as a package manager, allowing us to install up-to-date software on the Kindle without trampling over old libraries or accidentally bricking the Kindle's operating system. Nix allows us to effortlessly cross compile [lots of software](https://search.nixos.org/packages) on our powerful computers and move it over to the Kindle, since the Kindle isn't made to be a compilation powerhouse.
 
 ---
 
-## TL;DR How do I install it? How do I install software?
+## TL;DR How do I install it? How do I install software? {id="TLDR"}
 
 Run the `kindle-nix-installer.sh` [script from my GitHub](https://github.com/CollinDewey/kindle-nix/releases/latest/) on your Kindle, either through Kterm, or through SSH. Here's the command.
 
@@ -55,7 +55,7 @@ kindle-send root@<KINDLE_IP> htop
 
 ---
 
-## How does this work?
+## How does this work? {id="HowDoesThisWork"}
 
 The regular Nix installer will fail on the Kindle due to differences between how the Kindle's Linux is setup versus more traditional Linux setups. So let's set it up ourselves.
 

@@ -14,14 +14,14 @@ size: 16:9
 
 {{< slides >}}
 
-## Scanning & Reconnaissance Basics
+## Scanning & Reconnaissance Basics {id="ScanningReconnaissanceBasics"}
 <!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 
 ---
 
-## What is Scanning & Reconnaissance?
+## What is Scanning & Reconnaissance? {id="ScanningAndReconnaissance"}
 
 Scanning
 - Probing systems to identity what they are hosting
@@ -31,14 +31,14 @@ Reconnaissance
 
 ---
 
-## What is an IP?
+## What is an IP? {id="WhatIsAnIP"}
 
 Each computer has a numeric address
 google.com is an alias to 142.250.191.110
 
 ---
 
-## What is a port?
+## What is a port? {id="WhatIsAPort"}
 
 - 65536 ports
 - Data Transport
@@ -47,7 +47,7 @@ google.com is an alias to 142.250.191.110
 
 ---
 
-## Common Services/Ports
+## Common Services/Ports {id="CommonServicesPorts"}
 
 |Port|Service|Acronym|
 |---|---|---|
@@ -65,7 +65,7 @@ google.com is an alias to 142.250.191.110
 
 ---
 
-## Scanning Computers
+## Scanning Computers {id="ScanningComputers"}
 
 [nmap](https://nmap.org/)
 - Scans for open ports
@@ -78,7 +78,7 @@ google.com is an alias to 142.250.191.110
 
 ---
 
-## nmap Script Engine
+## nmap Script Engine {id="NmapScriptEngine"}
 
 - [FTP-Brute](https://nmap.org/nsedoc/scripts/ftp-brute.html)
 - [HTTP-Brute](https://nmap.org/nsedoc/scripts/http-brute.html)
@@ -88,7 +88,7 @@ google.com is an alias to 142.250.191.110
 
 ---
 
-## netcat/nc/ncat
+## netcat/nc/ncat {id="NetcatNcNcat"}
 
 - Network 
 - TCP/UDP
@@ -102,7 +102,7 @@ echo "GET /" | nc google.com 80
 
 ---
 
-## Scanning Websites
+## Scanning Websites {id="ScanningWebsites"}
 
 - [dirbuster](https://sourceforge.net/projects/dirbuster/)/[feroxbuster](https://github.com/epi052/feroxbuster)
     - Uses a wordlist to enumerate existing folders
@@ -116,13 +116,13 @@ echo "GET /" | nc google.com 80
 
 ---
 
-## [Shodan](https://www.shodan.io/)
+## [Shodan](https://www.shodan.io/) {id="Shodan"}
 
 - Search engine for IPs
 
 ---
 
-## Wordlists for Scanning
+## Wordlists for Scanning {id="WordlistsForScanning"}
 
 [Common Names](https://download.weakpass.com/wordlists/1452/common-names.txt.gz )
 

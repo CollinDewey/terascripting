@@ -13,20 +13,20 @@ size: 16:9
 
 {{< slides >}}
 
-## Network Traffic Analysis Basics
+## Network Traffic Analysis Basics {id="NetworkTrafficAnalysisBasics"}
 <!-- _footer: By Collin Dewey-->
 
 For CTF Competitions
 
 ---
 
-## What is Network Traffic Analysis?
+## What is Network Traffic Analysis? {id="WhatIsNetworkTrafficAnalysis"}
 
 Looking through network traffic (duh)
 
 ---
 
-## Wireshark
+## Wireshark {id="Wireshark"}
 
 Tool that we'll use to look through network traffic
 - Network traffic is sent through chunks of data called packets
@@ -34,7 +34,7 @@ Tool that we'll use to look through network traffic
 - Search packet contents, and metadata
 - Filters
 
-## Tshark
+## Tshark {id="Tshark"}
 
 Command line version of Wireshark
 - Same filters as Wireshark
@@ -42,7 +42,7 @@ Command line version of Wireshark
 
 ---
 
-## Wireshark
+## Wireshark {id="Wireshark2"}
 
 Extract images from webpages with "File -> Export Objects -> HTTP"
 
@@ -52,7 +52,7 @@ See contents of a TCP stream by right clicking the packet and pressing "Follow -
 
 ---
 
-## Some Common Protocols
+## Some Common Protocols {id="SomeCommonProtocols"}
 
 - HTTP(S)
 - FTP
@@ -63,7 +63,7 @@ See contents of a TCP stream by right clicking the packet and pressing "Follow -
 
 ---
 
-## HyperText Transfer Protocol (HTTP)
+## HyperText Transfer Protocol (HTTP) {id="HyperTextTransferProtocolHTTP"}
 
 This is what everthing website related uses. Most commonly you'll see GET and POST requests to GET data from the server, or to POST data to the server.
 
@@ -99,13 +99,13 @@ Unencrypted
 
 ---
 
-## File Transfer Protocol (FTP)
+## File Transfer Protocol (FTP) {id="FileTransferProtocolFTP"}
 
 For file transfers
 
 ---
 
-## E-Mail
+## E-Mail {id="EMail"}
 
 ### SMTP
 Sending mail
@@ -122,7 +122,7 @@ Receiving mail but better
 
 ---
 
-## Domain Name System (DNS)
+## Domain Name System (DNS) {id="DomainNameSystemDNS"}
 
 What IP is example.com at? Ask a DNS server to find out!
 
@@ -138,7 +138,7 @@ example.com.            296     IN      A       23.192.228.84
 
 ---
 
-## Internet Control Message Protocol (ICMP)
+## Internet Control Message Protocol (ICMP) {id="ICMP"}
 
 Notably
 - 8 – Echo Request
@@ -146,7 +146,7 @@ Notably
 
 ---
 
-## Address Resolution Protocol (ARP)
+## Address Resolution Protocol (ARP) {id="ARP"}
 
 Get a MAC address from an IP address
 

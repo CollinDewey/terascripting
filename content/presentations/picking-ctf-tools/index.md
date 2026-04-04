@@ -14,12 +14,12 @@ size: 16:9
 
 {{< slides >}}
 
-## Which CTF tool should I use?
+## Which CTF tool should I use? {id="WhichCTFToolShouldIUse"}
 <!-- _footer: By Collin Dewey-->
 
 ---
 
-## Open Source Intelligence - Searching
+## Open Source Intelligence - Searching {id="OpenSourceIntelligenceSearching"}
 
 Google
 - You've heard of this one before
@@ -29,7 +29,7 @@ Google "Dorking"
 
 ---
 
-## Open Source Intelligence - Reverse Image Search
+## Open Source Intelligence - Reverse Image Search {id="OpenSourceIntelligenceReverseImageSearch"}
 
 Google Images
 Yandex Images
@@ -41,7 +41,7 @@ Tineye
 
 ---
 
-## Open Source Intelligence - Mapping
+## Open Source Intelligence - Mapping {id="OpenSourceIntelligenceMapping"}
 
 Google Maps
 - Street View
@@ -56,7 +56,7 @@ Overpass Turbo
 
 ---
 
-## Open Source Intelligence - Websites
+## Open Source Intelligence - Websites {id="OpenSourceIntelligenceWebsites"}
 
 [crt.sh](https://crt.sh/)
 - Certificates
@@ -70,7 +70,7 @@ Overpass Turbo
 
 ---
 
-## Open Source Intelligence - Where to find more tools?
+## Open Source Intelligence - Where to find more tools? {id="OpenSourceIntelligenceWhereToFindMoreTools"}
 
 [OSINT Framework.com](https://osintframework.com/)
 - Tree diagram for finding websites that cover certain topics
@@ -80,7 +80,7 @@ Overpass Turbo
 
 ---
 
-## Cryptography - ASCII
+## Cryptography - ASCII {id="CryptographyAscii"}
 
 | Encoding | Example |
 |----------|---------|
@@ -91,7 +91,7 @@ Overpass Turbo
 
 ---
 
-## Cryptography - Cipher
+## Cryptography - Cipher {id="CryptographyCipher"}
 
 Seeing giberish text? Probably a cipher. Some common ones
 
@@ -127,7 +127,7 @@ Seeing giberish text? Probably a cipher. Some common ones
 
 ---
 
-## Cryptography - RSA
+## Cryptography - RSA {id="CryptographyRsa"}
 
 Seeing something like `e = 17`?
 
@@ -136,7 +136,7 @@ Seeing something like `e = 17`?
 
 ---
 
-## Password Cracking
+## Password Cracking {id="PasswordCracking"}
 
 Only tool you need
 - [Hashcat](https://hashcat.net/hashcat/)
@@ -153,7 +153,7 @@ See a password protected PDF/RAR/ZIP/7z/Office file?
 
 ---
 
-## Forensics - Steganography
+## Forensics - Steganography {id="ForensicsSteganography"}
 
 See an image with no other context? Maybe hidden data is inside.
 
@@ -173,7 +173,7 @@ Audio and not an image?
 
 ---
 
-## Forensics - Binary Files/Drive Images
+## Forensics - Binary Files/Drive Images {id="ForensicsBinaryFilesDriveImages"}
 
 Look through a file
 
@@ -190,7 +190,7 @@ Extract files from a file (carving)
 
 ---
 
-## Forensics - Misc
+## Forensics - Misc {id="ForensicsMisc"}
 
 Image Metadata?
 - exiftool
@@ -207,7 +207,7 @@ Other?
 
 ---
 
-## Log Analysis
+## Log Analysis {id="LogAnalysis"}
 
 Log File to look through?
 - [LNAV](https://github.com/tstack/lnav)
@@ -218,7 +218,7 @@ Something more complicated?
 
 ---
 
-## Network Traffic Analysis
+## Network Traffic Analysis {id="NetworkTrafficAnalysis"}
 
 General analysis
 - [Wireshark](https://www.wireshark.org/)
@@ -228,7 +228,7 @@ Bulk analysis/statistics
 
 ---
 
-## Scanning and Reconnaissance
+## Scanning and Reconnaissance {id="ScanningAndReconnaissance"}
 
 Need to find what ports are open? Or a service version?
 - [nmap](https://nmap.org/)
@@ -240,7 +240,7 @@ Need to find subdomains?
 
 ---
 
-## Web Application Exploitation
+## Web Application Exploitation {id="WebApplicationExploitation"}
 
 Easy Problem?
 - F12/CTRL+SHIFT+I Developer Tools
@@ -257,7 +257,7 @@ Need to modify a request? repeat it? intercept it? make a new one?
 
 ---
 
-## Enumeration and Exploitation
+## Enumeration and Exploitation {id="EnumerationAndExploitation"}
 
 What language is this? (text)
 - Probably one of Python, Ruby, Perl, Lua
@@ -270,7 +270,7 @@ What language is this? (file)
 
 ---
 
-## Enumeration and Exploitation - Decompilers
+## Enumeration and Exploitation - Decompilers {id="EnumerationAndExploitationDecompilers"}
 
 | Type | Language | Tool |
 |----------|------|-------|

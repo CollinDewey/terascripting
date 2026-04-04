@@ -17,7 +17,7 @@ This causes some common issues
 - How do I paste in an application where normal paste doesn't work?
 
 ---
-## TL;DR
+## TL;DR {id="TLDR"}
 
 Open the Run dialog box by pressing Win+R, and paste this in. It will stay in the Run dialog for future invocations. When you run it, quickly select your desired application and watch the contents of your clipboard be pasted letter by letter to whatever application you're using.
 ```
@@ -29,7 +29,7 @@ powershell -w h -c "sleep 2;add-type -a system.windows.forms;[windows.forms.send
 > You cannot use this to type into an administrative window without running the command as an administrator.
 
 ---
-## Existing approaches
+## Existing approaches {id="ExistingApproaches"}
 
 There are many approaches that can be taken to type out the characters in your clipboard character by character. Such as...
 
@@ -42,7 +42,7 @@ There are many approaches that can be taken to type out the characters in your c
 Of these options, AutoHotKey is the simplest method. ClickPaste has the easiest granular control, letting you decide the delay between key presses. But they all require downloading something to the computer you're using. If you're using some sort of lab computer where you don't have access to the outside internet, or don't have permission to download files, you're out of luck with those tools. But there are some parts of Windows we can take advantage of.
 
 ---
-## Requirements
+## Requirements {id="Requirements"}
 
 I wanted a solution to this problem which followed a few requirements
 - Didn't require downloading anything off of the Internet
@@ -53,7 +53,7 @@ I wanted a solution to this problem which followed a few requirements
 - Works on Windows 10/11
 
 ---
-## System.Windows.Forms.SendKeys
+## System.Windows.Forms.SendKeys {id="SystemWindowsFormsSendKeys"}
 Looking up scripts on how to paste your clipboard with PowerShell, you'll find scripts that use .NET, which has a [SendKeys](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys) class, used for sending characters, one by one, to a window.
 
 
@@ -66,7 +66,7 @@ Add-Type -AssemblyName System.Windows.Forms
 ```
 
 ---
-## Get-Clipboard and Replace
+## Get-Clipboard and Replace {id="GetClipboardAndReplace"}
 
 But we want to use the contents of our clipboard.
 
@@ -132,7 +132,7 @@ $clipboard_newline_escaped = $clipboard_newline -replace '[+^%~(){}\[\]]', '{$0}
 These two replacments are enough to copy whatever you want, as long as it isn't a file or weird unicode characters.
 
 ---
-## Running PowerShell
+## Running PowerShell {id="RunningPowerShell"}
 
 PowerShell supports commands as an argument through two ways. Through `-Command` and through `-EncodedCommand`.
 Unfortunately, the encoded command must be a UTF-16LE formatted string. I think it's pretty clear which method is better for our usecase of fitting it into the Run dialog.
@@ -150,7 +150,7 @@ powershell -WindowStyle hidden -Command "Write-Host Hello"
 
 
 ---
-## Bringing it together
+## Bringing it together {id="BringingItTogether"}
 
 All together, we have this, which is to be invoked with `powershell -WindowStyle hidden -Command`
 
@@ -199,7 +199,7 @@ Which fits all of the requirements I had set. It's even short enough that you co
 
 ---
 
-## [WScript.Shell.SendKeys](https://learn.microsoft.com/en-us/archive/technet-wiki/5169.vbscript-sendkeys-method)
+## [WScript.Shell.SendKeys](https://learn.microsoft.com/en-us/archive/technet-wiki/5169.vbscript-sendkeys-method) {id="WScriptShellSendKeys"}
 
 VBScript has a similar SendKeys method to that of Windows.Forms. Even needing the same replacements.
 

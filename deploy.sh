@@ -26,6 +26,7 @@ for dir in content/presentations/*/; do
             cp "$file" "$tmpfile"
             sed -i "s/{{< slides >}}/<style>$EXTRA_CSS<\/style>/g" "$tmpfile"
             sed -i 's/{{<[^>]*>}}//g' "$tmpfile"
+            sed -E -i 's/\{[[:space:]]*id="[^"]*"[[:space:]]*\}//g' "$tmpfile"
             marp "$tmpfile" "$MARP_ARGS" --output "$name"
             rm "$tmpfile"
             

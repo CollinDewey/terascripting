@@ -200,11 +200,11 @@ There are a few different main "Cyber Security" Linux distros, with different pu
 -->
 
 ---
-## Other
+## Other {id="Other"}
 ---
 
 [My Github Cyber List](https://github.com/stars/CollinDewey/lists/cyber)
 
 ---
 
-## Good luck!
+## Good luck! {id="GoodLuck"}

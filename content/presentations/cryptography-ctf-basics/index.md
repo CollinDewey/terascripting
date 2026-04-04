@@ -12,7 +12,7 @@ size: 16:9
 ---
 {{< slides >}}
 
-## Cryptography Basics
+## Cryptography Basics {id="CryptographyBasics"}
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
 
@@ -30,7 +30,7 @@ For CTF Competitions
 
 ---
 
-## What is Cryptograhpy?
+## What is Cryptograhpy? {id="Cryptography"}
 
 <!-- Cryptography is an overarching field over trying to have secure and private communications, even in the presence of prying eyes. -->
 
@@ -39,7 +39,7 @@ Secure Communication
 <br>
 <br>
 
-## What is a cipher?
+## What is a cipher? {id="Cipher"}
 
 <!-- The algorithm of how we get there. -->
 
@@ -65,7 +65,7 @@ How we get there
 
 ---
 
-## Common Different Representations of Text
+## Common Different Representations of Text {id="TextFormatting"}
 <!-- _footer: Convert these using https://gchq.github.io/CyberChef/-->
 
 <!-- However, you can represent that data itself in different ways. -->
@@ -92,7 +92,7 @@ There exist other representations such as Morse Code and Braille
 
 {{< /marp >}}
 
-## Common Ciphers
+## Common Ciphers {id="CommonCiphers"}
 
 Rail Fence Cipher
 - Requires number of "rails", with an optional offset
@@ -131,7 +131,7 @@ Bit Shifting/Rotation
 XOR-->
 
 ---
-## Other Symbols
+## Other Symbols {id="OtherSymbols"}
 
 {{< marp >}}
 ![bg fit](ICS-flags.jpg)
@@ -142,7 +142,7 @@ XOR-->
 
 ---
 <!-- _class: -->
-## Other Symbols
+## Other Symbols {id="OtherSymbols2"}
 - Reverse Image Search
 
 {{< marp >}}

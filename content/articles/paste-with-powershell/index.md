@@ -8,6 +8,8 @@ slug: paste-with-powershell
 description: "Using PowerShell to bypass paste restrictions in applications by simulating keyboard inputs with a single command. No additional software required. Paste in Proxmox, paste in a Virtual Machine, paste anywhere."
 ---
 
+> UPDATE: This will now likely trigger Windows Defender, since a lot of newer scams have you execute powershell within the Run dialog.
+
 When you copy text, that goes into a temporary space called the clipboard. When you paste, it dumps the contents from that clipboard. Copy and Paste help speed up tasks all the time, but some applications don't want or don't support pasting.
 
 This causes some common issues

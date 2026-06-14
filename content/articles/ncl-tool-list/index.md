@@ -187,6 +187,10 @@ LLMs - Good for writing Python scripts
 
 [crxviewer](https://robwu.nl/crxviewer) - View Chrome extension source
 
+[WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/) - Windows crash dump analyzer
+
+[Synchrony](https://deobfuscate.relative.im/) - Javascript deobfuscator
+
 <!---
 # Linux Distro
 ---

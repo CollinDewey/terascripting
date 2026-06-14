@@ -11,7 +11,7 @@ My homelab is a constantly evolving endeavor. Below are the computers actively b
 ---
 ## CYAN - Workstation {id="CYAN"}
 
-[NixOS 26.05 (Yarara)](https://nixos.org/)
+[NixOS 26.11 (Zokor)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -52,10 +52,14 @@ NVIDIA GB10
  - Large Language Models
  - GPU Compute
 
+#### Description
+
+VIRIDIAN is the ASUS GX10 Mini PC based on the GB10/Spark platform. I'm personally most interested in Large Language Models and Text to Speech models. While it's not the fastest hardware in terms of tokens per second, it can host some fairly sizable models. Hermes Agent is fun to play with.
+
 ---
 ## TEAL - Server {id="TEAL"}
 
-[NixOS 25.11 (Xantusia)](https://nixos.org/)
+[NixOS 26.05 (Yarara)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -81,7 +85,6 @@ GeForce RTX 2070 Super
 
 #### Hosted Software
  - [Traefik Reverse Proxy](https://traefik.io/traefik/)
- - [jmusicbot Discord Bot](https://jmusicbot.com/)
  - [Hugo](https://github.com/klakegg/docker-hugo)
  - [Multiple NGINX instances](https://hub.docker.com/_/nginx)
  - [Error Pages](https://github.com/tarampampam/error-pages)
@@ -173,9 +176,9 @@ Windows Server 2025 Standard Insider
 Going into a job where I worked on Windows computers, I wanted to supplement my knowledge of Windows, Windows Server, and Active Directory. I created an AD domain and setup Group Policies for my other Windows VMs to use.
 
 ---
-## BROWN/RUBY/SCARLET - VPS {id="VPS"}
+## BROWN/SCARLET - VPS {id="VPS"}
 
-[NixOS 25.11 (Xantusia)](https://nixos.org/)
+[NixOS 26.05 (Yarara)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -200,12 +203,12 @@ Going into a job where I worked on Windows computers, I wanted to supplement my 
  - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
 
 #### Description
-BROWN, RUBY, and SCARLET are all aarch64 Virtual Private Servers. These host various game servers - mostly Minecraft - as well as the [uptime tracker](https://kuma.terascripting.com/) for my website using [Uptime-Kuma](https://github.com/louislam/uptime-kuma).
+BROWN and SCARLET are both aarch64 Virtual Private Servers. These host various game servers - mostly Minecraft - as well as the [uptime tracker](https://kuma.terascripting.com/) for my website using [Uptime-Kuma](https://github.com/louislam/uptime-kuma).
 
 ---
 ## AZUL - 3D Printer Controller {id="AZUL"}
 
-[NixOS 26.05 (Yarara)](https://nixos.org/)
+[NixOS 26.11 (Zokor)](https://nixos.org/)
 
 [Nix Configuration](https://github.com/CollinDewey/nix-config)
 
@@ -226,7 +229,7 @@ Intel N97
 One of my hobbies is my 3D printer, which I've performed all sorts of upgrades on. One of those updates is to use [Klipper](https://www.klipper3d.org/) instead of the default [Marlin](https://marlinfw.org/) firmware. This requires a computer to be connected to the printer's mainboard. Previously, I used a Raspberry Pi 3B, but encountered various power-related issues. I've now replaced it with a Mini PC, with shockingly high specs for the cost. Now I'm able to find models, and slice them directly next to the printer itself.
 
 ---
-{{< img src="https://img.shields.io/date/1775248981?label=Last%20Updated&style=for-the-badge" alt="Last updated relative time" aspect="242/28" max-height="28px" min-width="242px" >}}
+{{< img src="https://img.shields.io/date/1781457485?label=Last%20Updated&style=for-the-badge" alt="Last updated relative time" aspect="242/28" max-height="28px" min-width="242px" >}}
 
 ---
 

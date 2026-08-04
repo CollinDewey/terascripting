@@ -16,7 +16,10 @@ size: 16:9
 
 ## Password Cracking Basics {id="PasswordCrackingBasics"}
 <!-- _footer: By Collin Dewey-->
+
 For CTF Competitions
+
+> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
 
 {{< marp >}}
 ![bg right:42%](hashcat-logo.svg)

@@ -17,6 +17,8 @@ size: 16:9
 ## Introduction to Managing systemd {id="IntroductionToManagingSystemd"}
 <!-- _footer: By Collin Dewey-->
 
+> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+
 {{< marp >}}
 ![bg right:40% 90%](systemd-dark-mono.svg)
 {{< /marp >}}{{< hugo >}}

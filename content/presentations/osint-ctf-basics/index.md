@@ -18,6 +18,8 @@ size: 16:9
 
 For CTF Competitions
 
+> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+
 ---
 
 ## What is OSINT? {id="OSINT"}

@@ -17,6 +17,9 @@ size: 16:9
 ## Which CTF tool should I use? {id="WhichCTFToolShouldIUse"}
 <!-- _footer: By Collin Dewey-->
 
+
+> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+
 ---
 
 ## Open Source Intelligence - Searching {id="OpenSourceIntelligenceSearching"}

@@ -16,6 +16,9 @@ size: 16:9
 ## Introduction to Containers {id="IntroductionToContainers"}
 <!-- _footer: By Collin Dewey-->
 
+
+> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+
 {{< marp >}}
 ![bg right:40% 90%](docker.svg)
 {{< /marp >}}{{< hugo >}}

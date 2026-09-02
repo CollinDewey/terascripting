@@ -19,7 +19,7 @@ size: 16:9
 
 For CTF Competitions
 
-> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+{{< presentation_disclaimer >}}
 
 {{< marp >}}
 ![bg right:42%](hashcat-logo.svg)

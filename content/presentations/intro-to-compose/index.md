@@ -18,7 +18,7 @@ size: 16:9
 
 Docker/Podman Compose
 
-> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+{{< presentation_disclaimer >}}
 
 ---
 

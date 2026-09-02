@@ -16,7 +16,7 @@ size: 16:9
 <!-- _footer: By Collin Dewey-->
 For CTF Competitions
 
-> Note: This was presented in-person, so a lot of the commentary for the slides is not here.
+{{< presentation_disclaimer >}}
 
 {{< marp >}}
 ![bg invert right:55%](Pigpen_cipher_key.svg)

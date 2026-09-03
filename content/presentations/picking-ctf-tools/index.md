@@ -312,5 +312,7 @@ What language is this? (file)
 ## Enumeration and Exploitation - Debugging {id="EnumerationAndExploitationDebugging"}
 
 [pwndbg](https://github.com/pwndbg/pwndbg) (Modified GDB)
+
 [WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/)
+
 [Buffer Overflow Pattern Generator](https://wiremask.eu/tools/buffer-overflow-pattern-generator/)

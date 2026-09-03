@@ -2,7 +2,7 @@
 title: Which CTF tool should I use?
 author: Collin Dewey
 date: '2025-10-23'
-lastmod: '2025-10-23'
+lastmod: '2026-09-02'
 type: Presentation
 slug: picking-ctf-tools
 description: "Which CTF tool should I use to complete a problem? How do I start?"
@@ -51,10 +51,10 @@ Google Maps
     - "See more dates"
 
 OpenStreetMap
-- Open Source Mapping Program
+- Open Source Map
 
 Overpass Turbo
-- Complex Queries
+- Complex Queries using OpenStreetMap
 - Building near building near building
 
 ---
@@ -140,19 +140,36 @@ Seeing something like `e = 17`?
 ---
 
 ## Password Cracking {id="PasswordCracking"}
+<!-- _footer: On Kali in a VM: `sudo apt install libhwloc-dev ocl-icd-dev ocl-icd-opencl-dev pocl-opencl-icd` -->
 
-Only tool you need
-- [Hashcat](https://hashcat.net/hashcat/)
-    - [Example Hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)
-    - [Name-That-Hash](https://nth.skerritt.blog/)
 
-Datasets to make wordlists
+The tool you need is [Hashcat](https://hashcat.net/hashcat/)
+- [Example Hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)
+- [Name-That-Hash](https://nth.skerritt.blog/)
+
+Wordlists
+- [SecLists](https://github.com/danielmiessler/SecLists) (Rockyou)
+- [Weakpass](https://weakpass.com/)
+
+Datasets to make custom wordlists
 - [Kaggle](https://www.kaggle.com/)
 - [Wikidata Query Service](https://query.wikidata.org/)
 
+---
+
+## Password Cracking Special Tools {id="PasswordCrackingSpecialTools"}
+
+NT:LM `(9BC9CDAFDFDBFDF55BFA81527A37D05E:F6332EE5142AC368C401F065B6F57E69)`
+
+- [Ophcrack](https://ophcrack.sourceforge.io/) with XP Special tables
+
+PCAPNG/PCAP?
+
+- [cap2hashcat](https://hashcat.net/cap2hashcat/)
+
 See a password protected PDF/RAR/ZIP/7z/Office file?
 
-[pdf2john](https://hashes.com/en/johntheripper/pdf2john), [rar2john](https://hashes.com/en/johntheripper/rar2john), [zip2john](https://hashes.com/en/johntheripper/zip2john), [7z2john](https://hashes.com/en/johntheripper/7z2john), [office2john](https://hashes.com/en/johntheripper/office2john)
+- [pdf2john](https://hashes.com/en/johntheripper/pdf2john), [rar2john](https://hashes.com/en/johntheripper/rar2john), [zip2john](https://hashes.com/en/johntheripper/zip2john), [7z2john](https://hashes.com/en/johntheripper/7z2john), [office2john](https://hashes.com/en/johntheripper/office2john)
 
 ---
 
@@ -196,7 +213,7 @@ Extract files from a file (carving)
 ## Forensics - Misc {id="ForensicsMisc"}
 
 Image Metadata?
-- exiftool
+- [exiftool](https://exif.tools/)
 - [CyberChef](https://gchq.github.io/CyberChef/#recipe=Extract_EXIF())
 
 RAM/Memory Analysis?
@@ -217,7 +234,8 @@ Log File to look through?
 
 Something more complicated?
 - Standard Linux Tools (cut, uniq, sort, awk)
-- Ask an LLM to make you a Python script
+- JSON? ([gron](https://github.com/tomnomnom/gron), [jq](https://jqlang.org/))
+- Ask an LLM to make you a Python script - check with your CTF's rules
 
 ---
 
@@ -251,6 +269,10 @@ Easy Problem?
 - Look through website Javascript
 - Check out cookies
 
+---
+
+## Web Application Exploitation {id="WebApplicationExploitation2"}
+
 What tech stack is this website using?
 - [Wappalyzer](https://www.wappalyzer.com/)
 
@@ -268,6 +290,7 @@ What language is this? (text)
 
 What language is this? (file)
 - `file`
+- File extension
 - Open it up in [Ghidra](https://ghidra-sre.org/) and look around
     - Probably C or C++
 
@@ -278,8 +301,16 @@ What language is this? (file)
 | Type | Language | Tool |
 |----------|------|-------|
 | exe/msi | .NET | [dotPeek](https://www.jetbrains.com/decompiler) |
-| jar | Java |[Vineflower](https://github.com/Vineflower/vineflower) |
+| jar | Java |[Recaf](https://github.com/Col-E/Recaf) |
 | pyc | Python | [uncompyle6](https://pypi.org/project/uncompyle6) |
 | crx | Javascript| [crxviewer](https://robwu.nl/crxviewer) |
 | ELF | ? | [Ghidra](https://ghidra-sre.org/) |
 | ELF | ? | [dogbolt](https://dogbolt.org/) |
+
+---
+
+## Enumeration and Exploitation - Debugging {id="EnumerationAndExploitationDebugging"}
+
+[pwndbg](https://github.com/pwndbg/pwndbg) (Modified GDB)
+[WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/)
+[Buffer Overflow Pattern Generator](https://wiremask.eu/tools/buffer-overflow-pattern-generator/)

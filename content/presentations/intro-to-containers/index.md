@@ -177,3 +177,10 @@ Kubernetes, Docker Swarm, Rancher, Portainer, Nomad, etc...
 ## Compose {id="Compose"}
 
 See [Compose Presentation](https://collindewey.net/presentations/intro-to-compose/)
+
+{{< hugo >}}
+---
+Docker logo: GPL 2
+
+OCI logo: Apache-2.0
+{{< /hugo >}}

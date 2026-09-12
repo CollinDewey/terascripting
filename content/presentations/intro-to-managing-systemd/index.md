@@ -195,3 +195,9 @@ NoNewPrivileges=yes
 
 ### Edits below this comment will be discarded
 ```
+
+{{< hugo >}}
+---
+
+systemd logo: CC-BY-SA 4.0
+{{< /hugo >}}

@@ -7,7 +7,6 @@ set -euo pipefail
 # --- Settings ---
 DEPLOY_DEST="./public"
 MARP_ARGS="--html true"
-EXTRA_CSS="div.is-hugo{display:none;content-visibility:hidden;}"
 
 # --- Build ---
 for dir in content/presentations/*/; do
@@ -16,7 +15,7 @@ for dir in content/presentations/*/; do
             tmpfile=$(mktemp)
             cp "$file" "$tmpfile"
 
-            sed -i "s/{{< slides >}}/<style>$EXTRA_CSS<\/style>/g" "$tmpfile"
+            sed -i '/{{< hugo >}}/,/{{< \/hugo >}}/d' "$tmpfile"
             sed -i 's/{{<[^>]*>}}//g' "$tmpfile"
 
             marp "$tmpfile" "$MARP_ARGS" --output "$DEPLOY_DEST/presentations/$(basename "$dir")/slides.html"

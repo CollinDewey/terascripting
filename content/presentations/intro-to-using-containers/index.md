@@ -265,3 +265,9 @@ services:
       - ./config:/opt/adguardhome/conf
       - ./work:/opt/adguardhome/work
 ```
+
+{{< hugo >}}
+---
+
+Docker logo: GPL 2
+{{< /hugo >}}
